@@ -1,6 +1,6 @@
 # PD 1-Comparativa LIS-FMAT vs Otro programa
 ## La carpeta PD1 incluye lo siguiente:
-- Infografía PD1(1).pdf:
+- Infografía PD1 (1).pdf:
   - Material visual que incluye la comparativa del plan de estudios de FMAT LIS respecto al de UV LIS abarcando los siguientes aspectos:
       - Objetivos.
       - Nivel de cumplimiento de las áreas de conocimiento de ANIEI.
