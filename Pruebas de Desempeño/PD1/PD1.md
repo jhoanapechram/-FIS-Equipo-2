@@ -11,6 +11,7 @@
       - Referencias.
 - [Material Audiovisual](https://www.canva.com/design/DAGyoWQWNJY/lwNjHmmayDz2_30m91Bucg/edit):
     - Material audiovisual donde se explican los resultados más importantes/significativos de la actividad.
+      
 -INFO_A_LIS:
 - Material de evidencia en donde se fue trabajando la actividad:
   - 1.0 Objetivo del programa	2
