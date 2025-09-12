@@ -12,7 +12,7 @@
 - [Material Audiovisual](https://www.canva.com/design/DAGyoWQWNJY/lwNjHmmayDz2_30m91Bucg/edit):
     - Material audiovisual donde se explican los resultados más importantes/significativos de la actividad.
       
-- INFO_A_LIS:
+- INFO_A_LIS.pdf:
   - Material de evidencia en donde se fue trabajando la actividad:
     - 1.0 Objetivo del programa	2
     - 2.0 Malla Curriculares de la FMAT UADY y de la UV	  2.1 Malla Curricular Facultad de Matemáticas LIS UADY (FMAT)	
