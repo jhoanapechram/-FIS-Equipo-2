@@ -1,1 +1,1 @@
-## Informaciónd de documentos del directorio:
+## Información de documentos del directorio:
