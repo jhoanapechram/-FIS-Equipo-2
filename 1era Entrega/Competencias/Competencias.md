@@ -1,1 +1,1 @@
-# Información de los Documentos
+# Información de Documentos del Directorio
