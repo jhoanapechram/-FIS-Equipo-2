@@ -4,3 +4,5 @@ En él se describen las principales funcionalidades que debe tener la aplicació
 -Requisitos principales (MUST HAVE): integración con APIs de supermercados, comparación de precios en tiempo real y gestión de base de datos histórica.
 -Requisitos importantes (SHOULD HAVE): como la predicción de precios con IA, validación de ofertas y geolocalización para optimizar la decisión de compra.
 -Requisitos opcionales (COULD HAVE): como el asistente inteligente (chatbot) y la integración de datos externos.
+
+[FIS_REQUISITOS](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf): El siguiente documento contiene los requisitos funcionales y no funcionales de Smart Price, imcluyendo la clasificación de estos últimos. Además , contiene un diagrama de casos de usos de usuario que podría tener al usar SmartPrice
