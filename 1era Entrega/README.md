@@ -13,6 +13,6 @@
   - [Video_presentación](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/Video_Presentaci%C3%B3n.md)
 ## - [Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Requisitos)
   - [Fis_Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf)
-  - [Historias-de-usario](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/Historias_de_usuario.pdf)
+  - [Historias-de-usuario](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/Historias_de_usuario.pdf)
   - [Requisitos Priorización](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACI%C3%93N.pdf)
      
