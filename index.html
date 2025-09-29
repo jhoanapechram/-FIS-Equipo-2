@@ -1,82 +1,464 @@
-html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartPrice - Asistente Digital de Compras</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mi Repositorio - Proyecto Académico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #ff6b6b;
+            --light: rgba(255, 255, 255, 0.9);
+            --dark: #2d3748;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--dark);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3em;
+            margin-bottom: 25px;
+        }
+
+        .repo-stats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 25px;
+            border-radius: 15px;
+            color: white;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 10px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px 25px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .tab:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .tab.active {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.3);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-height: 500px;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Folder Structure */
+        .folder-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .folder-category {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .category-title {
+            color: white;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .folder {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin: 8px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .folder:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .folder i {
+            margin-right: 12px;
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+
+        .file {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px 10px 35px;
+            margin: 5px 0;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .file:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .file i {
+            margin-right: 10px;
+            font-size: 1em;
+            color: #4fc3f7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .folder-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .header {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>🛍️ SmartPrice</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#PD1">PD1</a></li>
-                <li><a href="#1ra Entrega">1ra Entrega</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h2>FIS EQUIPO2</h2>
-            <p>Repositorio del Equipo 2</p>
-            <a href="#instalacion" class="cta-button">Comenzar ahora</a>
-        </div>
-    </section>
-
-    <section id="caracteristicas" class="features">
-        <h2>Características Principales</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <h3>🔍 Comparación Inteligente</h3>
-                <p>Compara precios entre diferentes supermercados en tiempo real</p>
-            </div>
-            <div class="feature-card">
-                <h3>💰 Alertas de Ofertas</h3>
-                <p>Recibe notificaciones cuando productos bajen de precio</p>
-            </div>
-            <div class="feature-card">
-                <h3>📱 Interfaz Responsive</h3>
-                <p>Funciona perfecto en desktop, tablet y móvil</p>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Mi Repositorio Académico</h1>
+            <p class="subtitle">Proyecto de Desarrollo de Software - Universidad XYZ</p>
+            <div class="repo-stats">
+                <div class="stat">
+                    <i class="fas fa-user-graduate"></i> Estudiante: Tu Nombre
+                </div>
+                <div class="stat">
+                    <i class="fas fa-book"></i> Curso: Desarrollo Web
+                </div>
+                <div class="stat">
+                    <i class="fas fa-calendar"></i> Semestre: 2024-1
+                </div>
             </div>
         </div>
-    </section>
 
-    <section id="tecnologias" class="tech">
-        <h2>Tecnologías Utilizadas</h2>
-        <div class="tech-badges">
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">Python</span>
-            <span class="badge">MySQL</span>
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab active" onclick="showSection('inicio')">
+                <i class="fas fa-home"></i> Inicio
+            </button>
+            <button class="tab" onclick="showSection('pruebas')">
+                <i class="fas fa-chart-line"></i> Pruebas de Desempeño
+            </button>
+            <button class="tab" onclick="showSection('entregas')">
+                <i class="fas fa-folder-open"></i> Entregas
+            </button>
         </div>
-    </section>
 
-    <section id="instalacion" class="installation">
-        <h2>Instalación y Uso</h2>
-        <div class="code-block">
-            <pre><code># Clonar el repositorio
-git clone https://github.com/tuusuario/smartprice.git
+        <!-- Inicio Section -->
+        <div id="inicio" class="content-section active">
+            <h2 class="section-title"><i class="fas fa-home"></i> Página de Inicio</h2>
+            <div class="folder-container">
+                <div class="folder-category">
+                    <h3 class="category-title">Documentación</h3>
+                    <div class="folder" onclick="toggleFolder('doc-files')">
+                        <i class="fas fa-folder"></i> Documentos del Proyecto
+                    </div>
+                    <div id="doc-files" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-pdf"></i> Especificaciones.pdf
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-word"></i> Requerimientos.docx
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-alt"></i> README.md
+                        </div>
+                    </div>
 
-# Navegar al directorio
-cd smartprice
+                    <div class="folder" onclick="toggleFolder('planning')">
+                        <i class="fas fa-folder"></i> Planificación
+                    </div>
+                    <div id="planning" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-chart-gantt"></i> Cronograma.xlsx
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-tasks"></i> Tareas.md
+                        </div>
+                    </div>
+                </div>
 
-# Instalar dependencias
-npm install
-
-# Ejecutar la aplicación
-npm start</code></pre>
+                <div class="folder-category">
+                    <h3 class="category-title">Código Fuente</h3>
+                    <div class="folder" onclick="toggleFolder('src-files')">
+                        <i class="fas fa-folder"></i> Source Code
+                    </div>
+                    <div id="src-files" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> main.js
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> styles.css
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> utils.js
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>© 2024 SmartPrice - Desarrollado por [Tu Nombre]</p>
-    </footer>
+        <!-- Pruebas de Desempeño Section -->
+        <div id="pruebas" class="content-section">
+            <h2 class="section-title"><i class="fas fa-chart-line"></i> Pruebas de Desempeño</h2>
+            <div class="folder-container">
+                <div class="folder-category">
+                    <h3 class="category-title">Tests de Rendimiento</h3>
+                    <div class="folder" onclick="toggleFolder('performance')">
+                        <i class="fas fa-folder"></i> Pruebas de Performance
+                    </div>
+                    <div id="performance" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> load-test.js
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-chart-bar"></i> resultados.json
+                        </div>
+                    </div>
+
+                    <div class="folder" onclick="toggleFolder('unit-tests')">
+                        <i class="fas fa-folder"></i> Pruebas Unitarias
+                    </div>
+                    <div id="unit-tests" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> test-app.js
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> test-utils.js
+                        </div>
+                    </div>
+                </div>
+
+                <div class="folder-category">
+                    <h3 class="category-title">Métricas y Reportes</h3>
+                    <div class="folder" onclick="toggleFolder('metrics')">
+                        <i class="fas fa-folder"></i> Métricas
+                    </div>
+                    <div id="metrics" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-csv"></i> metricas.csv
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-chart-pie"></i> reporte.html
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Entregas Section -->
+        <div id="entregas" class="content-section">
+            <h2 class="section-title"><i class="fas fa-folder-open"></i> Entregas del Proyecto</h2>
+            <div class="folder-container">
+                <div class="folder-category">
+                    <h3 class="category-title">Entregas por Semana</h3>
+                    <div class="folder" onclick="toggleFolder('semana1')">
+                        <i class="fas fa-folder"></i> Semana 1
+                    </div>
+                    <div id="semana1" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-archive"></i> entrega-inicial.zip
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-powerpoint"></i> presentacion.pptx
+                        </div>
+                    </div>
+
+                    <div class="folder" onclick="toggleFolder('semana2')">
+                        <i class="fas fa-folder"></i> Semana 2
+                    </div>
+                    <div id="semana2" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-code"></i> desarrollo-v1.rar
+                        </div>
+                    </div>
+
+                    <div class="folder" onclick="toggleFolder('semana3')">
+                        <i class="fas fa-folder"></i> Semana 3
+                    </div>
+                    <div id="semana3" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-archive"></i> version-final.zip
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-video"></i> demo.mp4
+                        </div>
+                    </div>
+                </div>
+
+                <div class="folder-category">
+                    <h3 class="category-title">Documentos Finales</h3>
+                    <div class="folder" onclick="toggleFolder('final-docs')">
+                        <i class="fas fa-folder"></i> Documentación Final
+                    </div>
+                    <div id="final-docs" class="folder-content">
+                        <div class="file">
+                            <i class="fas fa-file-pdf"></i> memoria-tecnica.pdf
+                        </div>
+                        <div class="file">
+                            <i class="fas fa-file-pdf"></i> manual-usuario.pdf
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para cambiar entre secciones
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remover clase active de todas las pestañas
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Mostrar sección seleccionada
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Activar pestaña clickeada
+            event.currentTarget.classList.add('active');
+        }
+
+        // Función para expandir/contraer carpetas
+        function toggleFolder(folderId) {
+            const folderContent = document.getElementById(folderId);
+            const isVisible = folderContent.style.display === 'block';
+            
+            // Cerrar todos los folders primero (opcional)
+            document.querySelectorAll('.folder-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // Abrir/cerrar el folder clickeado
+            folderContent.style.display = isVisible ? 'none' : 'block';
+        }
+
+        // Inicializar: cerrar todas las carpetas al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.folder-content').forEach(content => {
+                content.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
