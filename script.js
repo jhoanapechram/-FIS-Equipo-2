@@ -1,0 +1,194 @@
+// Datos de la estructura de carpetas y archivos
+const data = {
+    inicio: [
+        {
+            title: "Documentación Principal",
+            folders: [
+                {
+                    name: "1era Entrega",
+                    files: []
+                },
+                {
+                    name: "Competencias",
+                    files: [
+                        { name: "Competencias genericas y especificas_1.pdf", type: "pdf" },
+                        { name: "Competencias.md", type: "md" }
+                    ]
+                },
+                {
+                    name: "Proceso",
+                    files: []
+                },
+                {
+                    name: "Producto",
+                    files: [
+                        { name: "FIS producto.pdf", type: "pdf" },
+                        { name: "Producto.md", type: "md" },
+                        { name: "Video_Presentacion.md", type: "video" }
+                    ]
+                },
+                {
+                    name: "Requisitos",
+                    files: [
+                        { name: "Caso de Uso con Criterios de Aceptacion.pdf", type: "pdf" },
+                        { name: "FIS_REQUISITOS.pdf", type: "pdf" },
+                        { name: "REQUISITOS PRIORIZACION.pdf", type: "pdf" },
+                        { name: "Requisitos.md", type: "md" }
+                    ]
+                }
+            ]
+        }
+    ],
+    pruebas: [
+        {
+            title: "Pruebas de Desempeño",
+            folders: [
+                {
+                    name: "Pruebas de Desempeño",
+                    files: [
+                        { name: "README.md", type: "md" },
+                        { name: "INFO_A_LIS.pdf", type: "pdf" },
+                        { name: "Infografía PD1 (1).pdf", type: "pdf" },
+                        { name: "PD1.md", type: "md" }
+                    ]
+                }
+            ]
+        }
+    ],
+    entregas: [
+        {
+            title: "Entregas del Proyecto",
+            folders: [
+                {
+                    name: "1era Entrega",
+                    files: []
+                }
+            ]
+        }
+    ]
+};
+
+// Función para obtener el icono según el tipo de archivo
+function getFileIcon(type) {
+    switch(type) {
+        case 'pdf': return 'fa-file-pdf';
+        case 'md': return 'fa-file-alt';
+        case 'video': return 'fa-file-video';
+        case 'word': return 'fa-file-word';
+        case 'code': return 'fa-file-code';
+        case 'archive': return 'fa-file-archive';
+        case 'powerpoint': return 'fa-file-powerpoint';
+        case 'csv': return 'fa-file-csv';
+        case 'chart-bar': return 'fa-chart-bar';
+        case 'chart-pie': return 'fa-chart-pie';
+        default: return 'fa-file';
+    }
+}
+
+// Función para generar el contenido HTML de una sección
+function generateSectionContent(sectionId) {
+    const sectionData = data[sectionId];
+    let html = '';
+    
+    sectionData.forEach(category => {
+        html += `
+            <div class="folder-category">
+                <h3 class="category-title">${category.title}</h3>
+        `;
+        
+        category.folders.forEach(folder => {
+            html += `
+                <div class="folder" onclick="toggleFolder('${sectionId}-${folder.name.replace(/\s+/g, '-')}')">
+                    <i class="fas fa-folder"></i> ${folder.name}
+                </div>
+                <div id="${sectionId}-${folder.name.replace(/\s+/g, '-')}" class="folder-content">
+            `;
+            
+            if (folder.files.length === 0) {
+                html += `
+                    <div class="file">
+                        <i class="fas fa-info-circle"></i> No hay archivos
+                    </div>
+                `;
+            } else {
+                folder.files.forEach(file => {
+                    html += `
+                        <div class="file">
+                            <i class="fas ${getFileIcon(file.type)}"></i> ${file.name}
+                        </div>
+                    `;
+                });
+            }
+            
+            html += `</div>`;
+        });
+        
+        html += `</div>`;
+    });
+    
+    return html;
+}
+
+// Función para inicializar el contenido de las secciones
+function initializeSections() {
+    const sections = ['inicio', 'pruebas', 'entregas'];
+    
+    sections.forEach(section => {
+        const container = document.getElementById(`${section}-container`);
+        if (container) {
+            container.innerHTML = generateSectionContent(section);
+        }
+    });
+}
+
+// Función para cambiar entre secciones
+function showSection(sectionId) {
+    // Ocultar todas las secciones
+    document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+    });
+    
+    // Remover clase active de todas las pestañas
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Mostrar sección seleccionada
+    document.getElementById(sectionId).classList.add('active');
+    
+    // Activar pestaña clickeada
+    event.currentTarget.classList.add('active');
+}
+
+// Función para expandir/contraer carpetas
+function toggleFolder(folderId) {
+    const folderContent = document.getElementById(folderId);
+    const isVisible = folderContent.style.display === 'block';
+    
+    // Cerrar todos los folders primero (opcional)
+    document.querySelectorAll('.folder-content').forEach(content => {
+        content.style.display = 'none';
+    });
+    
+    // Abrir/cerrar el folder clickeado
+    folderContent.style.display = isVisible ? 'none' : 'block';
+}
+
+// Inicializar: cerrar todas las carpetas al cargar y generar contenido
+document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar el contenido de las secciones
+    initializeSections();
+    
+    // Cerrar todas las carpetas al cargar
+    document.querySelectorAll('.folder-content').forEach(content => {
+        content.style.display = 'none';
+    });
+    
+    // Añadir event listeners a las pestañas
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            const sectionId = this.getAttribute('data-section');
+            showSection(sectionId);
+        });
+    });
+});
