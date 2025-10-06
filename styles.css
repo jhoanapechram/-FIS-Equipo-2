@@ -130,6 +130,107 @@ h1 {
     text-align: center;
 }
 
+/* Nueva estructura para la Documentación Principal */
+.documentation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.doc-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.doc-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.doc-title {
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.doc-description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.doc-files {
+    margin-top: auto;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.file:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.file i {
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.file i.fa-file-pdf {
+    color: #e74c3c;
+}
+
+.file i.fa-file-alt, .file i.fa-file-code {
+    color: #4fc3f7;
+}
+
+.file i.fa-file-video {
+    color: #8e44ad;
+}
+
+.file i.fa-file-archive, .file i.fa-file-powerpoint {
+    color: #d35400;
+}
+
+.file i.fa-file-csv, .file i.fa-chart-bar, .file i.fa-chart-pie {
+    color: #27ae60;
+}
+
+.empty-message {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    padding: 15px;
+}
+
 /* Folder Structure */
 .folder-container {
     display: grid;
@@ -177,52 +278,6 @@ h1 {
     color: #ffd700;
 }
 
-.file {
-    display: flex;
-    align-items: center;
-    padding: 10px 15px 10px 35px;
-    margin: 5px 0;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.file:hover {
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-}
-
-.file i {
-    margin-right: 10px;
-    font-size: 1em;
-}
-
-/* File type colors */
-.file i.fa-file-pdf {
-    color: #e74c3c;
-}
-
-.file i.fa-file-word {
-    color: #2b579a;
-}
-
-.file i.fa-file-alt, .file i.fa-file-code {
-    color: #4fc3f7;
-}
-
-.file i.fa-file-archive, .file i.fa-file-powerpoint {
-    color: #d35400;
-}
-
-.file i.fa-file-video {
-    color: #8e44ad;
-}
-
-.file i.fa-file-csv, .file i.fa-chart-bar, .file i.fa-chart-pie {
-    color: #27ae60;
-}
-
 .folder-content {
     display: none;
 }
@@ -233,7 +288,7 @@ h1 {
         flex-direction: column;
     }
     
-    .folder-container {
+    .folder-container, .documentation-grid {
         grid-template-columns: 1fr;
     }
     
