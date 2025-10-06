@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Repositorio - Proyecto Académico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Mi Repositorio Académico</h1>
+            <p class="subtitle">Fundamentos de Ingeniería de Software - UADY</p>
+            <div class="repo-stats">
+                <div class="stat">
+                    <i class="fas fa-user-graduate"></i> Equipo: 2
+                </div>
+                <div class="stat">
+                    <i class="fas fa-book"></i> Proyecto: SmartPrice
+                </div>
+                <div class="stat">
+                    <i class="fas fa-calendar"></i> Semestre: 2025-1
+                </div>
+            </div>
+        </div>
 
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab active" data-section="inicio">
+                <i class="fas fa-home"></i> Inicio
+            </button>
+            <button class="tab" data-section="pruebas">
+                <i class="fas fa-chart-line"></i> Pruebas de Desempeño
+            </button>
+            <button class="tab" data-section="entregas">
+                <i class="fas fa-folder-open"></i> Entregas
+            </button>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="inicio" class="content-section active">
+            <h2 class="section-title"><i class="fas fa-home"></i> Página de Inicio</h2>
+            <div class="folder-container" id="inicio-container">
+                <!-- Contenido cargado dinámicamente desde data.json -->
+            </div>
+        </div>
+
+        <div id="pruebas" class="content-section">
+            <h2 class="section-title"><i class="fas fa-chart-line"></i> Pruebas de Desempeño</h2>
+            <div class="folder-container" id="pruebas-container">
+                <!-- Contenido cargado dinámicamente desde data.json -->
+            </div>
+        </div>
+
+        <div id="entregas" class="content-section">
+            <h2 class="section-title"><i class="fas fa-folder-open"></i> Entregas del Proyecto</h2>
+            <div class="folder-container" id="entregas-container">
+                <!-- Contenido cargado dinámicamente desde data.json -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
