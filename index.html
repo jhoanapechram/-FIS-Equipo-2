@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Repositorio - Proyecto Académico</title>
+    <title>Repositorio Académico - SmartPrice</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -19,6 +19,8 @@
             --accent: #ff6b6b;
             --light: rgba(255, 255, 255, 0.9);
             --dark: #2d3748;
+            --card-bg: rgba(255, 255, 255, 0.1);
+            --card-hover: rgba(255, 255, 255, 0.15);
         }
 
         body {
@@ -26,6 +28,7 @@
             min-height: 100vh;
             padding: 20px;
             color: var(--dark);
+            background-attachment: fixed;
         }
 
         .container {
@@ -43,6 +46,18 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #ff6b6b);
         }
 
         h1 {
@@ -50,6 +65,7 @@
             font-size: 3em;
             margin-bottom: 15px;
             font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
         .subtitle {
@@ -73,6 +89,11 @@
             color: white;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .stat:hover {
+            transform: translateY(-3px);
         }
 
         /* Navigation Tabs */
@@ -85,11 +106,11 @@
             margin-bottom: 30px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             gap: 10px;
+            justify-content: center;
         }
 
         .tab {
-            flex: 1;
-            padding: 15px 25px;
+            padding: 15px 30px;
             text-align: center;
             background: transparent;
             border: none;
@@ -99,6 +120,23 @@
             transition: all 0.3s ease;
             font-size: 1.1em;
             font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tab::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .tab:hover::before {
+            left: 100%;
         }
 
         .tab:hover {
@@ -136,102 +174,90 @@
             font-size: 2em;
             margin-bottom: 25px;
             text-align: center;
+            position: relative;
+            padding-bottom: 15px;
         }
 
-        /* Nueva estructura para la Documentación Principal */
-        .documentation-grid {
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 3px;
+        }
+
+        /* Inicio Section */
+        .welcome-container {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .welcome-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .welcome-text {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .feature-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
         }
 
-        .doc-card {
-            background: rgba(255, 255, 255, 0.15);
+        .feature-card {
+            background: var(--card-bg);
             border-radius: 15px;
             padding: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
             transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .doc-card:hover {
+        .feature-card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--card-hover);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        .doc-icon {
+        .feature-icon {
             font-size: 2.5em;
             margin-bottom: 15px;
             color: #ffd700;
-            text-align: center;
         }
 
-        .doc-title {
+        .feature-title {
             color: white;
-            font-size: 1.4em;
-            margin-bottom: 15px;
-            text-align: center;
-            font-weight: 600;
+            font-size: 1.3em;
+            margin-bottom: 10px;
         }
 
-        .doc-description {
+        .feature-desc {
             color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 20px;
-            text-align: center;
-            flex-grow: 1;
+            font-size: 0.9em;
         }
 
-        .doc-files {
-            margin-top: auto;
-        }
-
-        .file {
-            display: flex;
-            align-items: center;
-            padding: 10px 15px;
-            margin: 5px 0;
-            color: rgba(255, 255, 255, 0.8);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-        .file:hover {
-            color: white;
-            background: rgba(255, 255, 255, 0.1);
-            text-decoration: none;
-        }
-
-        .file i {
-            margin-right: 10px;
-            font-size: 1em;
-        }
-
-        .file i.fa-file-pdf {
-            color: #e74c3c;
-        }
-
-        .file i.fa-file-alt, .file i.fa-file-code {
-            color: #4fc3f7;
-        }
-
-        .file i.fa-file-video {
-            color: #8e44ad;
-        }
-
-        .empty-message {
-            text-align: center;
-            color: rgba(255, 255, 255, 0.7);
-            font-style: italic;
-            padding: 15px;
-        }
-
-        /* Folder Structure */
+        /* File Structure */
         .folder-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -239,10 +265,15 @@
         }
 
         .folder-category {
-            background: rgba(255, 255, 255, 0.15);
+            background: var(--card-bg);
             border-radius: 15px;
             padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .folder-category:hover {
+            transform: translateY(-5px);
         }
 
         .category-title {
@@ -251,35 +282,65 @@
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
         }
 
-        .folder {
+        .category-title i {
+            margin-right: 10px;
+            color: #ffd700;
+        }
+
+        .file-grid {
+            display: grid;
+            gap: 10px;
+        }
+
+        .file {
             display: flex;
             align-items: center;
             padding: 12px 15px;
-            margin: 8px 0;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 10px;
-            color: white;
-            cursor: pointer;
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
             transition: all 0.3s ease;
             border: 1px solid transparent;
         }
 
-        .folder:hover {
-            background: rgba(255, 255, 255, 0.2);
+        .file:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
             transform: translateX(5px);
-            border-color: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .folder i {
-            margin-right: 12px;
+        .file i {
+            margin-right: 10px;
             font-size: 1.2em;
-            color: #ffd700;
+            width: 20px;
+            text-align: center;
         }
 
-        .folder-content {
-            display: none;
+        .file i.fa-file-pdf {
+            color: #e74c3c;
+        }
+
+        .file i.fa-file-alt {
+            color: #4fc3f7;
+        }
+
+        .file i.fa-file-video {
+            color: #8e44ad;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
         }
 
         /* Responsive */
@@ -288,7 +349,7 @@
                 flex-direction: column;
             }
             
-            .folder-container, .documentation-grid {
+            .folder-container, .feature-cards {
                 grid-template-columns: 1fr;
             }
             
@@ -299,6 +360,14 @@
             .header {
                 padding: 25px 20px;
             }
+            
+            .welcome-icon {
+                font-size: 3em;
+            }
+            
+            .welcome-title {
+                font-size: 1.8em;
+            }
         }
     </style>
 </head>
@@ -306,7 +375,7 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>Mi Repositorio Académico</h1>
+            <h1>Repositorio Académico</h1>
             <p class="subtitle">Fundamentos de Ingeniería de Software - UADY</p>
             <div class="repo-stats">
                 <div class="stat">
@@ -323,99 +392,52 @@
 
         <!-- Navigation Tabs -->
         <div class="nav-tabs">
-            <button class="tab active" onclick="showSection('inicio')">
+            <button class="tab active" data-section="inicio">
                 <i class="fas fa-home"></i> Inicio
             </button>
-            <button class="tab" onclick="showSection('pruebas')">
+            <button class="tab" data-section="pruebas">
                 <i class="fas fa-chart-line"></i> Pruebas de Desempeño
             </button>
-            <button class="tab" onclick="showSection('entregas')">
+            <button class="tab" data-section="entregas">
                 <i class="fas fa-folder-open"></i> Entregas
             </button>
         </div>
 
         <!-- Inicio Section -->
         <div id="inicio" class="content-section active">
-            <h2 class="section-title"><i class="fas fa-home"></i> Página de Inicio</h2>
-            
-            <!-- Documentación Principal -->
-            <div class="documentation-grid">
-                <div class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-folder-open"></i>
-                    </div>
-                    <h3 class="doc-title">1era Entrega</h3>
-                    <p class="doc-description">Contenido de la primera entrega del proyecto</p>
-                    <div class="doc-files">
-                        <div class="empty-message">No hay archivos disponibles</div>
-                    </div>
+            <div class="welcome-container">
+                <div class="welcome-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
+                <h2 class="welcome-title">Bienvenido al Repositorio del Proyecto SmartPrice</h2>
+                <p class="welcome-text">
+                    Este repositorio contiene toda la documentación, entregas y pruebas de desempeño 
+                    del proyecto académico desarrollado para la materia de Fundamentos de Ingeniería de Software.
+                </p>
                 
-                <div class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Documentación Completa</h3>
+                        <p class="feature-desc">Accede a todos los documentos del proyecto organizados por categorías</p>
                     </div>
-                    <h3 class="doc-title">Competencias</h3>
-                    <p class="doc-description">Documentación sobre competencias genéricas y específicas</p>
-                    <div class="doc-files">
-                        <a class="file" href="Competencias/Competencias genericas y especificas_1.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Competencias genericas y especificas_1.pdf
-                        </a>
-                        <a class="file" href="Competencias/Competencias.md">
-                            <i class="fas fa-file-alt"></i> Competencias.md
-                        </a>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">Pruebas de Desempeño</h3>
+                        <p class="feature-desc">Revisa los resultados y análisis de las pruebas realizadas</p>
                     </div>
-                </div>
-                
-                <div class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="doc-title">Proceso</h3>
-                    <p class="doc-description">Documentación del proceso de desarrollo</p>
-                    <div class="doc-files">
-                        <div class="empty-message">No hay archivos disponibles</div>
-                    </div>
-                </div>
-                
-                <div class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-box"></i>
-                    </div>
-                    <h3 class="doc-title">Producto</h3>
-                    <p class="doc-description">Información sobre el producto desarrollado</p>
-                    <div class="doc-files">
-                        <a class="file" href="Producto/FIS producto.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> FIS producto.pdf
-                        </a>
-                        <a class="file" href="Producto/Producto.md">
-                            <i class="fas fa-file-alt"></i> Producto.md
-                        </a>
-                        <a class="file" href="Producto/Video_Presentacion.md">
-                            <i class="fas fa-file-video"></i> Video_Presentacion.md
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="doc-card">
-                    <div class="doc-icon">
-                        <i class="fas fa-list-alt"></i>
-                    </div>
-                    <h3 class="doc-title">Requisitos</h3>
-                    <p class="doc-description">Especificaciones y criterios de aceptación</p>
-                    <div class="doc-files">
-                        <a class="file" href="Requisitos/Caso de Uso con Criterios de Aceptacion.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Caso de Uso con Criterios de Aceptacion.pdf
-                        </a>
-                        <a class="file" href="Requisitos/FIS_REQUISITOS.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> FIS_REQUISITOS.pdf
-                        </a>
-                        <a class="file" href="Requisitos/REQUISITOS PRIORIZACION.pdf" target="_blank">
-                            <i class="fas fa-file-pdf"></i> REQUISITOS PRIORIZACION.pdf
-                        </a>
-                        <a class="file" href="Requisitos/Requisitos.md">
-                            <i class="fas fa-file-alt"></i> Requisitos.md
-                        </a>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3 class="feature-title">Entregas del Proyecto</h3>
+                        <p class="feature-desc">Consulta todas las entregas realizadas durante el semestre</p>
                     </div>
                 </div>
             </div>
@@ -426,11 +448,8 @@
             <h2 class="section-title"><i class="fas fa-chart-line"></i> Pruebas de Desempeño</h2>
             <div class="folder-container">
                 <div class="folder-category">
-                    <h3 class="category-title">Pruebas de Desempeño</h3>
-                    <div class="folder" onclick="toggleFolder('pruebas-folder')">
-                        <i class="fas fa-folder"></i> Pruebas de Desempeño
-                    </div>
-                    <div id="pruebas-folder" class="folder-content">
+                    <h3 class="category-title"><i class="fas fa-folder"></i> Pruebas de Desempeño</h3>
+                    <div class="file-grid">
                         <a class="file" href="Pruebas de Desempeño/README.md">
                             <i class="fas fa-file-alt"></i> README.md
                         </a>
@@ -453,26 +472,14 @@
             <h2 class="section-title"><i class="fas fa-folder-open"></i> Entregas del Proyecto</h2>
             <div class="folder-container">
                 <div class="folder-category">
-                    <h3 class="category-title">1era Entrega</h3>
-                    
-                    <!-- Competencias dentro de 1era Entrega -->
-                    <div class="folder" onclick="toggleFolder('competencias-1era')">
-                        <i class="fas fa-folder"></i> Competencias
-                    </div>
-                    <div id="competencias-1era" class="folder-content">
+                    <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega</h3>
+                    <div class="file-grid">
                         <a class="file" href="1era Entrega/Competencias/Competencias genericas y especificas_1.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> Competencias genericas y especificas_1.pdf
                         </a>
                         <a class="file" href="1era Entrega/Competencias/Competencias.md">
                             <i class="fas fa-file-alt"></i> Competencias.md
                         </a>
-                    </div>
-
-                    <!-- Producto dentro de 1era Entrega -->
-                    <div class="folder" onclick="toggleFolder('producto-1era')">
-                        <i class="fas fa-folder"></i> Producto
-                    </div>
-                    <div id="producto-1era" class="folder-content">
                         <a class="file" href="1era Entrega/Producto/FIS producto.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> FIS producto.pdf
                         </a>
@@ -482,13 +489,6 @@
                         <a class="file" href="1era Entrega/Producto/Video_Presentacion.md">
                             <i class="fas fa-file-video"></i> Video_Presentacion.md
                         </a>
-                    </div>
-
-                    <!-- Requisitos dentro de 1era Entrega -->
-                    <div class="folder" onclick="toggleFolder('requisitos-1era')">
-                        <i class="fas fa-folder"></i> Requisitos
-                    </div>
-                    <div id="requisitos-1era" class="folder-content">
                         <a class="file" href="1era Entrega/Requisitos/Caso de Uso con Criterios de Aceptacion.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> Caso de Uso con Criterios de Aceptacion.pdf
                         </a>
@@ -504,6 +504,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 Proyecto SmartPrice - Fundamentos de Ingeniería de Software - UADY</p>
         </div>
     </div>
 
@@ -527,24 +532,13 @@
             event.currentTarget.classList.add('active');
         }
 
-        // Función para expandir/contraer carpetas
-        function toggleFolder(folderId) {
-            const folderContent = document.getElementById(folderId);
-            const isVisible = folderContent.style.display === 'block';
-            
-            // Cerrar todos los folders primero (opcional)
-            document.querySelectorAll('.folder-content').forEach(content => {
-                content.style.display = 'none';
-            });
-            
-            // Abrir/cerrar el folder clickeado
-            folderContent.style.display = isVisible ? 'none' : 'block';
-        }
-
-        // Inicializar: cerrar todas las carpetas al cargar
+        // Añadir event listeners a las pestañas
         document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.folder-content').forEach(content => {
-                content.style.display = 'none';
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+                });
             });
         });
     </script>
