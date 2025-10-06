@@ -5,7 +5,302 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Repositorio - Proyecto Académico</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #667eea;
+            --secondary: #764ba2;
+            --accent: #ff6b6b;
+            --light: rgba(255, 255, 255, 0.9);
+            --dark: #2d3748;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--dark);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3em;
+            margin-bottom: 25px;
+        }
+
+        .repo-stats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 25px;
+            border-radius: 15px;
+            color: white;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 10px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px 25px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .tab:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .tab.active {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.3);
+        }
+
+        /* Content Sections */
+        .content-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-height: 500px;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Nueva estructura para la Documentación Principal */
+        .documentation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .doc-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .doc-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .doc-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .doc-title {
+            color: white;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .doc-description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .doc-files {
+            margin-top: auto;
+        }
+
+        .file {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            margin: 5px 0;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .file:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+
+        .file i {
+            margin-right: 10px;
+            font-size: 1em;
+        }
+
+        .file i.fa-file-pdf {
+            color: #e74c3c;
+        }
+
+        .file i.fa-file-alt, .file i.fa-file-code {
+            color: #4fc3f7;
+        }
+
+        .file i.fa-file-video {
+            color: #8e44ad;
+        }
+
+        .empty-message {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+            padding: 15px;
+        }
+
+        /* Folder Structure */
+        .folder-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .folder-category {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .category-title {
+            color: white;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .folder {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin: 8px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .folder:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .folder i {
+            margin-right: 12px;
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+
+        .folder-content {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-tabs {
+                flex-direction: column;
+            }
+            
+            .folder-container, .documentation-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .header {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -28,40 +323,230 @@
 
         <!-- Navigation Tabs -->
         <div class="nav-tabs">
-            <button class="tab active" data-section="inicio">
+            <button class="tab active" onclick="showSection('inicio')">
                 <i class="fas fa-home"></i> Inicio
             </button>
-            <button class="tab" data-section="pruebas">
+            <button class="tab" onclick="showSection('pruebas')">
                 <i class="fas fa-chart-line"></i> Pruebas de Desempeño
             </button>
-            <button class="tab" data-section="entregas">
+            <button class="tab" onclick="showSection('entregas')">
                 <i class="fas fa-folder-open"></i> Entregas
             </button>
         </div>
 
-        <!-- Content Sections -->
+        <!-- Inicio Section -->
         <div id="inicio" class="content-section active">
             <h2 class="section-title"><i class="fas fa-home"></i> Página de Inicio</h2>
-            <div class="folder-container" id="inicio-container">
-                <!-- Contenido cargado dinámicamente desde script.js -->
+            
+            <!-- Documentación Principal -->
+            <div class="documentation-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3 class="doc-title">1era Entrega</h3>
+                    <p class="doc-description">Contenido de la primera entrega del proyecto</p>
+                    <div class="doc-files">
+                        <div class="empty-message">No hay archivos disponibles</div>
+                    </div>
+                </div>
+                
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="doc-title">Competencias</h3>
+                    <p class="doc-description">Documentación sobre competencias genéricas y específicas</p>
+                    <div class="doc-files">
+                        <a class="file" href="Competencias/Competencias genericas y especificas_1.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Competencias genericas y especificas_1.pdf
+                        </a>
+                        <a class="file" href="Competencias/Competencias.md">
+                            <i class="fas fa-file-alt"></i> Competencias.md
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="doc-title">Proceso</h3>
+                    <p class="doc-description">Documentación del proceso de desarrollo</p>
+                    <div class="doc-files">
+                        <div class="empty-message">No hay archivos disponibles</div>
+                    </div>
+                </div>
+                
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3 class="doc-title">Producto</h3>
+                    <p class="doc-description">Información sobre el producto desarrollado</p>
+                    <div class="doc-files">
+                        <a class="file" href="Producto/FIS producto.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> FIS producto.pdf
+                        </a>
+                        <a class="file" href="Producto/Producto.md">
+                            <i class="fas fa-file-alt"></i> Producto.md
+                        </a>
+                        <a class="file" href="Producto/Video_Presentacion.md">
+                            <i class="fas fa-file-video"></i> Video_Presentacion.md
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <h3 class="doc-title">Requisitos</h3>
+                    <p class="doc-description">Especificaciones y criterios de aceptación</p>
+                    <div class="doc-files">
+                        <a class="file" href="Requisitos/Caso de Uso con Criterios de Aceptacion.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Caso de Uso con Criterios de Aceptacion.pdf
+                        </a>
+                        <a class="file" href="Requisitos/FIS_REQUISITOS.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> FIS_REQUISITOS.pdf
+                        </a>
+                        <a class="file" href="Requisitos/REQUISITOS PRIORIZACION.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> REQUISITOS PRIORIZACION.pdf
+                        </a>
+                        <a class="file" href="Requisitos/Requisitos.md">
+                            <i class="fas fa-file-alt"></i> Requisitos.md
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Pruebas de Desempeño Section -->
         <div id="pruebas" class="content-section">
             <h2 class="section-title"><i class="fas fa-chart-line"></i> Pruebas de Desempeño</h2>
-            <div class="folder-container" id="pruebas-container">
-                <!-- Contenido cargado dinámicamente desde script.js -->
+            <div class="folder-container">
+                <div class="folder-category">
+                    <h3 class="category-title">Pruebas de Desempeño</h3>
+                    <div class="folder" onclick="toggleFolder('pruebas-folder')">
+                        <i class="fas fa-folder"></i> Pruebas de Desempeño
+                    </div>
+                    <div id="pruebas-folder" class="folder-content">
+                        <a class="file" href="Pruebas de Desempeño/README.md">
+                            <i class="fas fa-file-alt"></i> README.md
+                        </a>
+                        <a class="file" href="Pruebas de Desempeño/INFO_A_LIS.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> INFO_A_LIS.pdf
+                        </a>
+                        <a class="file" href="Pruebas de Desempeño/Infografía PD1 (1).pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Infografía PD1 (1).pdf
+                        </a>
+                        <a class="file" href="Pruebas de Desempeño/PD1.md">
+                            <i class="fas fa-file-alt"></i> PD1.md
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Entregas Section -->
         <div id="entregas" class="content-section">
             <h2 class="section-title"><i class="fas fa-folder-open"></i> Entregas del Proyecto</h2>
-            <div class="folder-container" id="entregas-container">
-                <!-- Contenido cargado dinámicamente desde script.js -->
+            <div class="folder-container">
+                <div class="folder-category">
+                    <h3 class="category-title">1era Entrega</h3>
+                    
+                    <!-- Competencias dentro de 1era Entrega -->
+                    <div class="folder" onclick="toggleFolder('competencias-1era')">
+                        <i class="fas fa-folder"></i> Competencias
+                    </div>
+                    <div id="competencias-1era" class="folder-content">
+                        <a class="file" href="1era Entrega/Competencias/Competencias genericas y especificas_1.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Competencias genericas y especificas_1.pdf
+                        </a>
+                        <a class="file" href="1era Entrega/Competencias/Competencias.md">
+                            <i class="fas fa-file-alt"></i> Competencias.md
+                        </a>
+                    </div>
+
+                    <!-- Producto dentro de 1era Entrega -->
+                    <div class="folder" onclick="toggleFolder('producto-1era')">
+                        <i class="fas fa-folder"></i> Producto
+                    </div>
+                    <div id="producto-1era" class="folder-content">
+                        <a class="file" href="1era Entrega/Producto/FIS producto.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> FIS producto.pdf
+                        </a>
+                        <a class="file" href="1era Entrega/Producto/Producto.md">
+                            <i class="fas fa-file-alt"></i> Producto.md
+                        </a>
+                        <a class="file" href="1era Entrega/Producto/Video_Presentacion.md">
+                            <i class="fas fa-file-video"></i> Video_Presentacion.md
+                        </a>
+                    </div>
+
+                    <!-- Requisitos dentro de 1era Entrega -->
+                    <div class="folder" onclick="toggleFolder('requisitos-1era')">
+                        <i class="fas fa-folder"></i> Requisitos
+                    </div>
+                    <div id="requisitos-1era" class="folder-content">
+                        <a class="file" href="1era Entrega/Requisitos/Caso de Uso con Criterios de Aceptacion.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Caso de Uso con Criterios de Aceptacion.pdf
+                        </a>
+                        <a class="file" href="1era Entrega/Requisitos/FIS_REQUISITOS.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> FIS_REQUISITOS.pdf
+                        </a>
+                        <a class="file" href="1era Entrega/Requisitos/REQUISITOS PRIORIZACION.pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> REQUISITOS PRIORIZACION.pdf
+                        </a>
+                        <a class="file" href="1era Entrega/Requisitos/Requisitos.md">
+                            <i class="fas fa-file-alt"></i> Requisitos.md
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Función para cambiar entre secciones
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remover clase active de todas las pestañas
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Mostrar sección seleccionada
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Activar pestaña clickeada
+            event.currentTarget.classList.add('active');
+        }
+
+        // Función para expandir/contraer carpetas
+        function toggleFolder(folderId) {
+            const folderContent = document.getElementById(folderId);
+            const isVisible = folderContent.style.display === 'block';
+            
+            // Cerrar todos los folders primero (opcional)
+            document.querySelectorAll('.folder-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // Abrir/cerrar el folder clickeado
+            folderContent.style.display = isVisible ? 'none' : 'block';
+        }
+
+        // Inicializar: cerrar todas las carpetas al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.folder-content').forEach(content => {
+                content.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
