@@ -335,6 +335,14 @@
             color: #9b59b6;
         }
 
+        .file-description {
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 5px;
+            padding-left: 30px;
+            font-style: italic;
+        }
+
         /* Footer */
         .footer {
             text-align: center;
@@ -352,6 +360,33 @@
             margin: 20px 0;
             text-align: center;
             color: white;
+        }
+
+        .status-message.error {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid rgba(231, 76, 60, 0.5);
+        }
+
+        .status-message.success {
+            background: rgba(46, 204, 113, 0.2);
+            border: 1px solid rgba(46, 204, 113, 0.5);
+        }
+
+        /* File Status */
+        .file-status {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .file-status.working {
+            background: #2ecc71;
+        }
+
+        .file-status.problem {
+            background: #e74c3c;
         }
 
         /* Responsive */
@@ -448,6 +483,11 @@
                     <i class="fas fa-info-circle"></i> 
                     Haz clic en las tarjetas de arriba o usa el menú de navegación para acceder a los archivos
                 </div>
+
+                <div class="status-message error">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <strong>Problema común:</strong> Algunos archivos pueden no abrirse si GitHub Pages no está completamente configurado o si hay problemas con los nombres de archivo.
+                </div>
             </div>
         </div>
 
@@ -460,17 +500,36 @@
                     <h3 class="category-title"><i class="fas fa-folder"></i> Pruebas de Desempeño</h3>
                     <div class="file-grid">
                         <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/README.md" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-alt"></i> README.md
                         </a>
+                        <div class="file-description">
+                            Documento principal con información general sobre las pruebas de desempeño
+                        </div>
+                        
                         <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/INFO_A_LIS.pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> INFO_A_LIS.pdf
                         </a>
+                        <div class="file-description">
+                            Información adicional sobre el análisis de sistemas
+                        </div>
+                        
                         <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/Infograf%C3%ADa%20PD1%20(1).pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> Infografía PD1 (1).pdf
                         </a>
+                        <div class="file-description">
+                            Infografía resumen de la primera prueba de desempeño
+                        </div>
+                        
                         <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/PD1.md" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-alt"></i> PD1.md
                         </a>
+                        <div class="file-description">
+                            Detalles específicos de la primera prueba de desempeño
+                        </div>
                     </div>
                 </div>
             </div>
@@ -480,16 +539,26 @@
         <div id="entregas" class="content-section">
             <h2 class="section-title"><i class="fas fa-folder-open"></i> Entregas del Proyecto</h2>
             
+            <!-- Primera Entrega -->
             <div class="folder-container">
                 <div class="folder-category">
                     <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega - Competencias</h3>
                     <div class="file-grid">
                         <a class="file" href="1era%20Entrega/Competencias/Competencias%20genericas%20y%20especificas_1.pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> Competencias genericas y especificas_1.pdf
                         </a>
+                        <div class="file-description">
+                            Documentación sobre competencias genéricas y específicas del equipo
+                        </div>
+                        
                         <a class="file" href="1era%20Entrega/Competencias/Competencias.md" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-alt"></i> Competencias.md
                         </a>
+                        <div class="file-description">
+                            Resumen en formato Markdown de las competencias del equipo
+                        </div>
                     </div>
                 </div>
 
@@ -497,14 +566,28 @@
                     <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega - Producto</h3>
                     <div class="file-grid">
                         <a class="file" href="1era%20Entrega/Producto/FIS%20producto.pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> FIS producto.pdf
                         </a>
+                        <div class="file-description">
+                            Especificaciones y documentación del producto SmartPrice
+                        </div>
+                        
                         <a class="file" href="1era%20Entrega/Producto/Producto.md" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-alt"></i> Producto.md
                         </a>
+                        <div class="file-description">
+                            Descripción detallada del producto en formato Markdown
+                        </div>
+                        
                         <a class="file" href="1era%20Entrega/Producto/Video_Presentacion.md" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-video"></i> Video_Presentacion.md
                         </a>
+                        <div class="file-description">
+                            Guión y detalles de la presentación en video del producto
+                        </div>
                     </div>
                 </div>
 
@@ -512,17 +595,36 @@
                     <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega - Requisitos</h3>
                     <div class="file-grid">
                         <a class="file" href="1era%20Entrega/Requisitos/Caso%20de%20Uso%20con%20Criterios%20de%20Aceptacion.pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> Caso de Uso con Criterios de Aceptacion.pdf
                         </a>
+                        <div class="file-description">
+                            Especificación de casos de uso con criterios de aceptación
+                        </div>
+                        
                         <a class="file" href="1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> FIS_REQUISITOS.pdf
                         </a>
+                        <div class="file-description">
+                            Documento formal de requisitos del sistema
+                        </div>
+                        
                         <a class="file" href="1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACION.pdf" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-pdf"></i> REQUISITOS PRIORIZACION.pdf
                         </a>
+                        <div class="file-description">
+                            Priorización de requisitos del proyecto SmartPrice
+                        </div>
+                        
                         <a class="file" href="1era%20Entrega/Requisitos/Requisitos.md" target="_blank">
+                            <span class="file-status working"></span>
                             <i class="fas fa-file-alt"></i> Requisitos.md
                         </a>
+                        <div class="file-description">
+                            Resumen de requisitos en formato Markdown
+                        </div>
                     </div>
                 </div>
             </div>
@@ -563,7 +665,16 @@
                     showSection(sectionId);
                 });
             });
+
+            // Verificar enlaces (esto es una simulación)
+            checkLinks();
         });
+
+        // Función para verificar enlaces (simulada)
+        function checkLinks() {
+            // En un caso real, aquí harías peticiones para verificar que los archivos existen
+            console.log("Verificando enlaces...");
+        }
     </script>
 </body>
 </html>
