@@ -14,9 +14,9 @@
         }
 
         :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --accent: #ff6b6b;
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
             --light: rgba(255, 255, 255, 0.9);
             --dark: #2d3748;
             --card-bg: rgba(255, 255, 255, 0.1);
@@ -57,7 +57,7 @@
             left: 0;
             right: 0;
             height: 5px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #ff6b6b);
+            background: linear-gradient(90deg, #3498db, #2c3e50, #e74c3c);
         }
 
         h1 {
@@ -186,7 +186,7 @@
             transform: translateX(-50%);
             width: 100px;
             height: 3px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
+            background: linear-gradient(90deg, #3498db, #2c3e50);
             border-radius: 3px;
         }
 
@@ -200,7 +200,7 @@
         .welcome-icon {
             font-size: 5em;
             margin-bottom: 20px;
-            color: #ffd700;
+            color: #f39c12;
             text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
@@ -232,6 +232,7 @@
             text-align: center;
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
         }
 
         .feature-card:hover {
@@ -243,7 +244,7 @@
         .feature-icon {
             font-size: 2.5em;
             margin-bottom: 15px;
-            color: #ffd700;
+            color: #f39c12;
         }
 
         .feature-title {
@@ -288,7 +289,7 @@
 
         .category-title i {
             margin-right: 10px;
-            color: #ffd700;
+            color: #f39c12;
         }
 
         .file-grid {
@@ -327,11 +328,11 @@
         }
 
         .file i.fa-file-alt {
-            color: #4fc3f7;
+            color: #3498db;
         }
 
         .file i.fa-file-video {
-            color: #8e44ad;
+            color: #9b59b6;
         }
 
         /* Footer */
@@ -341,6 +342,16 @@
             padding: 20px;
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9em;
+        }
+
+        /* Status Message */
+        .status-message {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            color: white;
         }
 
         /* Responsive */
@@ -416,23 +427,15 @@
                 </p>
                 
                 <div class="feature-cards">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <h3 class="feature-title">Documentación Completa</h3>
-                        <p class="feature-desc">Accede a todos los documentos del proyecto organizados por categorías</p>
-                    </div>
-                    
-                    <div class="feature-card">
+                    <div class="feature-card" onclick="showSection('pruebas')">
                         <div class="feature-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <h3 class="feature-title">Pruebas de Desempeño</h3>
-                        <p class="feature-desc">Revisa los resultados y análisis de las pruebas realizadas</p>
+                        <p class="feature-desc">Accede a los documentos de pruebas y análisis de rendimiento</p>
                     </div>
                     
-                    <div class="feature-card">
+                    <div class="feature-card" onclick="showSection('entregas')">
                         <div class="feature-icon">
                             <i class="fas fa-tasks"></i>
                         </div>
@@ -440,26 +443,32 @@
                         <p class="feature-desc">Consulta todas las entregas realizadas durante el semestre</p>
                     </div>
                 </div>
+
+                <div class="status-message">
+                    <i class="fas fa-info-circle"></i> 
+                    Haz clic en las tarjetas de arriba o usa el menú de navegación para acceder a los archivos
+                </div>
             </div>
         </div>
 
         <!-- Pruebas de Desempeño Section -->
         <div id="pruebas" class="content-section">
             <h2 class="section-title"><i class="fas fa-chart-line"></i> Pruebas de Desempeño</h2>
+            
             <div class="folder-container">
                 <div class="folder-category">
                     <h3 class="category-title"><i class="fas fa-folder"></i> Pruebas de Desempeño</h3>
                     <div class="file-grid">
-                        <a class="file" href="Pruebas de Desempeño/README.md">
+                        <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/README.md" target="_blank">
                             <i class="fas fa-file-alt"></i> README.md
                         </a>
-                        <a class="file" href="Pruebas de Desempeño/INFO_A_LIS.pdf" target="_blank">
+                        <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/INFO_A_LIS.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> INFO_A_LIS.pdf
                         </a>
-                        <a class="file" href="Pruebas de Desempeño/Infografía PD1 (1).pdf" target="_blank">
+                        <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/Infograf%C3%ADa%20PD1%20(1).pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> Infografía PD1 (1).pdf
                         </a>
-                        <a class="file" href="Pruebas de Desempeño/PD1.md">
+                        <a class="file" href="Pruebas%20de%20Desempe%C3%B1o/PD1.md" target="_blank">
                             <i class="fas fa-file-alt"></i> PD1.md
                         </a>
                     </div>
@@ -470,35 +479,48 @@
         <!-- Entregas Section -->
         <div id="entregas" class="content-section">
             <h2 class="section-title"><i class="fas fa-folder-open"></i> Entregas del Proyecto</h2>
+            
             <div class="folder-container">
                 <div class="folder-category">
-                    <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega</h3>
+                    <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega - Competencias</h3>
                     <div class="file-grid">
-                        <a class="file" href="1era Entrega/Competencias/Competencias genericas y especificas_1.pdf" target="_blank">
+                        <a class="file" href="1era%20Entrega/Competencias/Competencias%20genericas%20y%20especificas_1.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> Competencias genericas y especificas_1.pdf
                         </a>
-                        <a class="file" href="1era Entrega/Competencias/Competencias.md">
+                        <a class="file" href="1era%20Entrega/Competencias/Competencias.md" target="_blank">
                             <i class="fas fa-file-alt"></i> Competencias.md
                         </a>
-                        <a class="file" href="1era Entrega/Producto/FIS producto.pdf" target="_blank">
+                    </div>
+                </div>
+
+                <div class="folder-category">
+                    <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega - Producto</h3>
+                    <div class="file-grid">
+                        <a class="file" href="1era%20Entrega/Producto/FIS%20producto.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> FIS producto.pdf
                         </a>
-                        <a class="file" href="1era Entrega/Producto/Producto.md">
+                        <a class="file" href="1era%20Entrega/Producto/Producto.md" target="_blank">
                             <i class="fas fa-file-alt"></i> Producto.md
                         </a>
-                        <a class="file" href="1era Entrega/Producto/Video_Presentacion.md">
+                        <a class="file" href="1era%20Entrega/Producto/Video_Presentacion.md" target="_blank">
                             <i class="fas fa-file-video"></i> Video_Presentacion.md
                         </a>
-                        <a class="file" href="1era Entrega/Requisitos/Caso de Uso con Criterios de Aceptacion.pdf" target="_blank">
+                    </div>
+                </div>
+
+                <div class="folder-category">
+                    <h3 class="category-title"><i class="fas fa-folder"></i> 1era Entrega - Requisitos</h3>
+                    <div class="file-grid">
+                        <a class="file" href="1era%20Entrega/Requisitos/Caso%20de%20Uso%20con%20Criterios%20de%20Aceptacion.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> Caso de Uso con Criterios de Aceptacion.pdf
                         </a>
-                        <a class="file" href="1era Entrega/Requisitos/FIS_REQUISITOS.pdf" target="_blank">
+                        <a class="file" href="1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> FIS_REQUISITOS.pdf
                         </a>
-                        <a class="file" href="1era Entrega/Requisitos/REQUISITOS PRIORIZACION.pdf" target="_blank">
+                        <a class="file" href="1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACION.pdf" target="_blank">
                             <i class="fas fa-file-pdf"></i> REQUISITOS PRIORIZACION.pdf
                         </a>
-                        <a class="file" href="1era Entrega/Requisitos/Requisitos.md">
+                        <a class="file" href="1era%20Entrega/Requisitos/Requisitos.md" target="_blank">
                             <i class="fas fa-file-alt"></i> Requisitos.md
                         </a>
                     </div>
@@ -509,6 +531,7 @@
         <!-- Footer -->
         <div class="footer">
             <p>© 2025 Proyecto SmartPrice - Fundamentos de Ingeniería de Software - UADY</p>
+            <p><a href="https://github.com/jhoanapechram/-FIS-Equipo-2" style="color: rgba(255, 255, 255, 0.7);">Ver repositorio en GitHub</a></p>
         </div>
     </div>
 
@@ -528,8 +551,8 @@
             // Mostrar sección seleccionada
             document.getElementById(sectionId).classList.add('active');
             
-            // Activar pestaña clickeada
-            event.currentTarget.classList.add('active');
+            // Activar pestaña correspondiente
+            document.querySelector(`.tab[data-section="${sectionId}"]`).classList.add('active');
         }
 
         // Añadir event listeners a las pestañas
