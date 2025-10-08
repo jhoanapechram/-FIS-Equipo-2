@@ -24,10 +24,6 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Emilio Arellano | Gestión del backlog y prioridades |
 | José Correa | Control de calidad y coherencia |
 
-Basándome en las actividades del proyecto **SmartPrice**, he reorganizado y distribuido equitativamente las tareas en **4 sprints**, asignando responsables y definiendo entregables claros para cada uno. Se mantiene la duración original (4 semanas) y se asegura que todos los integrantes tengan una carga balanceada de trabajo.
-
----
-
 ### 🗓️ Cronograma de Sprints con Actividades, Entregables y Responsables
 
 ---
