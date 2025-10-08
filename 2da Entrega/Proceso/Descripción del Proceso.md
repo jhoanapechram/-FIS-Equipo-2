@@ -24,69 +24,69 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Emilio Arellano | Gestión del backlog y prioridades |
 | José Correa | Control de calidad y coherencia |
 
-
-## 🗓️ Cronograma de Sprints con Actividades, Entregables y Responsables
-
-### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**
-
-**Fecha:** 7 al 13 de octubre
-
-| **Actividad Específica**                                           | **Descripción**                                                    | **Entregable Esperado**                         | **Responsable**   |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------- | ----------------- |
-| Documentar los cambios requeridos en la segunda entrega            | Registrar mejoras necesarias en funcionalidades y flujo de usuario | Documento de cambios y mejoras                  | Kevin Morales      |
-| Revisar y reorganizar requerimientos funcionales y no funcionales  | Asegurar claridad y prioridad de objetivos                         | Lista de requerimientos revisada y priorizada   | Bianca Ramos     |
-| Crear/actualizar historias de usuario y diagrama de casos de uso   | Reflejar todas las excepciones y criterios de aceptación           | Historias de usuario + diagrama de casos de uso | Ana Angulo        |
-| Crear plan de sprints y cronograma de actividades                  | Definir duración de cada sprint, roles y tareas principales        | Plan de sprints y cronograma detallado          | Jhoana Pech       |
-| Establecer tabla de contribuciones y % de participación            | Registrar cómo cada integrante aportará al 100% del sprint         | Documento de métricas de contribución           | José Correa       |
-| Crear estructura inicial de carpetas y branch para segunda entrega | Asegurar organización clara y accesible del repositorio            | Branch inicial + estructura de carpetas         | Emilio Arellano   |
-| Validar requisitos con todo el equipo y ajustar prioridades        | Revisión colaborativa para mejorar claridad y factibilidad         | Documento de prioridades validado               | Alejandra Aguilar |
+Basándome en las actividades del proyecto **SmartPrice**, he reorganizado y distribuido equitativamente las tareas en **4 sprints**, asignando responsables y definiendo entregables claros para cada uno. Se mantiene la duración original (4 semanas) y se asegura que todos los integrantes tengan una carga balanceada de trabajo.
 
 ---
 
-### 🚀 **Sprint 2: Diseño y Prototipado**
-
-**Fecha:** 14 al 20 de octubre
-
-| **Actividad Específica**                                      | **Descripción**                                                        | **Entregable Esperado**                           | **Responsable**   |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| Crear prototipos de baja y media fidelidad                    | Diseñar pantallas y flujos principales con consistencia visual         | Prototipos de baja/medio fidelidad                | Alejandra Aguilar |
-| Validar que cada prototipo cumpla los requerimientos          | Revisar que funcionalidades y flujos estén implementados correctamente | Matriz de correspondencia prototipo-requerimiento | Bianca Ramos      |
-| Preparar simulación de tareas para validación con cliente     | Documentar comentarios y aplicar mejoras                               | Escenarios de validación + guion                  | Ana Angulo        |
-| Actualizar backlog y decisiones de priorización               | Incorporar ajustes técnicos y de valor de negocio                      | Backlog actualizado con decisiones documentadas   | Emilio Arellano   |
-| Documentar avances de prototipos y cambios en funcionalidades | Evidencia de progreso respecto a la primera entrega                    | Documento de evolución parcial                    | Kevin Morales     |
-| Aplicar conocimientos técnicos en prototipado                 | Integrar habilidades de diseño y desarrollo en las actividades         | Evidencias de aplicación de competencias técnicas | Jhoana Pech       |
-| Revisar consistencia de historias de usuario con prototipos   | Garantizar trazabilidad completa                                       | Documento de trazabilidad                         | José Correa       |
+### 🗓️ Cronograma de Sprints con Actividades, Entregables y Responsables
 
 ---
 
-### 🧩 **Sprint 3: Validación y Ajustes del Producto**
+### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**  
+**Fecha:** 7 al 13 de octubre  
 
-**Fecha:** 21 al 27 de octubre
-
-| **Actividad Específica**                                        | **Descripción**                                           | **Entregable Esperado**                   | **Responsable**   |
-| --------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- | ----------------- |
-| Coordinar y moderar sesión de validación con cliente            | Registrar comentarios y acuerdos para mejorar prototipos  | Acta de validación + lista de ajustes     | Jhoana Pech       |
-| Ajustar historias de usuario y requisitos funcionales           | Incorporar retroalimentación y asegurar trazabilidad      | Historias de usuario actualizadas         | Ana Angulo        |
-| Documentar cambios significativos tras validación               | Evidencia de avances en el producto                       | Documento de evolución final              | Kevin Morales     |
-| Registrar decisiones, ajustes y avances del sprint              | Documentar evolución del sprint y coordinación del equipo | Bitácoras completas                       | Emilio Arellano   |
-| Practicar trabajo colaborativo y comunicación                   | Mejorar habilidades de equipo mientras se aplican cambios | Informe de competencias blandas aplicadas | José Correa       |
-| Refinar prototipos a alta fidelidad                             | Ajustar interfaz según feedback del cliente               | Prototipos finales de alta fidelidad      | Alejandra Aguilar |
-| Actualizar contribuciones individuales según trabajo del sprint | Reflejar avances y participación de cada integrante       | Tabla de contribuciones actualizada       | Bianca Ramos      |
+| Actividad Específica | Descripción | Entregable Esperado | Responsable |
+|----------------------|-------------|----------------------|-------------|
+| Análisis de comentarios del cliente | Revisar observaciones de la primera versión y listar cambios necesarios | Lista de cambios priorizados | Kevin Morales |
+| Ordenar y priorizar el backlog | Reorganizar tareas por importancia y eliminar redundancias | Backlog priorizado | Bianca Ramos |
+| Actualizar requisitos funcionales y no funcionales | Detallar funcionalidades y especificaciones de rendimiento | Documento de requisitos actualizado | Ana Angulo |
+| Definir criterios de aceptación por función | Establecer condiciones para validar cada funcionalidad | Lista de criterios de aceptación | José Correa |
+| Realizar estimación con Planning Poker | Estimar complejidad de tareas con votación | Tabla de estimaciones | Emilio Arellano |
+| Unir y revisar documentación | Consolidar y validar documentos del sprint | Documento consolidado | Jhoana Pech |
+| Subir entrega semanal a GitHub | Publicar “Requisitos_Actualizados_V2.pdf” | Archivo PDF en GitHub | Alejandra Aguilar |
 
 ---
 
-### 🎯 **Sprint 4: Integración, Presentación y Entrega Final**
+### 🚀 **Sprint 2: Diseño y Prototipado**  
+**Fecha:** 14 al 20 de octubre  
 
-**Fecha:** 28 al 31 de octubre
+| Actividad Específica | Descripción | Entregable Esperado | Responsable |
+|----------------------|-------------|----------------------|-------------|
+| Revisar y actualizar casos de uso | Ajustar descripciones de interacción usuario-sistema | Casos de uso actualizados | José Correa |
+| Crear diagramas UML actualizados | Dibujar flujos de interacción y estructura | Diagramas UML | Emilio Arellano |
+| Completar historias de usuario | Redactar todas las historias con formato “Como [usuario]…” | Historias de usuario completas | Jhoana Pech |
+| Desarrollar prototipos de baja fidelidad | Bocetar pantallas y flujos principales | Prototipos en papel/digital | Alejandra Aguilar |
+| Integrar documentación de diseño | Unir casos de uso, historias y diagramas | Documento “Casos_de_Uso_Completos.pdf” | Ana Angulo |
+| Validar cobertura funcional | Asegurar que todas las funciones estén documentadas | Matriz de trazabilidad | Bianca Ramos |
+| Revisión de calidad y subida a GitHub | Verificar integridad y publicar entrega | Archivo PDF en GitHub | Kevin Morales |
 
-| **Actividad Específica**                                | **Descripción**                                          | **Entregable Esperado**                            | **Responsable**   |
-| ------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------- | ----------------- |
-| Consolidar documentación y prototipos finales           | Integrar evidencia completa del producto                 | Carpeta consolidada con prototipos y documentación | Bianca Ramos      |
-| Revisar estructura de repositorio y documentación MD    | Garantizar claridad y accesibilidad de archivos          | Repositorio organizado y documentado               | Emilio Arellano   |
-| Crear diapositivas, demo y recursos visuales            | Presentación clara, profesional y balanceada             | Presentación final + demo en video                 | Alejandra Aguilar |
-| Ensayar exposición y roles                              | Mantener fluidez, tiempo y tono adecuado                 | Plan de exposición con tiempos                     | José Correa       |
-| Redactar discurso técnico y formal                      | Aplicar lenguaje de Ingeniería de Software correctamente | Guion de exposición                                | Ana Angulo        |
-| Documentar competencias técnicas y blandas              | Evidenciar aprendizaje y habilidades desarrolladas       | Documento final de competencias                    | Kevin Morales     |
-| Supervisar integración final y cumplimiento de métricas | Verificar que todo el producto esté completo y coherente | Informe final de integración                       | Jhoana Pech       |
+---
 
+### 🧩 **Sprint 3: Validación y Ajustes del Producto**  
+**Fecha:** 21 al 27 de octubre  
+
+| Actividad Específica | Descripción | Entregable Esperado | Responsable |
+|----------------------|-------------|----------------------|-------------|
+| Diseñar interfaces de alta fidelidad | Crear pantallas finales en Figma/Canva | Prototipos visuales | Alejandra Aguilar |
+| Aplicar guía de estilos consistente | Unificar colores, fuentes y componentes | Guía de estilos | Bianca Ramos |
+| Desarrollar prototipo interactivo | Simular navegación y funcionalidades | Link del prototipo navegable | Emilio Arellano |
+| Realizar pruebas internas de usabilidad | Identificar dificultades y confusiones | Reporte de pruebas | Jhoana Pech |
+| Documentar evolución del producto | Comparar versión 1 vs. versión 2 | “Evolucion_Producto.pdf” | Kevin Morales |
+| Preparar y moderar validación con cliente | Coordinar sesión y registrar feedback | Acta de validación | Ana Angulo |
+| Consolidar feedback y ajustar prioridades | Organizar comentarios del cliente | Lista de ajustes priorizados | José Correa |
+
+---
+
+### 🎯 **Sprint 4: Integración, Presentación y Entrega Final**  
+**Fecha:** 28 al 31 de octubre  
+
+| Actividad Específica | Descripción | Entregable Esperado | Responsable |
+|----------------------|-------------|----------------------|-------------|
+| Consolidar documentación y prototipos | Reunir toda la evidencia del producto | Carpeta final con todos los entregables | Bianca Ramos |
+| Revisar y organizar repositorio en GitHub | Asegurar estructura clara y README completo | Repositorio organizado | Emilio Arellano |
+| Preparar presentación final y demo | Elaborar diapositivas y video de demostración | Slides y video de demo | Alejandra Aguilar |
+| Redactar guion de exposición | Escribir discurso técnico y formal | Guion de presentación | Ana Angulo |
+| Ensayar exposición y ajustar tiempos | Practicar presentación en equipo | Plan de exposición con cronometraje | José Correa |
+| Documentar competencias técnicas y blandas | Registrar habilidades desarrolladas por cada integrante | Documento de competencias | Kevin Morales |
+| Subir bitácoras, minutas y métricas finales | Publicar evidencia de proceso y contribuciones | Carpeta con bitácoras y métricas | Jhoana Pech |
 
