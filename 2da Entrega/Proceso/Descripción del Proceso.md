@@ -24,14 +24,8 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Emilio Arellano | Gestión del backlog y prioridades |
 | José Correa | Control de calidad y coherencia |
 
-¡Perfecto, Jhoana! 😄
-Voy a reorganizar la **asignación de responsables** para que **cada tarea tenga solo una persona** asignada y que al final **todos tengan un número equilibrado de tareas** por sprint y por proyecto. Mantendré la distribución equilibrada y los entregables.
-
----
 
 ## 🗓️ Cronograma de Sprints con Actividades, Entregables y Responsables
-
----
 
 ### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**
 
