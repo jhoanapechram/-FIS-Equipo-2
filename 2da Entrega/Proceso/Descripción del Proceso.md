@@ -9,6 +9,9 @@
 | **Duración** | 4 sprints (una semana cada uno) |
 | **Metodología** | Scrum |
 
+## Objetivo principal
+Mejorar el producto desarrollado en la primera entrega, asegurando la evolución de los requerimientos, la validación de los diseños, la documentación del proceso y la calidad del resultado final.
+
 ## 👥 Equipo de Trabajo
 
 | **Integrante** | **Responsabilidad Principal** |
@@ -22,71 +25,92 @@
 | José Correa | Control de calidad y coherencia |
 
 ---
+🗓️ Cronograma de Sprints
+🏁 Sprint 1: Planeación y Refinamiento de Requisitos
 
-## 🗓️ Cronograma de Sprints
+Fecha: 7 al 13 de octubre
+Objetivo general: Reorganizar los requerimientos del producto, definir el backlog actualizado, establecer métricas de trabajo y preparar el proceso de desarrollo.
 
-### 🏁 Sprint 1: Refinamiento de Requisitos y Estructura
-**Fecha:** 7 al 13 de octubre
+Integrante	Actividades Específicas	Entregables Esperados
+Jhoana Pech	- Elaborar plan de trabajo con calendario de los 4 sprints
+- Definir plantilla de bitácoras y métricas de contribución por integrante
+- Coordinar primera reunión de planeación	Plan de sprints y métricas de contribución
+Bianca Ramos	- Actualizar requerimientos funcionales con base en retroalimentación
+- Reestructurar documentación del usuario final	Documento de requerimientos funcionales revisado
+Ana Angulo	- Redactar nuevas historias de usuario con criterios de aceptación claros
+- Elaborar diagrama de casos de uso completo	Historias de usuario + diagrama de casos de uso
+Alejandra Aguilar	- Diseñar esquema visual inicial del producto (wireframe básico)
+- Definir paleta de colores y tipografía institucional	Wireframe base + guía de diseño inicial
+Kevin Morales	- Redefinir requerimientos no funcionales (rendimiento, compatibilidad, seguridad)
+- Establecer indicadores técnicos medibles	Documento de requerimientos no funcionales
+Emilio Arellano	- Actualizar backlog con nuevas historias priorizadas
+- Organizar tareas en orden de valor y complejidad	Backlog actualizado
+José Correa	- Verificar coherencia entre los documentos elaborados
+- Crear checklist de trazabilidad entre requerimientos y objetivos	Checklist de trazabilidad validado
+🚀 Sprint 2: Diseño y Prototipado
 
-| Integrante | Actividades Detalladas | Evidencia Esperada |
-|------------|----------------------|-------------------|
-| **Jhoana Pech** | - Crear documento de planificación con: cronograma de 4 sprints, fechas de reuniones, roles específicos<br>- Establecer sistema de métricas de contribución individual (división del 100% entre 7 integrantes = 14.3% cada uno)<br>- Definir formato para bitácoras de reuniones | Documento de planificación con métricas y cronograma |
-| **Bianca Ramos** | - Revisar requerimientos funcionales de la primera entrega y mejorarlos<br>- Documentar necesidades específicas del usuario con mayor claridad<br>- Validar que los procesos del cliente estén bien entendidos y documentados | Lista priorizada de requerimientos funcionales mejorados |
-| **Ana Angulo** | - Elaborar historias de usuario con criterios de aceptación específicos<br>- Documentar excepciones y casos de uso no contemplados<br>- Definir diagrama de casos de uso que resuma todos los requerimientos | Documento de criterios de aceptación y diagrama de casos de uso |
-| **Alejandra Aguilar** | - Crear guías de diseño para mantener consistencia visual<br>- Desarrollar diagrama de casos de uso en herramienta especializada<br>- Establecer paleta de colores y tipografía para el producto | Diagrama de casos de uso y guías de diseño establecidas |
-| **Kevin Morales** | - Especificar requerimientos no funcionales (rendimiento, seguridad, usabilidad)<br>- Definir métricas técnicas de calidad<br>- Establecer criterios de aceptación para aspectos técnicos | Documento de requerimientos no funcionales con métricas |
-| **Emilio Arellano** | - Organizar el backlog con historias de usuario priorizadas<br>- Asegurar que la priorización refleje los objetivos principales del producto<br>- Validar que cada historia tenga criterios de aceptación claros | Backlog priorizado con historias de usuario completas |
-| **José Correa** | - Revisar que todos los artefactos sean coherentes entre sí<br>- Verificar trazabilidad entre requerimientos y diseño<br>- Validar completitud de toda la documentación | Checklist de verificación de coherencia documental |
+Fecha: 14 al 20 de octubre
+Objetivo general: Crear prototipos de baja y media fidelidad, asegurar que correspondan a los requerimientos y preparar la validación con el cliente.
 
----
+Integrante	Actividades Específicas	Entregables Esperados
+Jhoana Pech	- Registrar minutas de cada reunión Scrum (Daily y Review)
+- Actualizar avance de métricas y bitácoras
+- Supervisar que los entregables estén completos cada semana	Bitácoras actualizadas + control de avance
+Bianca Ramos	- Elaborar prototipos de baja fidelidad (en papel o digital)
+- Relacionar cada pantalla con su requerimiento correspondiente	Prototipos de baja fidelidad + matriz de correspondencia
+Alejandra Aguilar	- Diseñar prototipos de media fidelidad en Figma o herramienta similar
+- Aplicar guías visuales establecidas
+- Crear biblioteca de componentes reutilizables	Prototipos de media fidelidad + library UI
+Ana Angulo	- Diseñar escenarios de validación (simulación de tareas del usuario)
+- Redactar guion para sesión de validación interna	Guion de validación y escenarios definidos
+Kevin Morales	- Verificar la viabilidad técnica de los prototipos
+- Documentar observaciones y ajustes necesarios	Informe técnico de viabilidad
+Emilio Arellano	- Revisar backlog y actualizar prioridades según complejidad técnica
+- Documentar decisiones tomadas durante el sprint	Backlog ajustado + registro de decisiones
+José Correa	- Validar coherencia visual y cumplimiento de estándares
+- Revisar correspondencia entre diseño y requerimientos	Reporte de validación de coherencia visual
+🧩 Sprint 3: Validación y Ajustes del Producto
 
-### 🚀 Sprint 2: Desarrollo de Prototipos y Validación
-**Fecha:** 14 al 20 de octubre
+Fecha: 21 al 27 de octubre
+Objetivo general: Validar los diseños con el cliente o grupo de prueba, incorporar retroalimentación y mejorar los artefactos.
 
-| Integrante | Actividades Detalladas | Evidencia Esperada |
-|------------|----------------------|-------------------|
-| **Jhoana Pech** | - Realizar minutas de todas las reuniones con: acuerdos, tareas, responsables y fechas límite<br>- Actualizar métricas de contribución con avances reales<br>- Coordinar preparación para validación con cliente | Bitácoras de reuniones completas con seguimiento |
-| **Bianca Ramos** | - Desarrollar prototipos de baja fidelidad (bosquejos en papel o digital)<br>- Crear matriz de correspondencia que demuestre cómo cada prototipo satisface requerimientos específicos<br>- Documentar flujos de usuario principales | Prototipos de baja fidelidad y matriz de correspondencia |
-| **Alejandra Aguilar** | - Evolucionar prototipos a media y alta fidelidad usando herramientas de diseño (Figma, Adobe XD, etc)<br>- Aplicar consistentemente las guías de diseño establecidas<br>- Crear librería de componentes reutilizables | Prototipos evolucionados y library de componentes |
-| **Ana Angulo** | - Diseñar escenarios específicos para validación con cliente<br>- Elaborar guion detallado para sesión de feedback<br>- Preparar tareas específicas que el cliente deberá simular durante validación | Guion de validación y escenarios de prueba preparados |
-| **Kevin Morales** | - Implementar prototipo interactivo que demuestre funcionalidades clave<br>- Verificar viabilidad técnica de todos los diseños propuestos<br>- Documentar especificaciones técnicas para desarrollo | Prototipo interactivo y especificaciones técnicas |
-| **Emilio Arellano** | - Actualizar backlog incorporando ajustes identificados durante diseño<br>- Documentar decisiones de priorización basadas en complejidad técnica y valor de negocio<br>- Preparar resumen de cambios para presentar al cliente | Backlog actualizado con decisiones documentadas |
-| **José Correa** | - Verificar coherencia entre prototipos y requerimientos originales<br>- Validar que se apliquen consistentemente las guías de diseño<br>- Revisar preparación general para sesión de validación | Reporte de verificación pre-validación |
+Integrante	Actividades Específicas	Entregables Esperados
+Jhoana Pech	- Coordinar la sesión de validación
+- Registrar comentarios, acuerdos y conclusiones
+- Actualizar métricas de participación	Acta de validación + métricas actualizadas
+Ana Angulo	- Aplicar guion de validación con los usuarios de prueba
+- Registrar observaciones y resultados	Registro de validación con evidencias
+Alejandra Aguilar	- Incorporar cambios en los prototipos de acuerdo con la retroalimentación
+- Refinar guías visuales y estilo final	Prototipos finales + guía visual actualizada
+Bianca Ramos	- Actualizar requerimientos funcionales según los cambios validados
+- Documentar las modificaciones	Documento de requerimientos actualizado
+Kevin Morales	- Evaluar cumplimiento de requerimientos técnicos
+- Realizar pruebas básicas de rendimiento o simulación	Reporte técnico de validación
+Emilio Arellano	- Actualizar backlog reflejando los cambios validados
+- Documentar la evolución del producto	Backlog final ajustado
+José Correa	- Verificar que todos los cambios estén integrados
+- Revisar consistencia entre prototipos, requerimientos y backlog	Checklist de revisión final
+🎯 Sprint 4: Integración, Presentación y Entrega Final
 
+Fecha: 28 al 31 de octubre
+Objetivo general: Integrar todos los avances, preparar la presentación formal y entregar el producto universitario completo.
 
----
+Integrante	Actividades Específicas	Entregables Esperados
+Jhoana Pech	- Integrar todas las evidencias del proyecto en carpeta organizada
+- Supervisar que se cumplan todas las métricas
+- Gestionar entrega oficial del producto	Carpeta consolidada de evidencias
+Ana Angulo	- Redactar resumen ejecutivo de evolución del producto
+- Elaborar conclusiones del proyecto	Resumen ejecutivo + conclusiones
+Alejandra Aguilar	- Diseñar presentación final profesional (diapositivas y demo)
+- Asegurar consistencia visual	Presentación final + demo del producto
+Bianca Ramos	- Organizar y documentar el repositorio en GitHub
+- Crear archivo README en formato Markdown	Repositorio GitHub completo y documentado
+Kevin Morales	- Elaborar documento técnico con competencias específicas de ingeniería de software
+- Describir aspectos técnicos relevantes	Documento de competencias específicas
+Emilio Arellano	- Elaborar documento de competencias genéricas (trabajo colaborativo, liderazgo, comunicación)
+- Supervisar la narrativa y ritmo de la presentación final	Documento de competencias genéricas
+José Correa	- Revisar todo el material antes de la entrega
+- Validar que la presentación cumpla con duración y claridad	Checklist final aprobado
 
-### 🧩 Sprint 3: Validación y Refinamiento
-**Fecha:** 21 al 27 de octubre
-
-| Integrante | Actividades Detalladas | Evidencia Esperada |
-|------------|----------------------|-------------------|
-| **Jhoana Pech** | - Coordinar y moderar sesión de validación con cliente<br>- Documentar todos los comentarios, feedback y acuerdos alcanzados<br>- Actualizar métricas de contribución con trabajo del sprint | Acta de validación con comentarios y acuerdos |
-| **Ana Angulo** | - Ejecutar sesión de validación según guion preparado<br>- Recolectar comentarios específicos del cliente sobre cada prototipo<br>- Documentar resultados de simulaciones de tareas realizadas | Grabación/transcripción de sesión de validación |
-| **Alejandra Aguilar** | - Implementar todos los cambios de diseño basados en feedback del cliente<br>- Refinar prototipos hasta versión final<br>- Actualizar guías de diseño con mejoras identificadas | Prototipos finales y documentación de cambios |
-| **Bianca Ramos** | - Actualizar requerimientos funcionales incorporando feedback de validación<br>- Refinar flujos de usuario basados en resultados de pruebas<br>- Documentar cambios significativos post-validación | Matriz de cambios en requerimientos |
-| **Kevin Morales** | - Validar cumplimiento de todos los requisitos no funcionales<br>- Realizar pruebas de rendimiento y estabilidad<br>- Documentar resultados técnicos de las validaciones | Reporte de validación técnica completa |
-| **Emilio Arellano** | - Revisar y ajustar prioridades del backlog según resultados de validación<br>- Documentar evolución de requerimientos entre primera y segunda entrega<br>- Preparar resumen ejecutivo de cambios | Backlog ajustado y resumen de evolución |
-| **José Correa** | - Verificar incorporación de todo el feedback del cliente<br>- Validar coherencia final entre todos los componentes<br>- Realizar aprobación formal de versión para entrega | Checklist de verificación final aprobado |
-
-
----
-
-### 🎯 Sprint 4: Consolidación y Entrega
-**Fecha:** 28 al 31 de octubre
-
-| Integrante | Actividades Detalladas | Evidencia Esperada |
-|------------|----------------------|-------------------|
-| **Jhoana Pech** | - Consolidar todas las evidencias en carpeta organizada<br>- Verificar cumplimiento de todas las métricas establecidas<br>- Supervisar integración final de todos los componentes | Carpeta consolidada con evidencias completas |
-| **Ana Angulo** | - Redactar resumen ejecutivo de evolución del producto<br>- Documentar cambios más significativos entre primera y segunda entrega<br>- Elaborar conclusión general del reporte enfatizando logros | Resumen ejecutivo y conclusiones finales |
-| **Alejandra Angular** | - Diseñar presentación visual profesional con diapositivas balanceadas<br>- Crear demo en video del producto mostrando funcionalidades clave<br>- Asegurar consistencia visual en todos los materiales | Presentación profesional y demo en video |
-| **Bianca Ramos** | - Organizar repositorio GitHub creando branch específico para segunda entrega<br>- Documentar en MD todas las secciones relevantes del repositorio<br>- Estructurar carpetas de forma clara y lógica | Repositorio organizado con documentación MD |
-| **Kevin Morales** | - Documentar competencias específicas de IS aplicadas en el proyecto<br>- Argumentar cómo las actividades técnicas desarrollaron conocimientos especializados<br>- Elaborar documento de especificaciones técnicas final | Documento de competencias específicas |
-| **Emilio Arellano** | - Documentar competencias genéricas desarrolladas (trabajo en equipo, comunicación)<br>- Argumentar cómo las actividades promovieron habilidades transversales<br>- Revisar flujo y ritmo de la presentación final | Documento de competencias genéricas |
-| **José Correa** | - Realizar revisión cruzada final de todos los materiales<br>- Verificar consistencia visual y de contenido en presentación<br>- Validar que presentación se ajuste a 5 minutos y tenga audio claro | Checklist de revisión final y aprobación |
-
----
-
-## 📈 Resumen General de Métricas
 
 
