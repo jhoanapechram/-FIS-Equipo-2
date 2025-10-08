@@ -39,8 +39,8 @@ Voy a reorganizar la **asignación de responsables** para que **cada tarea tenga
 
 | **Actividad Específica**                                           | **Descripción**                                                    | **Entregable Esperado**                         | **Responsable**   |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------- | ----------------- |
-| Documentar los cambios requeridos en la segunda entrega            | Registrar mejoras necesarias en funcionalidades y flujo de usuario | Documento de cambios y mejoras                  | Bianca Ramos      |
-| Revisar y reorganizar requerimientos funcionales y no funcionales  | Asegurar claridad y prioridad de objetivos                         | Lista de requerimientos revisada y priorizada   | Kevin Morales     |
+| Documentar los cambios requeridos en la segunda entrega            | Registrar mejoras necesarias en funcionalidades y flujo de usuario | Documento de cambios y mejoras                  | Kevin Morales      |
+| Revisar y reorganizar requerimientos funcionales y no funcionales  | Asegurar claridad y prioridad de objetivos                         | Lista de requerimientos revisada y priorizada   | Bianca Ramos     |
 | Crear/actualizar historias de usuario y diagrama de casos de uso   | Reflejar todas las excepciones y criterios de aceptación           | Historias de usuario + diagrama de casos de uso | Ana Angulo        |
 | Crear plan de sprints y cronograma de actividades                  | Definir duración de cada sprint, roles y tareas principales        | Plan de sprints y cronograma detallado          | Jhoana Pech       |
 | Establecer tabla de contribuciones y % de participación            | Registrar cómo cada integrante aportará al 100% del sprint         | Documento de métricas de contribución           | José Correa       |
