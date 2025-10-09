@@ -61,7 +61,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Mejorar detalles visuales y flujo de interacción del prototipo según comentarios del cliente. | Jhoana Pech (aporta ajustes de diseño y consistencia), Emilio Arellano (simula interacción), Alejandra Aguilar (valida navegación) | `Prototipo_Mejorado.fig`            |
 | Actualizar artefactos de requisitos y casos de uso según cambios de diseño.                   | Bianca Ramos (actualiza), Emilio Arellano (verifica), Kevin Morales (valida consistencia)                                          | `Artefactos_Actualizados.md`        |
 | Simular tareas específicas en el prototipo para validar funcionalidad.                        | Emilio Arellano (simula), Alejandra Aguilar (documenta), Ana Angulo (aporta ajustes)                                               | Video `Simulacion_TareaUsuario.mp4` |
-| Mantener actualizado el repositorio con todos los documentos y prototipos.                    | José Correa (sube), Kevin Morales (verifica)                                                                                       | Branch `Sprint3/` actualizado       |
+| Mantener actualizado el repositorio con todos los documentos y prototipos y documentar cada parte en md.                    | José Correa (sube), Kevin Morales (verifica)                                                                                       | Branch `Sprint3/` actualizado       |
 
 ---
 
