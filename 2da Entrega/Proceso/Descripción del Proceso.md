@@ -30,16 +30,29 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 ### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**  
 **Fecha:** 7 al 13 de octubre  
+Claro, aquí tienes el **Sprint 1 ajustado** sin Planning Poker y con una distribución más equilibrada de tareas, asegurando que todos los miembros tengan una mezcla de responsabilidades complejas y simples:
+
+---
+
+### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**  
+**Fecha:** 7 al 13 de octubre  
 
 | Actividad Específica | Descripción | Entregable Esperado | Responsable |
 |----------------------|-------------|----------------------|-------------|
-| Análisis de comentarios del cliente | Revisar observaciones de la primera versión y listar cambios necesarios | Lista de cambios priorizados | Kevin Morales |
-| Ordenar y priorizar el backlog | Reorganizar tareas por importancia y eliminar redundancias | Backlog priorizado | Bianca Ramos |
-| Actualizar requisitos funcionales y no funcionales | Detallar funcionalidades y especificaciones de rendimiento | Documento de requisitos actualizado | Ana Angulo |
-| Definir criterios de aceptación por función | Establecer condiciones para validar cada funcionalidad | Lista de criterios de aceptación | José Correa |
-| Realizar estimación con Planning Poker | Estimar complejidad de tareas con votación | Tabla de estimaciones | Emilio Arellano |
-| Unir y revisar documentación | Consolidar y validar documentos del sprint | Documento consolidado | Jhoana Pech |
-| Subir entrega semanal a GitHub | Publicar “Requisitos_Actualizados_V2.pdf” | Archivo PDF en GitHub | Alejandra Aguilar |
+| Definir estructura y secuencia completa de sprints | Organizar hitos, entregables y duración de cada sprint | Cronograma general de sprints | Jhoana Pech |
+| Análisis detallado de comentarios y lecciones aprendidas | Identificar mejoras técnicas y de UX desde la retroalimentación | Documento de lecciones aprendidas | Ana Angulo |
+| Priorización con matriz de valor vs. esfuerzo | Clasificar tareas según impacto y complejidad | Backlog priorizado con justificación | Bianca Ramos |
+| Especificación técnica de requisitos funcionales | Documentar comportamientos del sistema con casos de uso | Especificación formal de requisitos | José Correa |
+| Definición de criterios de aceptación y "definición de hecho" | Establecer condiciones para validar cada funcionalidad | Lista de criterios verificables | Emilio Arellano |
+| Diseño de métricas de contribución individual | Definir cómo se medirá la participación de cada integrante | Documento de métricas de contribución | Kevin Morales |
+| Creación de plantillas para documentación | Desarrollar formatos estándar para documentos del proyecto | Set de plantillas uniformes | Alejandra Aguilar |
+| Gestión y coordinación de reuniones de planificación | Organizar agendas, minutas y seguimiento de acuerdos | Minutas de reuniones | Jhoana Pech |
+| Validación técnica de requisitos no funcionales | Verificar viabilidad de requisitos de rendimiento y seguridad | Checklist de viabilidad técnica | Ana Angulo |
+| Organización de la estructura de carpetas en GitHub | Crear repositorio organizado con branches iniciales | Estructura de carpetas en GitHub | Bianca Ramos |
+| Protocolo de validación con cliente | Diseñar metodología para sesiones de feedback | Guión de validación | José Correa |
+| Documentación de supuestos y restricciones | Registrar limitaciones técnicas y de proyecto | Lista de supuestos y restricciones | Emilio Arellano |
+| Seguimiento de participación en tareas | Monitorear contribución inicial de cada integrante | Reporte de participación inicial | Kevin Morales |
+| Revisión de calidad de documentación | Verificar consistencia y completitud de documentos | Checklist de calidad | Alejandra Aguilar |
 
 ---
 
