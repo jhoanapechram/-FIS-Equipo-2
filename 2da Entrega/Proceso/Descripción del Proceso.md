@@ -26,14 +26,6 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 ### 🗓️ Cronograma de Sprints con Actividades, Entregables y Responsables
 
----
-
-### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**  
-**Fecha:** 7 al 13 de octubre  
-Claro, aquí tienes el **Sprint 1 ajustado** sin Planning Poker y con una distribución más equilibrada de tareas, asegurando que todos los miembros tengan una mezcla de responsabilidades complejas y simples:
-
----
-
 ### 🏁 **Sprint 1: Planeación y Refinamiento de Requisitos**  
 **Fecha:** 7 al 13 de octubre  
 
