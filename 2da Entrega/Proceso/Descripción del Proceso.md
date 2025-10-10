@@ -37,6 +37,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Organizar estructura inicial del repositorio y documentar cada apartado creado en el sprint.                 | José Correa (organiza), Kevin Morales (verifica consistencia)             | Branch `Sprint1` y carpetas organizadas      |
 | Documentar bitácora de la reunión inicial con acuerdos y tareas asignadas.                       | Alejandra Aguilar (redacta), Jhoana Pech (aporta decisiones estratégicas) | `Bitacora_Sprint1.md`                        |
 | Organizar los 4 sprints y la asignación de actividades, y crear branch de segunda entrega.          | Jhoana Pech                                                               | Documento de coordinación `Descripción del Proceso.md` |
+| Definir Casos de Uso | Jose Correa (define) Jhoana Pech (verifica y realiza cambios o mejoras) |
 
 ---
 
