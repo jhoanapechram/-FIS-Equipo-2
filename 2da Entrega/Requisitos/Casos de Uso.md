@@ -1,4 +1,4 @@
-
+Casos de Uso de la Plataforma Digital SmartPrice
 #### **CU-001: Consultar y Comparar Precios en Tiempo Real**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
