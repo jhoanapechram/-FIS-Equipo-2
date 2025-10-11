@@ -18,8 +18,6 @@
 | **Reglas de Negocio:**              | **RN-001:** Los precios se deben obtener en tiempo real de las APIs. (RF1).<br>**RN-002:** El tiempo total de respuesta debe ser <3 segundos en el 95% de los casos (RNF-Rendimiento).                                                                                                                        |
 | **Requisitos Asociados:**           | **RF1, RF3.** RNF (Rendimiento: <3s), RNF (Confiabilidad: 99% uptime).                                                                                                                                                                                                                                      |
 
----
-
 #### **CU-002: Visualizar Historial y Evolución de Precios**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
@@ -37,9 +35,8 @@
 | **Flujo Principal:**                | 1. El usuario navega a la página de un producto.<br>2. El usuario hace clic en el botón "Ver Historial de Precios".<br>3. El sistema recupera los datos históricos del producto desde la BD.<br>4. El sistema presenta los datos en una visualización clara (gráfica o tabla).                                         |
 | **Flujos de Excepción:**            | **E-1: Sin Datos Históricos:**<br>1. Si el producto no tiene historial, se muestra un mensaje: "Aún no hay datos históricos para este producto".                                                                                                                                                              |
 | **Reglas de Negocio:**              | **RN-003:** La base de datos debe almacenar cada actualización de precio. (RF2).                                                                                                                                                                                                                              |
-| **Requisitos Asociados:**           | **RF2.**                                                                                                                                                                                                                                                                                                    |
+| **Requisitos Asociados:**           | **RF2.**                                                                                                                                          
 
----
 
 #### **CU-003: Recibir Predicción de Precios con IA**
 
@@ -60,8 +57,6 @@
 | **Reglas de Negocio:**              | **RN-004:** Las predicciones deben generarse utilizando modelos de IA entrenados con el historial de precios. (RF4).                                                                                                                                                                                           |
 | **Requisitos Asociados:**           | **RF4.**                                                                                                                                                                                                                                                                                                    |
 
----
-
 #### **CU-004: Validar Confiabilidad de una Oferta**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
@@ -80,8 +75,6 @@
 | **Flujos de Excepción:**            | **E-1: Sin Historial de Ofertas:**<br>1. Se asigna la etiqueta "Desconocida" o "Nueva Oferta".                                                                                                                                                                                                                |
 | **Reglas de Negocio:**              | **RN-005:** El nivel de validez se asigna en función de la duración histórica y vigencia de la oferta. (RF5).<br>**RN-006:** Una oferta se marca como vencida automáticamente al pasar su fecha de fin.                                                                                                        |
 | **Requisitos Asociados:**           | **RF5.**                                                                                                                                                                                                                                                                                                    |
-
----
 
 #### **CU-005: Recomendar Tienda Más Conveniente**
 
@@ -103,7 +96,6 @@
 | **Reglas de Negocio:**              | **RN-007:** La recomendación debe basarse en el menor costo total (precio + transporte implícito por distancia). (RF6).                                                                                                                                                                                       |
 | **Requisitos Asociados:**           | **RF6.**                                                                                                                                                                                                                                                                                                    |
 
----
 
 #### **CU-006: Interactuar con el Asistente Inteligente (Chatbot)**
 
@@ -124,38 +116,6 @@
 | **Reglas de Negocio:**              | **RN-008:** El chatbot debe utilizar información verificada de la base de datos interna y de Profeco. (RF7).                                                                                                                                                                                                   |
 | **Requisitos Asociados:**           | **RF7.**                                                                                                                                                                                                                                                                                                    |
 
----
-
-#### **CU-007: Integrar y Validar Datos con Profeco**
-
-| **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Identificador:**                  | CU-007                                                                                                                                                                                                                                                                                                      |
-| **Nombre:**                         | Integrar y Validar Datos con Profeco                                                                                                                                                                                                                                                                        |
-| **Actor Principal:**                | Sistema (Proceso Automatizado).                                                                                                                                                                                                                                                                             |
-| **Actores Secundarios:**            | API o Fuente de Datos de Profeco, Base de Datos de SmartPrice.                                                                                                                                                                                                                                              |
-| **Propósito:**                      | Consultar y utilizar información de la Profeco para enriquecer la base de datos y validar la veracidad de precios y ofertas, aumentando la confiabilidad del sistema. **(Corresponde a RF8)**                                                                                                               |
-| **Alcance:**                        | Módulo de Integración con Entidades Externas.                                                                                                                                                                                                                                                               |
-| **Nivel:**                          | Subfunción (a nivel de sistema).                                                                                                                                                                                                                                                                            |
-| **Disparador:**                     | Programado por un `Cron Job` o activado manualmente por un administrador.                                                                                                                                                                                                                                   |
-| **Precondiciones:**                 | 1. La fuente de datos de Profeco está disponible y accesible.                                                                                                                                                                                                                                               |
-| **Postcondiciones:**                | 1. La base de datos de SmartPrice se actualiza con la información validada por Profeco.<br>2. Los precios y ofertas pueden marcarse con un sello de "Verificado por Profeco".                                                                                                                                 |
-| **Flujo Principal:**                | 1. El proceso automatizado se ejecuta según la programación (ej., cada 24 horas).<br>2. El sistema consulta la información relevante (precios, quejas, alertas) de Profeco.<br>3. El sistema cruza esta información con sus propios registros.<br>4. Los registros se actualizan o marcan según corresponda (ej., un precio se marca como "Coincide con Profeco"). |
-| **Flujos de Excepción:**            | **E-1: Fuente de Profeco no disponible:**<br>1. El sistema registra el error en un log y reintenta en el siguiente ciclo.                                                                                                                                                                                      |
-| **Reglas de Negocio:**              | **RN-009:** La integración con Profeco debe cumplir con las normativas de protección al consumidor en México. (RF8, RNF-Legales).                                                                                                                                                                             |
-| **Requisitos Asociados:**           | **RF8.** RNF (Legales).                                                                                                                                                                                                                                                                                     |
-¡Perfecto, Jhoana! Tienes razón, voy a simplificar ese concepto y añadir algunos requisitos que considero importantes pero que faltan en el documento original, manteniendo un lenguaje accesible para una estudiante de ingeniería.
-
----
-
-### 🔄 **Explicación Sencilla del "Proceso Automatizado"**
-
-En lugar de "Cron Job", podemos decir: **"El sistema realiza esta verificación automáticamente cada 24 horas"**. Es como cuando tu teléfono se actualiza solo por las noches - no necesitas hacer nada, el sistema trabaja automáticamente.
-
----
-
-### 🧩 **Casos de Uso Mejorados con Requisitos que Hacían Falta**
-
 #### **CU-007: Integrar y Validar Datos con Profeco (Versión Simplificada)**
 
 | **Elemento**                        | **Descripción** |
@@ -175,7 +135,6 @@ En lugar de "Cron Job", podemos decir: **"El sistema realiza esta verificación 
 | **Reglas de Negocio:** | **RN-009:** La verificación con Profeco se debe hacer al menos una vez al día |
 | **Requisitos Asociados:** | **RF8**, RNF (Legales) |
 
----
 
 #### **CU-008: Gestionar Perfil de Usuario**
 
