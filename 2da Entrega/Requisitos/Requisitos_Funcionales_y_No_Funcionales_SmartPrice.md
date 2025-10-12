@@ -41,7 +41,3 @@
 | **Documentación** | Debe existir documentación técnica y manual de usuario. | Facilita mantenimiento y uso del sistema. | Verificación de carpeta “documentos” con README, diagramas C4, API docs y manual de usuario con ≥ 20 páginas. |
 
 ---
-
-**SmartPrice — Documento de Requisitos (v1.0)**  
-📅 Última actualización: 2025  
-✍️ Elaborado por: Equipo de desarrollo SmartPrice
