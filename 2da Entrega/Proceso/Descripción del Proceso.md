@@ -45,7 +45,6 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 | Actividad                                                                | Participantes                                                                                               | Entregable                          |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| Refinar artefactos de historias de usuario y criterios de aceptación.    | Bianca Ramos (actualiza), Emilio Arellano (verifica y documenta evidencia)                                  | `HistoriasUsuario_Refinadas.md`     |
 | Verificar correspondencia entre requerimientos y prototipos de interfaz. | Kevin Morales (analiza), Ana Angulo (documenta hallazgos)                                                   | `Correspondencia_Requerimientos.md` |
 | Diseñar bosquejos de interfaces (prototipo de baja fidelidad).           | Jhoana Pech y Alejandra Aguilar (diseñan), Emilio Arellano (aporta elementos visuales), Ana Angulo (estructura navegación) | `Prototipo_BajaFidelidad.fig`       |
 | Subir y organizar artefactos y prototipos en el repositorio.             | José Correa (sube y organiza), Kevin Morales (verifica consistencia)                                        | Carpeta `Evidencias_Sprint2/`       |
