@@ -4,7 +4,7 @@ Prueba de Desempeño
 | **Integrante** | **Responsabilidad Principal** |
 |----------------|------------------------------|
 | Jhoana Pech ![Jhoana Pech](imagenes/Foto%20Jhoana.jpeg)| Coordinación y seguimiento del proceso |
-| Bianca Ramos ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Análisis funcional y desarrollo. |
+| Bianca Ramos ![Bianca Ramos](imagenes/Bianca.jpg)| Análisis funcional y desarrollo. |
 | Ana Angulo ![Vale Angulo](imagenes/ImagenVale.jpeg)| Definición de objetivos y criterios |
 | Alejandra Aguilar ![Alejandra Aguilar](Imagenes/Imagen_Ale.jpeg)| Diseño visual y prototipos |
 | Kevin Morales ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Requerimientos técnicos y calidad |
