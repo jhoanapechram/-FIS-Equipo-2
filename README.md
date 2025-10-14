@@ -9,5 +9,5 @@ PD
 | Alejandra Aguilar | Diseño visual y prototipos |
 | Kevin Morales | Requerimientos técnicos y calidad |
 | Emilio Arellano ![Emilio Arellano](/imagenes/WhatsApp Image 2025-10-14 at 08.10.56_93906e61.jpg)| Gestión del backlog y prioridades |
-| José Correa | Control de calidad y coherencia |
+| José Correa ![José Correa](/imagenes/WhatsApp Image 2025-10-14 at 08.10.56_cc984aa9.jpg)| Control de calidad y coherencia |
 
