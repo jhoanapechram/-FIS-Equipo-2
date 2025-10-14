@@ -8,6 +8,7 @@ Prueba de Desempeño
 | Ana Angulo ![Vale Angulo](imagenes/ImagenVale.jpg)| Definición de objetivos y criterios |
 | Alejandra Aguilar ![Alejandra Aguilar](imagenes/Imagen_Ale.jpg)| Diseño visual y prototipos |
 | Kevin Morales ![Kevin Morales](imagenes/K1.jpg)| Requerimientos técnicos y calidad |
+| Bianca Ramos ![Bianca Ramos](imagenes/Bianca.jpg)| Análisis funcional y desarrollo. |
 | Emilio Arellano ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Gestión del backlog y prioridades |
 | José Correa ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Control de calidad y coherencia |
 
