@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -FIS-Equipo-2
 Segunda Entrega
 Prueba de Desempeño
@@ -11,3 +12,6 @@ Prueba de Desempeño
 | Emilio Arellano ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Gestión del backlog y prioridades |
 | José Correa ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Control de calidad y coherencia |
 
+=======
+# -FIS-Equipo-2
+>>>>>>> parent of 3234482 (Merge pull request #48 from jhoanapechram/Kevin)
