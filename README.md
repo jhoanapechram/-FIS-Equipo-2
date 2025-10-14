@@ -1,13 +1,13 @@
 # -FIS-Equipo-2
 Segunda Entrega
-PD
+Prueba de Desempeño
 | **Integrante** | **Responsabilidad Principal** |
 |----------------|------------------------------|
-| Jhoana Pech ![Jhoana Pech](/imagenes/Foto Jhoana.jpeg)| Coordinación y seguimiento del proceso |
-| Bianca Ramos | Análisis funcional y desarrollo. |
-| Ana Angulo | Definición de objetivos y criterios |
-| Alejandra Aguilar | Diseño visual y prototipos |
-| Kevin Morales | Requerimientos técnicos y calidad |
-| Emilio Arellano ![Emilio Arellano](/imagenes/WhatsApp Image 2025-10-14 at 08.10.56_93906e61.jpg)| Gestión del backlog y prioridades |
-| José Correa | Control de calidad y coherencia |
+| Jhoana Pech ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Coordinación y seguimiento del proceso |
+| Bianca Ramos ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Análisis funcional y desarrollo. |
+| Ana Angulo ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Definición de objetivos y criterios |
+| Alejandra Aguilar ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Diseño visual y prototipos |
+| Kevin Morales ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Requerimientos técnicos y calidad |
+| Emilio Arellano ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Gestión del backlog y prioridades |
+| José Correa ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Control de calidad y coherencia |
 
