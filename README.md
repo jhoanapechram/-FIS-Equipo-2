@@ -1,17 +1,18 @@
-<<<<<<< HEAD
-# -FIS-Equipo-2
-Segunda Entrega
-Prueba de Desempeño
-| **Integrante** | **Responsabilidad Principal** |
-|----------------|------------------------------|
-| Jhoana Pech ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Coordinación y seguimiento del proceso |
-| Bianca Ramos ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Análisis funcional y desarrollo. |
-| Ana Angulo ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Definición de objetivos y criterios |
-| Alejandra Aguilar ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Diseño visual y prototipos |
-| Kevin Morales ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Requerimientos técnicos y calidad |
-| Emilio Arellano ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Gestión del backlog y prioridades |
-| José Correa ![Jhoana Pech](imagenes/Foto Jhoana.jpeg)| Control de calidad y coherencia |
+# Información de las carpetas:
 
-=======
-# -FIS-Equipo-2
->>>>>>> parent of 3234482 (Merge pull request #48 from jhoanapechram/Kevin)
+## - [Competencias](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Competencias)
+- [Competencias genéricas y específicas_1](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Competencias/Competencias%20genericas%20y%20especificas_1.pdf)
+
+## - [Proceso](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Proceso)
+- [Sprints](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Proceso/Sprints)
+    - [Resultados Reunión Sprint #1](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Sprints/Resultados_Reuni%C3%B3n_Sprint%20%231.docx)
+    - [Resultados Reunión Sprint #2](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Sprints/Resultados%20Reuni%C3%B3n%20Sprint%20%232.docx)
+  - [Bitácora_de_Actividades](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Bit%C3%A1cora_de_actividades.pdf)
+## - [Producto](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Producto)
+  - [Fis producto](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/FIS%20producto.pdf)
+  - [Video_presentación](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/Video_Presentaci%C3%B3n.md)
+## - [Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Requisitos)
+  - [Fis_Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf)
+  - [Historias-de-usuario](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/Historias_de_usuario.pdf)
+  - [Requisitos Priorización](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACI%C3%93N.pdf)
+     
