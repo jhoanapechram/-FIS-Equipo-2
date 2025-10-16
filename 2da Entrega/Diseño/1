@@ -1,1 +1,210 @@
+# 💸 **SmartPrice – Prototipo de Interfaz**
+### 🧾 *Documentación del Diseño y Navegación de la Aplicación Web*
+---
+
+## 📚 **Índice de Contenido**
+1. [Portada](#-portada)
+2. [Introducción](#-introducción)
+3. [Nivel de fidelidad del prototipo](#-nivel-de-fidelidad-del-prototipo)
+4. [Herramientas utilizadas](#-herramientas-utilizadas)
+5. [Guías de diseño aplicadas](#-guías-de-diseño-aplicadas)
+6. [Mapa de navegación](#-mapa-de-navegación)
+7. [Secciones del prototipo](#️-secciones-del-prototipo)
+   - [7.1 Página de Inicio](#71-página-de-inicio)
+   - [7.2 Login y Registro](#72-sección-de-login-y-registro)
+   - [7.3 Búsqueda de Productos](#73-sección-de-búsqueda-de-productos)
+   - [7.4 Comparar Precios](#74-sección-de-comparar-precios)
+   - [7.5 Carrito de Compras](#75-sección-del-carrito-de-compras)
+   - [7.6 Mapa de Tiendas](#76-sección-del-mapa-de-tiendas)
+   - [7.7 Perfil del Usuario](#77-sección-del-perfil-del-usuario)
+   - [7.8 Chat o Asistencia](#78-sección-de-chat-o-asistencia)
+   - [7.9 Confirmación o Pago (opcional)](#79-sección-de-confirmación-o-pago-opcional)
+8. [Análisis del diseño](#-análisis-del-diseño)
+9. [Conclusión](#-conclusión)
+10. [Anexos](#-anexos)
+
+---
+
+## 🪪 **Portada**
+**Proyecto:** SmartPrice  
+**Materia:** [Nombre de la asignatura]  
+**Integrantes:** [Nombres del equipo]  
+**Docente:** [Nombre del profesor/a]  
+**Fecha:** [Fecha de entrega]  
+
+---
+
+## 💡 **Introducción**
+El presente documento presenta el **prototipo de interfaz del proyecto SmartPrice**, una aplicación web diseñada para facilitar la **comparación de precios** entre distintos establecimientos.  
+Su objetivo es **ayudar a los usuarios a tomar decisiones de compra más inteligentes**, ahorrando tiempo y dinero mediante una interfaz intuitiva y moderna.  
+
+El prototipo permite visualizar la estructura, diseño y navegación general del sistema antes de su desarrollo funcional completo, siguiendo principios de **claridad, consistencia y usabilidad**.
+
+---
+
+## 🎯 **Nivel de fidelidad del prototipo**
+El prototipo de SmartPrice es de **fidelidad media**, ya que combina elementos de diseño visual avanzados con una simulación básica de navegación.
+
+| Característica | Descripción | Nivel |
+|----------------|-------------|--------|
+| **Diseño visual** | Colores, tipografía y estilo coherente con la marca. | Media–Alta |
+| **Estructura funcional** | Enlaces reales entre secciones. | Media |
+| **Interactividad** | Navegación simulada sin backend. | Media |
+| **Grado de detalle** | Diseño cercano al producto final. | Media–Alta |
+
+> 📌 **Conclusión:** El prototipo es **media fidelidad**, ya que presenta navegación funcional y estética avanzada, pero sin conexión a base de datos ni funciones dinámicas reales.
+
+---
+
+## 🛠️ **Herramientas utilizadas**
+- **Lenguajes:** HTML, CSS y JavaScript.  
+- **Editor:** Visual Studio Code.  
+- **Plataforma:** GitHub Pages.  
+- **Enlace del prototipo:**  
+  🔗 [https://jhoanapechram.github.io/Mockup-SmartPrice/](https://jhoanapechram.github.io/Mockup-SmartPrice/)
+
+---
+
+## 🎨 **Guías de diseño aplicadas**
+El diseño sigue principios visuales de la experiencia de usuario (UX/UI):
+
+| Principio | Aplicación |
+|------------|-------------|
+| **Paleta de colores** | Azul (#2196F3), Naranja (#FF9800) y Blanco (#FFFFFF). |
+| **Tipografía** | Sans Serif moderna, fácil de leer. |
+| **Consistencia** | Misma forma y color en botones, menús e íconos. |
+| **Jerarquía visual** | Los elementos principales (Buscar, Comparar, Carrito) destacan visualmente. |
+| **Simplicidad** | Interfaz limpia, sin sobrecarga de texto ni elementos. |
+| **Adaptabilidad** | Diseño compatible con distintos tamaños de pantalla. |
+
+---
+
+## 🗺️ **Mapa de navegación**
+Flujo general del recorrido del usuario:
+
+> **Inicio → Login / Registro → Búsqueda → Comparar precios → Carrito → Pago → Confirmación → Mapa → Perfil → Chat**
+
+*(Se sugiere insertar un diagrama del flujo con flechas y pantallas conectadas.)*
+
+---
+
+## 🖥️ **Secciones del prototipo**
+
+A continuación, se detallan las principales secciones del prototipo SmartPrice.  
+Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
+
+---
+
+### **7.1 Página de Inicio**
+**Objetivo:** Dar la bienvenida y ofrecer acceso rápido a las secciones principales.  
+**Elementos:**
+- Logotipo SmartPrice  
+- Menú superior de navegación  
+- Mensaje introductorio  
+- Botones: “Buscar”, “Comparar”, “Mapa”  
+**Función:** Punto de partida del flujo de usuario.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Inicio.png`
+
+---
+
+### **7.2 Sección de Login y Registro**
+**Objetivo:** Permitir el acceso de usuarios registrados o crear una nueva cuenta.  
+**Elementos:**
+- Campos de texto: correo y contraseña  
+- Botón “Iniciar sesión”  
+- Enlace “Registrarse”  
+**Función:** Simula autenticación básica sin conexión real.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Login.png`
+
+---
+
+### **7.3 Sección de Búsqueda de Productos**
+**Objetivo:** Facilitar la búsqueda de productos específicos.  
+**Elementos:**
+- Barra de búsqueda  
+- Ícono de lupa  
+- Filtros de categoría o precio  
+- Botón “Comparar” junto a cada resultado  
+**Función:** Simula resultados de búsqueda y comparación inicial.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Busqueda.png`
+
+---
+
+### **7.4 Sección de Comparar Precios**
+**Objetivo:** Mostrar una tabla comparativa de precios por tienda.  
+**Elementos:**
+- Tabla con nombre de tienda, precio y logo  
+- Botón “Agregar al carrito”  
+- Resaltado del precio más bajo  
+**Función:** Simula la comparación de precios visual.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Comparar.png`
+
+---
+
+### **7.5 Sección del Carrito de Compras**
+**Objetivo:** Reunir los productos seleccionados por el usuario.  
+**Elementos:**
+- Lista de productos con precios  
+- Subtotal y total  
+- Botón “Proceder al pago”  
+**Función:** Representa la preparación de compra.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Carrito.png`
+
+---
+
+### **7.6 Sección del Mapa de Tiendas**
+**Objetivo:** Mostrar las ubicaciones de las tiendas asociadas.  
+**Elementos:**
+- Mapa ilustrativo  
+- Íconos de tiendas  
+- Botón “Ver ruta” o “Ver detalles”  
+**Función:** Simula la localización geográfica de los comercios.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Mapa.png`
+
+---
+
+### **7.7 Sección del Perfil del Usuario**
+**Objetivo:** Administrar la información personal y preferencias del usuario.  
+**Elementos:**
+- Ícono o foto de perfil  
+- Campos: nombre, correo, dirección  
+- Botón “Guardar cambios”  
+**Función:** Simula la gestión de datos del usuario.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Perfil.png`
+
+---
+
+### **7.8 Sección de Chat o Asistencia**
+**Objetivo:** Proporcionar ayuda directa o atención al cliente.  
+**Elementos:**
+- Ventana de chat simulada  
+- Área de texto para mensajes  
+- Botón “Enviar”  
+**Función:** Simula un asistente automatizado.  
+📸 *Captura sugerida:* `Mockup_SmartPrice_Chat.png`
+
+---
+
+## 📊 **Análisis del diseño**
+El prototipo cumple con los principios de **usabilidad, consistencia y simplicidad visual**.  
+Cada pantalla conserva la coherencia estética y facilita la comprensión del flujo por parte del usuario.
+
+**Fortalezas:**
+- Navegación clara e intuitiva.  
+- Colores armónicos y atractivos.  
+- Estructura ordenada y lógica.  
+
+**Áreas de mejora:**
+- Incorporar animaciones y retroalimentación visual.  
+- Optimizar la versión móvil.  
+- Agregar interactividad funcional (por ejemplo, simulación de pago real).  
+
+---
+
+## 🧩 **Conclusión**
+El prototipo de SmartPrice representa una base sólida para el desarrollo de la versión funcional.  
+Permite validar la experiencia del usuario y definir mejoras antes de la implementación definitiva.  
+
+**Versión publicada:**  
+🔗 [https://jhoanapechram.github.io/Mockup-SmartPrice/](https://jhoanapechram.github.io/Mockup-SmartPrice/)
 
