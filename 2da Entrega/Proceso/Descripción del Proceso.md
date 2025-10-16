@@ -46,9 +46,9 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Actividad                                                                | Participantes                                                                                               | Entregable                          |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | Verificar correspondencia entre requerimientos y prototipos de interfaz. | Kevin Morales (analiza), Ana Angulo (documenta hallazgos)                                                   | `Correspondencia_Requerimientos.md` |
-| Diseñar bosquejos de interfaces (prototipo de baja fidelidad).           | Jhoana Pech y Alejandra Aguilar (diseñan), Emilio Arellano (aporta elementos visuales), Ana Angulo (estructura navegación) | `Prototipo_BajaFidelidad.fig`       |
-| Subir y organizar artefactos y prototipos en el repositorio.             | José Correa (sube y organiza), Kevin Morales (verifica consistencia)                                        | Carpeta `Evidencias_Sprint2/`       |
-| Documentar bitácora de avances y acuerdos del sprint.                    | Alejandra Aguilar (redacta), Bianca Ramos (verifica coherencia)                                             | `Bitacora_Sprint2.md`               |
+| Diseñar bosquejos de interfaces (prototipo de media fidelidad).           | Jhoana Pech y Alejandra Aguilar (diseñan), Emilio Arellano (aporta elementos visuales), Ana Angulo (estructura navegación) | `Prototipo de SmartPrice`       |
+| Subir y documentar artefactos y prototipos en el repositorio, y documentar carpetas.             | José Correa (documenta artefactos y prototipos y sube archivos), Kevin Morales (documenta carpetas)                                        | Carpetas actualizadas y documentadas +  `Prototipo_Smartprice.md`       |
+| Documentar bitácora de avances y acuerdos del sprint.                    | Bianca Ramos (redacta),  Alejandra Aguilar(verifica coherencia)                                             | `Bitacora_Sprint2.md`               |
 
 ---
 
@@ -60,7 +60,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Aplicar cambios al prototipo según comentarios del cliente.                                   | Ana Angulo (modifica), Emilio Arellano (verifica consistencia), Alejandra Aguilar (aporta mejoras de flujo)                        | `Prototipo_Actualizado.fig`         |
 | Mejorar detalles visuales y flujo de interacción del prototipo según comentarios del cliente. | Jhoana Pech (aporta ajustes de diseño y consistencia), Emilio Arellano (simula interacción), Alejandra Aguilar (valida navegación) | `Prototipo_Mejorado.fig`            |
 | Actualizar artefactos de requisitos y casos de uso según cambios de diseño.                   | Bianca Ramos (actualiza), Emilio Arellano (verifica), Kevin Morales (valida consistencia)                                          | `Artefactos_Actualizados.md`        |
-| Simular tareas específicas en el prototipo para validar funcionalidad.                        | Emilio Arellano (simula), Alejandra Aguilar (documenta), Ana Angulo (aporta ajustes)                                               | Video `Simulacion_TareaUsuario.mp4` |
+| Simular tareas específicas en el prototipo para validar funcionalidad.                        | José Correa (simula), Alejandra Aguilar (documenta), Ana Angulo (aporta ajustes)                                               | Video `Simulacion_TareaUsuario.mp4` |
 | Mantener actualizado el repositorio con todos los documentos y prototipos y documentar cada parte en md.                    | José Correa (sube), Kevin Morales (verifica)                                                                                       | Branch `Sprint3/` actualizado       |
 
 ---
@@ -69,11 +69,11 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 | Actividad                                                                | Participantes                                                                                                                   | Entregable                             |
 | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| Elaborar presentación final (diapositivas, diagramas, ritmo y claridad). | Jhoana Pech (aporta ajustes visuales y flujo), Emilio Arellano (revisa ritmo y lenguaje), Alejandra Aguilar (estructura visual) | `Presentacion_Final.pptx`              |
+| Elaborar presentación final (diapositivas, diagramas, ritmo y claridad). | Jhoana Pech y Alejandra Aguilar(aportan ajustes visuales y flujo), Emilio Arellano (revisa ritmo y lenguaje),  Bianca Ramos (estructura visual) | `Presentacion_Final.pptx`              |
 | Redactar competencias genéricas desarrolladas durante el proyecto.       | Ana Angulo (redacta), Kevin Morales (verifica coherencia)                                                                       | `Competencias_Genericas.md`            |
-| Redactar competencias específicas desarrolladas durante el proyecto.     | Bianca Ramos (redacta), Alejandra Aguilar (verifica)                                                                            | `Competencias_Especificas.md`          |
-| Elaborar y documentar métrica de contribución individual con evidencias. | Alejandra Aguilar (calcula), José Correa (verifica y sube al repositorio)                                                           | `Metrica_Contribucion.md`            |
+| Redactar competencias específicas desarrolladas durante el proyecto.     | José Correa (redacta), Alejandra Aguilar (verifica)                                                                            | `Competencias_Especificas.md`          |
+| Elaborar y documentar métrica de contribución individual con evidencias. | José Correa (calcula), Alejandra Aguilar (verifica y sube al repositorio)                                                           | `Metrica_Contribucion.md`            |
 | Revisar organización final del repositorio y subir evidencia de cierre.  | José Correa (organiza), Emilio Arellano (verifica consistencia)                                                                 | Repositorio final limpio y documentado |
-| Registrar bitácora final de acuerdos y cierre de sprints.                | Alejandra Aguilar (redacta), Jhoana Pech (aprueba)                                                                              | `Bitacora_Final.md`                    |
+| Registrar bitácora final de acuerdos y cierre de sprints.                | Alejandra Aguilar (redacta), Jhoana Pech (verifica)                                                                              | `Bitacora_Final.md`                    |
 | Realiza un resumen de los cambios completados del producto entre la primera y la segunda entrega. | José Correa |  `Evolución_Producto.md` |
 
