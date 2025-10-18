@@ -8,55 +8,55 @@
 
 #### PANTALLA PRINCIPAL DEL MOCKUP
 
-![pantalla_principal_mockup](2da%20Entrega/Requisitos/fotos/Imagen1.png)
+![pantalla_principal_mockup](https://i.ibb.co/99GYdk17/Imagen1.png)
 
 #### INTERFAZ DE INICIO DE SESIÓN
 
-![interfaz_inicio_sesion](2da%20Entrega/Requisitos/fotos/Imagen2.png)
+![interfaz_inicio_sesion](https://i.ibb.co/pBw4D0Jm/Imagen2.png)
 
 #### BARRA DE NAVEGACIÓN
 
-![barra_navegacion](2da%20Entrega/Requisitos/fotos/Imagen3.png)
+![barra_navegacion](https://i.ibb.co/fYWkk0ZL/Imagen3.png)
 
 #### MAPA INTERACTIVO DE LA UBICACIÓN DE LAS TIENDAS MÁS CERCANAS
 
-![mapa_interactivo_ubicacion_tiendas](2da%20Entrega/Requisitos/fotos/Imagen4.png)
+![mapa_interactivo_ubicacion_tiendas](https://i.ibb.co/JwBm63HQ/Imagen4.png)
 
 ---
 
 #### CONFIGURACIONES DEL PERFIL DE USUARIO
 
-![configuraciones_perfil_usuario](2da%20Entrega/Requisitos/fotos/Imagen5.png)
+![configuraciones_perfil_usuario](https://i.ibb.co/ynncDtwH/Imagen5.png)
 
 #### PREFERENCIAS DE USUARIO Y MODOS DE BÚSQUEDA
 
-![preferencias_usuario_modos_busqueda](2da%20Entrega/Requisitos/fotos/Imagen6.jpg)
+![preferencias_usuario_modos_busqueda](https://i.ibb.co/WJJLb0d/Imagen6.jpg)
 
 #### INTERFAZ DE LOS PRODUCTOS
 
-![interfaz_productos](2da%20Entrega/Requisitos/fotos/Imagen7.png)
+![interfaz_productos](https://i.ibb.co/1GVjLqbL/Imagen7.png)
 
 #### RECOMENDACIONES Y GRÁFICA HISTORICA DE PRECIOS
 
-![recomendaciones_grafica_historica_precios](2da%20Entrega/Requisitos/fotos/Imagen8.png)
+![recomendaciones_grafica_historica_precios](https://i.ibb.co/HpLGKZR9/Imagen8.png)
 
 ---
 
 #### MÉTODO DE COMPARACIÓN DE LA APLICACIÓN Y REPORTE DE PRECIOS
 
-![metodo_comparacion_reporte_precios](2da%20Entrega/Requisitos/fotos/Imagen9.jpg)
+![metodo_comparacion_reporte_precios](https://i.ibb.co/m5MggNcQ/Imagen9.jpg)
 
 #### MODO DE BÚSQUEDA
 
-![modo_busqueda](2da%20Entrega/Requisitos/fotos/Imagen10.png)
+![modo_busqueda](https://i.ibb.co/8g65ntrV/Imagen10.png)
 
 #### CARRITO DE COMPRAS
 
-![carrito_compras](2da%20Entrega/Requisitos/fotos/Imagen11.png)
+![carrito_compras](https://i.ibb.co/rGGwMNm4/Imagen11.png)
 
 #### ASISTENTE VIRTUAL SMARTPRICE
 
-![asistente_virtual_smartprice](2da%20Entrega/Requisitos/fotos/Imagen12.png)
+![asistente_virtual_smartprice](https://i.ibb.co/HTCNRWCf/Imagen12.png)
 
 ---
 
