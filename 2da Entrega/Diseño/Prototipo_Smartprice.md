@@ -32,7 +32,7 @@
 
 ## 🪪 **Portada**
 **Proyecto:** SmartPrice  
-![Portada de la aplicación](https://i.ibb.co/N6RKdyNZ/imagen-2025-10-19-213406803.png)
+![Portada de la aplicación](https://i.ibb.co/dhyJMxg/Whats-App-Image-2025-10-20-at-15-47-21-1-1.jpg)
 
 ---
 
@@ -100,7 +100,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 - Mensaje introductorio  
 - Botones: “Buscar”, “Comparar”, “Mapa”  
 **Función:** Punto de partida del flujo de usuario.  
-![pantalla_principal_mockup](https://i.ibb.co/99GYdk17/Imagen1.png)
+![pantalla_principal_mockup](https://i.ibb.co/932w5Ttd/Whats-App-Image-2025-10-20-at-16-35-13.jpg)
 
 ---
 
@@ -108,8 +108,9 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Objetivo:** Permitir el acceso de usuarios registrados o crear una nueva cuenta.  
 **Elementos:**
 - Campos de texto: correo y contraseña  
-- Botón “Iniciar sesión”  
-- Enlace “Registrarse”  
+- Botón “Entrar”  
+- Botón “Entrar como invitado” 
+
 **Función:** Simula autenticación básica sin conexión real.  
 ![interfaz_inicio_sesion](https://i.ibb.co/pBw4D0Jm/Imagen2.png)
 
@@ -120,7 +121,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Elementos:**
 - Interfaz general de productos   
 - Filtros de categoría o precio  
-- Botón “Comparar” junto a cada resultado, "Añadir" junto a cada producto, "Ver" junto a cada producto  
+- Botón “Comparar” junto ala barra de busqueda, "Añadir" junto a cada producto, "Ver" junto a cada producto  
 **Función:** Proporciona a una visión general de los productos que el usuario desee comparar.  
 ![interfaz_productos](https://i.ibb.co/1GVjLqbL/Imagen7.png)
 
@@ -130,17 +131,16 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Objetivo:** Aparado más específico de la interfaz de los productos, busca facilitar la búsqueda de productos específicos.  
 **Elementos:**
 - Barra de búsqueda    
-- Filtros de categoría o precio  
-- Botón “Comparar” junto a cada resultado  
+- Filtros de categoría, nombre o tienda  
 **Función:** Simula resultados de búsqueda y comparación inicial.  
-![barra_navegacion](https://i.ibb.co/fYWkk0ZL/Imagen3.png)
+![barra_navegacion](https://i.ibb.co/B93pKpJ/image.png)
 
 ---
 
 ### 7.5 Sección de Comparar Precios y Reporte de Precios
 **Objetivo:** Mostrar una tabla comparativa de precios por tienda y el historial de precios.  
 **Elementos:**
-- Tabla con nombre de tienda, precio y logo  
+- Tabla con nombre de tienda y precio
 - Gráfica histórica de cambio de precios a lo largo de los meses  
 - Botón “Agregar al carrito”, "Comparar", "Reportar precio"  
 - Etiquetas como "mejor" según la configuración del usuario  
@@ -155,7 +155,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Elementos:**
 - Lista de productos con precios  
 - Subtotal y total  
-- Botón “Proceder al pago”  
+- Botón “Generar plan de compra”  
 **Función:** Representa la preparación de compra.  
 ![carrito_compras](https://i.ibb.co/rGGwMNm4/Imagen11.png)
 
@@ -166,7 +166,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Elementos:**
 - Mapa ilustrativo que muestra la distancia que tienen las tiendas del usuario  
 - Íconos de tiendas  
-- Botón “Ver ruta” o “Ver detalles”  
+- Botón “Ver productos” o “Como llegar”  
 **Función:** Simula la localización geográfica de los comercios.  
 ![mapa_interactivo_ubicacion_tiendas](https://i.ibb.co/JwBm63HQ/Imagen4.png)
 
@@ -176,7 +176,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Objetivo:** Administrar la información personal y preferencias del usuario.  
 **Elementos:**
 - Ícono o foto de perfil  
-- Campos: nombre, correo, dirección  
+- Campos: nombre, correo
 - Botón “Guardar cambios”  
 **Función:** Simula la gestión de datos del usuario.  
 ![configuraciones_perfil_usuario](https://i.ibb.co/ynncDtwH/Imagen5.png)
@@ -186,7 +186,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 ### 7.9 Configuraciones en los modos de búsqueda y preferencias de usuario
 **Objetivo:** Proporcionar al usuario un método de búsqueda que más se acople a su manera de organizar sus compras.  
 **Elementos:**
-- Tres modos: "Mejor precio", "Distancia", "Balance entre distancia y precio"  
+- Tres modos: "Mejor precio", "Más cercano", "Balance entre distancia y precio"  
 - Botón “Guardar cambios”  
 **Función:** Proporciona comodidad al usuario al momento de utilizar la aplicación  
 ![preferencias_usuario_modos_busqueda](https://i.ibb.co/WJJLb0d/Imagen6.jpg)
@@ -197,10 +197,11 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 **Objetivo:** Proporcionar ayuda directa o atención al cliente.  
 **Elementos:**
 - Ventana de chat simulada  
-- Área de texto para mensajes  
+- Área de texto para mensajes
+- Opción de preguntas rapidas para enviar mensajes predeterminados
 - Botón “Enviar”  
 **Función:** Simula un asistente automatizado.  
-![asistente_virtual_smartprice](https://i.ibb.co/HTCNRWCf/Imagen12.png)
+![asistente_virtual_smartprice]()
 
 
 ## 📊 **Análisis del diseño**
