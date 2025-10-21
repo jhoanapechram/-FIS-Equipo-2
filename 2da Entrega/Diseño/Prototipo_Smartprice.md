@@ -201,7 +201,7 @@ Cada una incluye su **objetivo, elementos visuales y funciones simuladas**.
 - Opción de preguntas rapidas para enviar mensajes predeterminados
 - Botón “Enviar”  
 **Función:** Simula un asistente automatizado.  
-![asistente_virtual_smartprice](https://ibb.co/LdqWdvtw/Whats-App-Image-2025-10-20-at-16-53-11.jpg)
+![asistente_virtual_smartprice](https://ibb.co/rGcXR6d5/imagen10.jpeg)
 
 
 ## 📊 **Análisis del diseño**
