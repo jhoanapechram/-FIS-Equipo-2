@@ -216,7 +216,7 @@ Cada pantalla conserva la coherencia estética y facilita la comprensión del fl
 **Áreas de mejora:**
 - Incorporar animaciones y retroalimentación visual.  
 - Optimizar la versión móvil.  
-- Agregar interactividad funcional (por ejemplo, simulación de pago real).  
+- Agregar elementos que proporcionen interactividad funcional.  
 
 ## 🧩 **Conclusión**
 El prototipo de SmartPrice representa una base sólida para el desarrollo de la versión funcional.  
