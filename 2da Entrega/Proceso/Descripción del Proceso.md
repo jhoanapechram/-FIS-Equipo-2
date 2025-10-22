@@ -62,7 +62,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 | Recopilar y organizar todos los comentarios, sugerencias y observaciones obtenidas durante la validación y pruebas de simulación. | Jhoana Pech (registra y clasifica los comentarios), Kevin Morales (valida la consistencia de la información), Emilio Arellano (verifica). | `Retroalimentacion_Cliente.md`     |
 | Aplicar los ajustes al diseño y la funcionalidad del prototipo con base en los resultados de la validación y simulación de tareas. | Jhoana Pech (realiza ajustes de diseño y funcionalidad),  Alejandra Aguilar (verifica la usabilidad final y hace correcciones). | `Prototipo_Mejorado.md`            |
 | Mantener actualizado el repositorio con todas las versiones del prototipo y documentación en formato Markdown, garantizando la trazabilidad del proceso. | Bianca Ramos (gestiona el repositorio y actualiza archivos `.md`), José Correa (revisa la estructura de documentación). | Branch `Segunda-Entrega` actualizado      |
-| Documentar bitácora de avances del sprint. | Kevin Morales| Bitácora sprint #3.md      |
+| Documentar bitácora de avances del sprint. | José Correa| Bitácora_Sprint3.md      |
 
 
 ---
