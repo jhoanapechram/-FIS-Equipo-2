@@ -1,7 +1,7 @@
 
 # Reporte de Análisis - Encuesta de Validación del Prototipo SmartPrice
 
-## 📊 Resumen Ejecutivo
+## 📊 Resumen
 
 ### Estado General del Prototipo
 **Evaluación Global**: Positiva  
