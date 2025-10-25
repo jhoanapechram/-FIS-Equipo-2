@@ -69,7 +69,7 @@
 1. **Información adicional solicitada**:
    - Cantidad del producto
    - Información nutrimental
-   - Más opciones de supermercados sin abrir producto
+   - Más opciones de supermercados
 
 2. **Mejoras visuales**:
    - Imágenes reales de productos vs ilustraciones
@@ -142,18 +142,6 @@
 | Facilidad de uso | Moderada a Alta |
 | Utilidad de respuestas | Variable (Crítico) |
 | Velocidad | Necesita mejora |
-
-#### Problemas Críticos Identificados
-🚨 **PROBLEMAS GRAVES**:
-1. Calidad de respuestas: "A veces no ponía respuestas claras"
-2. Cobertura limitada: "pregunté por huevos de menos de 30 piezas y no tenía información"
-3. Velocidad: "sea más rápido"
-4. Respuestas en inglés: "Idioma contesto una pregunta en puro ingles"
-
-⚠️ **PROBLEMAS MODERADOS**:
-1. Falta de personalidad: "Que sea más como chatgpt y te hable chistoso"
-2. Funcionalidades limitadas
-3. Falta de integración con otras secciones
 
 #### Funcionalidades Solicitadas para el ChatBot
 1. **Integración con pedidos**:
