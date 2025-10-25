@@ -1,6 +1,6 @@
 # Reporte de Análisis - Encuesta de Validación del Prototipo SmartPrice
 
-## 📊 Resumen
+## Resumen
 
 ### Estado General del Prototipo
 **Evaluación Global**: Positiva  
@@ -46,12 +46,12 @@
 | 1-2 (Poco Clara) | Mínima | ~5% |
 
 #### Comentarios Destacados
-✅ **Positivos**:
+**Positivos**:
 - "Para nada confusa"
 - "Interfaz clara y sencilla"
 - "No, ninguna parte confusa"
 
-❌ **Negativos**:
+**Negativos**:
 - "Un poco en el proceso de compra" (usuario específico)
 
 ### 3. Interfaz de Productos
@@ -159,9 +159,9 @@
    - "Más opciones de respuesta"
    - "Más acceso a información"
 
-## 📈 Tendencias y Patrones Identificados
+## Tendencias y Patrones Identificados
 
-### Fortalezas Consistentes
+### Fortalezas 
 1. **Propósito claro e inmediato**
 2. **Diseño intuitivo en flujos principales**
 3. **Funcionalidades de comparación bien implementadas**
