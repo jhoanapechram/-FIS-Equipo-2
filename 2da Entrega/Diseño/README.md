@@ -33,13 +33,4 @@ El propósito de esta carpeta es documentar la fase de diseño y validación de 
 
 ---
 
-##  Resumen del Sprint 3 (Diseño)
-
-Durante este sprint se avanzó en:
-
-- Correspondencia entre requisitos y pantallas del prototipo.  
-- Creación y documentación del prototipo visual con mockups y rutas de navegación.  
-- Aplicación de encuestas y validación remota con usuarios finales.  
-- Análisis de retroalimentación para priorizar ajustes (legibilidad, mejoras al chatbot, datos contextuales como horarios y costos de envío).  
-- Planificación de mejoras a implementar en el siguiente sprint de desarrollo.
 
