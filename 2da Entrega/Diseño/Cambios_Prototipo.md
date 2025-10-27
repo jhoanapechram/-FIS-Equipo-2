@@ -1,4 +1,4 @@
-# Cambios – SmartPrice Mockup
+# Cambios – SmartPrice Prototipo
 
 Cambios que se realizarán al prototipo de SmartPrice, con el objetivo de mejorar la presentación visual, la claridad de navegación y la coherencia con los requisitos definidos del proyecto tomando en cuenta los comentarios de los usuarios.
 
