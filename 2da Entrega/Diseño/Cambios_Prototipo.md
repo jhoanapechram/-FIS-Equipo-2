@@ -65,7 +65,6 @@ Cambios Específicos para el Mockup de SmartPrice
   - "¿Dónde está más barata la leche?"
   - "Muéstrame ofertas de hoy"
   - "Ayúdame a ahorrar en mi lista"
-- Indicador de estado: "🟢 Conectado" / "🤔 Procesando..."
 - Agregar botón "💬 Hablar con humano" (cuando corresponda)
 - Tooltips de ayuda: "Pregúntame por precios, ofertas o tiendas"
   
