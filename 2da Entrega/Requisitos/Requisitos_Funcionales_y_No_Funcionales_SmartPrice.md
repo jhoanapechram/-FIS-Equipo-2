@@ -25,19 +25,18 @@
 
 | Categoría | Descripción del Requisito | Experiencia Proporcionada al Usuario | Forma de Verificación |
 |------------|---------------------------|--------------------------------------|------------------------|
-| **Rendimiento** | Mostrar resultados en < 3 s en el 95 % de las búsquedas. | Resultados casi instantáneos sin esperas largas. | Pruebas con 100 búsquedas; 95 deben responder en ≤ 3 s. |
-| **Seguridad** | Cifrado SSL/TLS en todas las comunicaciones. | Navegación segura con datos protegidos. | Análisis con SSL Labs con calificación “A” o superior. |
+| **Rendimiento** | Mostrar resultados en < 3 s en el 95 % de las búsquedas. | El sistema deberá mostrar los resultados de búsqueda en menos de 3 segundos en al menos el 95 % de las consultas. | Pruebas de rendimiento con 100 búsquedas; al menos 95% deben responder en ≤ 3 s. |
+| **Seguridad** | Cifrado SSL/TLS en todas las comunicaciones. | La comunicación entre el cliente y el servidor deberá realizarse mediante cifrado SSL/TLS para proteger datos de precios y credenciales. | Análisis con SSL Labs con calificación “A” o superior. |
 | **Usabilidad** | Un nuevo usuario debe realizar su primera búsqueda en < 2 min sin tutorial. | Facilidad de uso sin instrucciones. | Pruebas con usuarios nuevos; tiempo promedio < 2 min. |
 | **Confiabilidad — Disponibilidad** | Disponibilidad mínima del 99 % mensual. | El sistema casi siempre estará activo (máx. 7.2 h inactivo/mes). | Reportes de uptime de herramientas de monitoreo. |
-| **Confiabilidad — Compatibilidad** | Soporte para navegadores modernos y móviles Android/iOS. | Accesible desde cualquier dispositivo y navegador. | Pruebas en Chrome, Edge, Firefox, Safari, Opera, Brave, Android y iOS. |
+| **Confiabilidad — Compatibilidad** | Compatibilidad y adaptabilidad con distintos dispositivos. | Interfaz adaptable a distintos dispositivos. | Pruebas en dispositivos móviles y computadoras con distintos navegadores. |
 | **Rendimiento — Carga Concurrente** | Soporte mínimo para 5,000 usuarios concurrentes. | Sin lentitud en uso normal con muchos usuarios conectados. | Pruebas de carga simulando 5,000 usuarios. |
 | **Desarrollo — Mantenibilidad** | Código documentado y bajo estándares de programación. | Sistema fácil de mantener y mejorar. | Revisiones periódicas de código y documentación. |
 | **Usabilidad — Accesibilidad** | Cumplimiento del estándar WCAG 2.1 nivel AA. | Accesible para personas con discapacidad visual o motriz. | Auditorías automáticas + pruebas con lectores de pantalla. |
 | **Rendimiento — Escalabilidad** | Escalar hasta 50,000 usuarios concurrentes en temporadas altas. | Funcionamiento fluido en eventos como Buen Fin o Navidad. | Pruebas de estrés simulando 50,000 usuarios. |
 | **Protección — Privacidad de Datos** | Cumplimiento con LFPDPPP (México). | Protección de datos personales y derechos ARCO garantizados. | Auditoría legal + revisión de aviso de privacidad y formularios ARCO. |
-| **Operacionales — Integración de APIs** | Integración con al menos 5 APIs de supermercados. | Información de precios en tiempo real y confiable. | Pruebas con 1,000 consultas por API (≥ 95 % exitosas). |
+| **Operacionales — Integración de APIs** | El sistema deberá integrarse con al menos 5 APIs de supermercados para obtener precios actualizados en tiempo real. | Información de precios en tiempo real y confiable. | Pruebas con 1,000 consultas por API (≥ 95 % exitosas). |
 | **Legales — Normativa Comercial** | Cumplimiento con regulaciones de comercio electrónico y protección al consumidor. | Términos claros, información fiscal visible y mecanismo de quejas. | Auditoría legal de términos y mecanismos de reclamaciones. |
-| **Seguridad — Backup y Recuperación** | Copias de seguridad automáticas cada 24 h y recuperación en < 4 h. | Minimiza la pérdida de información ante fallos del servidor. | Configuración de backups diarios a las 2:00 AM. Simulación de fallo y cronometraje del proceso de restauración. |
-| **Documentación** | Debe existir documentación técnica y manual de usuario. | Facilita mantenimiento y uso del sistema. | Verificación de carpeta “documentos” con README, diagramas C4, API docs y manual de usuario con ≥ 20 páginas. |
+
 
 ---
