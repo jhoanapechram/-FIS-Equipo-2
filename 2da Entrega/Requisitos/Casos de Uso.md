@@ -130,25 +130,33 @@
 | **Requisitos Asociados:** | **RF8**, RNF (Legales) |
 
 
-
 | **Elemento** | **Descripción** |
-|---|---|
+|---------------|----------------|
 | **Identificador:** | CU-008 |
-| **Nombre:** | Gestionar Perfil de Usuario |
-| **Actor Principal:** | Usuario Registrado |
-| **Propósito:** | Permitir al usuario gestionar sus preferencias y datos personales |
-| **Flujo Principal:** | 1. Usuario accede a "Mi Perfil"<br>2. Edita sus preferencias (tiendas favoritas, radio de búsqueda)<br>3. Guarda los cambios<br>4. El sistema actualiza las recomendaciones basándose en las nuevas preferencias |
-| **Reglas de Negocio:** | Los datos personales se protegen según la Ley Federal de Protección de Datos |
-| **Requisitos Asociados:** | **RF9**, RNF (Protección de datos) |
+| **Nombre:** | Iniciar Sesión |
+| **Actor Principal:** | Usuario |
+| **Propósito:** | Permitir que el usuario acceda a su cuenta mediante la validación de sus credenciales para utilizar las funcionalidades personalizadas del sistema. |
+| **Disparador:** | El usuario selecciona la opción **“Iniciar Sesión”** en la pantalla principal de la aplicación. |
+| **Precondiciones:** | - El usuario debe contar con una cuenta registrada en el sistema.<br>- En caso de ser un usuario nuevo, podrá acceder registrarse antes de iniciar sesión.<br>- El sistema debe tener conexión con la base de datos de usuarios. |
+| **Flujo Principal:** | 1. El usuario selecciona la opción **“Iniciar Sesión”**.<br>2. El sistema muestra el formulario de autenticación.<br>3. El usuario introduce su **correo electrónico** y **contraseña**.<br>4. El sistema valida las credenciales comparándolas con la base de datos.<br>5. Si las credenciales son correctas, el sistema permite el acceso y muestra la interfaz principal personalizada.<br>6. El sistema registra la fecha y hora del inicio de sesión. |
+| **Flujos de Excepción:** | - **E1:** Si el usuario introduce credenciales incorrectas, el sistema muestra el mensaje: *“Correo o contraseña incorrectos”* y permite reintentar.<br>- **E2:** Si el usuario no posee una cuenta registrada, el sistema muestra el mensaje: *“No se encontró una cuenta con este correo”* y ofrece la opción **“Registrarse”*.<br>- **E3:** Si no hay conexión a internet, el sistema muestra el mensaje: *“No hay conexión, inténtelo más tarde”*.<br>- **E4:** Si la cuenta se encuentra bloqueada por múltiples intentos fallidos, el sistema muestra: *“Su cuenta ha sido temporalmente bloqueada por seguridad”*. |
+| **Postcondiciones:** | - El usuario accede correctamente a su cuenta y puede gestionar sus preferencias o utilizar las funciones del sistema.<br>- El sistema registra la sesión activa y actualiza el historial de accesos. |
+| **Reglas de Negocio:** | - Las credenciales deben coincidir exactamente con las registradas en la base de datos.<br>- Después de **tres intentos fallidos**, la cuenta se bloquea temporalmente por motivos de seguridad.<br>- Las contraseñas deben almacenarse de forma **cifrada** conforme a la **Ley Federal de Protección de Datos Personales**. |
+| **Requisitos Asociados:** | RF8, RNF (Protección de datos) |
 
 
 | **Elemento** | **Descripción** |
-|---|---|
+|---------------|----------------|
 | **Identificador:** | CU-009 |
 | **Nombre:** | Recibir Notificaciones de Ofertas |
 | **Actor Principal:** | Usuario Registrado |
-| **Propósito:** | Recibir alertas cuando productos seguidos bajen de precio |
-| **Flujo Principal:** | 1. Usuario activa "seguimiento" en un producto<br>2. Sistema monitorea el precio<br>3. Cuando detecta baja de precio ≥5%, envía notificación<br>4. Usuario recibe alerta en la app |
-| **Reglas de Negocio:** | Solo enviar notificaciones si el precio baja al menos 5% |
-| **Requisitos Asociados:** | **RF10** |
+| **Propósito:** | Permitir que el usuario reciba notificaciones automáticas cuando los productos que sigue presenten una reducción de precio significativa. |
+| **Disparador:** | El sistema detecta una disminución en el precio de un producto seguido por el usuario. |
+| **Precondiciones:** | - El usuario debe haber iniciado sesión y tener activa la opción de **seguimiento de productos**.<br>- Los productos deben estar registrados en la base de datos con historial de precios.<br>- El sistema debe tener conexión a internet y acceso a la base de datos de productos. |
+| **Flujo Principal:** | 1. El usuario activa la opción **“Seguir producto”** desde la página del producto.<br>2. El sistema registra el producto en la lista de seguimiento del usuario.<br>3. El sistema monitorea periódicamente los precios de los productos seguidos.<br>4. Si se detecta una reducción de **≥ 5%**, el sistema genera una notificación.<br>5. El usuario recibe la alerta en la aplicación o por el canal de comunicación configurado. |
+| **Flujos de Excepción:** | - **E1:** Si el producto deja de estar disponible, el sistema elimina el seguimiento y notifica al usuario.<br>- **E2:** Si las notificaciones están desactivadas, el sistema guarda el evento pero no envía alerta.<br>- **E3:** Si el sistema no puede acceder a la base de datos, muestra un mensaje de error y registra el fallo para revisión. |
+| **Postcondiciones:** | - El usuario recibe la notificación correspondiente cuando se cumple la condición de descuento.<br>- El sistema mantiene actualizada la lista de productos seguidos. |
+| **Reglas de Negocio:** | - Solo se enviarán notificaciones cuando el precio del producto disminuya en **al menos un 5%**.<br>- Las notificaciones deben entregarse al usuario en tiempo razonable después de detectarse la baja de precio. |
+| **Requisitos Asociados:** | RF10 |
+
 
