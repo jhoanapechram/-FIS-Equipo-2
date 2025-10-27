@@ -1,27 +1,76 @@
 # Cambios – SmartPrice Prototipo
+Cambios Específicos para el Mockup de SmartPrice
 
-Cambios que se realizarán al prototipo de SmartPrice, con el objetivo de mejorar la presentación visual, la claridad de navegación y la coherencia con los requisitos definidos del proyecto tomando en cuenta los comentarios de los usuarios.
+1. **PROBLEMA**: "Letras chiquitas" - Múltiples quejas
+**CAMBIOS EN MOCKUP**:
+- Aumentar tamaño fuente principal de 14px → 16px
+- Títulos principales: 24px → 28px
+- Subtítulos: 16px → 18px
+- Mejorar contraste texto/fondo: #333 sobre #FFF
+- Agregar iconos visuales junto a "Comparar", "Ahorrar", "Encontrar"
+  
+2. **PROBLEMA**: "No encontré elemento que parezca comparación"
 
-## 1. Ajuste de colores y estilo general
-Se modificará la paleta de colores para mantener una apariencia más profesional y coherente con la identidad visual de la aplicación y el imagotipo. Se buscará que los tonos sean consistentes entre las pantallas principales y secundarias.
+**CAMBIOS EN MOCKUP**:
+- Renombrar "Comprar" → "Comparar Precios"
+- Agregar icono de gráfica 📊 junto a "Comparar"
+- Badge numérico en icono carrito mostrando items
+- Icono ChatBot más prominente con indicador "Activo"
+- 
+3. **PROBLEMA**: "Podrían agregar datos extra de los productos"
 
-## 2. Reubicación de elementos en pantalla
-Algunos componentes del pproototipo, como botones, encabezados y campos de búsqueda, serán reposicionados para mejorar la usabilidad y la legibilidad. Esto permitirá que los usuarios identifiquen más fácilmente las acciones principales dentro de la interfaz.
+**CAMBIOS EN MOCKUP**:
+- Agregar badge "Validado Profeco" ⭐ (RF8)
+- Mostrar precio por unidad.
+- Indicador visual de tendencia: ↗️ Precio subiendo, ↘️ Bajando
+- Etiqueta "Oferta Confiable" con colores:
+  - 🟢 ALTA (>7 días)
+  - 🟡 MEDIA (3-7 días)
+  - 🔴 BAJA (<3 días)
 
-## 3. Corrección de etiquetas y textos
-Se revisarán las etiquetas, títulos y mensajes de texto para garantizar que sean claros, concisos y uniformes en todas las pantallas. También se corregirá la tipografía.
+4. **PROBLEMA**: "Mostrar en grande los comparativos"
 
-## 4. Optimización del flujo de navegación
-Se realizarán pequeños ajustes en la secuencia de pantallas para lograr una navegación más intuitiva. La estructura de pasos y accesos directos se modificará para que el usuario pueda desplazarse sin confusión.
+**CAMBIOS EN MOCKUP**:
+- Gráfico de barras horizontal mostrando precios por tienda
+- Diferencia de precio destacada.
+- Indicador de distancia + tiempo estimado
+- Selector de modo de búsqueda visible:
+  - 💰 Mejor Precio
+  - 📍 Más Cercano
+  - ⚖️ Balance
 
-## 5. Inclusión de íconos representativos
-Se incorporarán íconos visuales en botones y secciones clave para reforzar la comprensión de las funciones, especialmente en las opciones del ChatBot y el menú principal.
+5. **PROBLEMA**: "Alertas de precio confusas"
 
-## 6. Ajustes en la sección del ChatBot
-El diseño del ChatBot se actualizará para que se perciba más integrado con el resto de la interfaz. Se mejorará la disposición del cuadro de conversación y los botones de respuesta rápida.
+**CAMBIOS EN MOCKUP**:
+- Separar sección "Alertas" del resumen principal
+- Iconos diferenciados: 🔔 Alerta activa, 💤 Inactiva
+- Mostrar ahorro total más prominente
+- Tooltip explicativo en "Ahorro estimado"
+  
+6. **PROBLEMA**: Faltan horarios y información útil
 
-## 7. Mejora en la consistencia de componentes
-Se verificará que todos los elementos compartan el mismo formato visual (bordes, sombras, márgenes y tamaños), asegurando una presentación uniforme en todas las vistas del prototipo.
+**CAMBIOS EN MOCKUP**:
+- Agregar badge de horario: "🕒 Abierto hasta 22:00"
+- Indicador de afluencia: 🟢 Poca, 🟡 Media, 🔴 Mucha
+- Filtro rápido por: "Abierto ahora", "Envío a domicilio"
+- Info bubble en tiendas con:
+  - Horarios completos
+  - Servicios: Estacionamiento, Delivery, etc.
 
-## 8. Eliminación de elementos redundantes
-Se eliminarán componentes repetidos o innecesarios que no aporten valor al flujo principal del usuario, con el fin de simplificar la interfaz y evitar sobrecarga visual.
+7. **PROBLEMA**: "Respuestas poco claras", "No entendí su propósito"
+
+**CAMBIOS EN MOCKUP**:
+- Header del chat: "Asistente de Compras - Te ayudo a comparar precios"
+- Burbujas de ejemplo más específicas:
+  - "¿Dónde está más barata la leche?"
+  - "Muéstrame ofertas de hoy"
+  - "Ayúdame a ahorrar en mi lista"
+- Indicador de estado: "🟢 Conectado" / "🤔 Procesando..."
+- Agregar botón "💬 Hablar con humano" (cuando corresponda)
+- Tooltips de ayuda: "Pregúntame por precios, ofertas o tiendas"
+  
+8. **PROBLEMA**: Configuraciones no descubiertas
+**CAMBIOS EN MOCKUP**:
+- Agregar control deslizante para "Radio de búsqueda"
+- Selector de "Canal de notificaciones": 🔔 Push, ✉️ Email
+- Toggle para "Modo ahorro extremo"
