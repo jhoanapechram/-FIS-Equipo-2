@@ -1,5 +1,5 @@
 #### **Casos de Uso de la Plataforma Digital SmartPrice**
-#### **CU-001: Consultar y Comparar Precios en Tiempo Real**
+
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -18,7 +18,6 @@
 | **Reglas de Negocio:**              | **RN-001:** Los precios se deben obtener en tiempo real de las APIs. (RF1).<br>**RN-002:** El tiempo total de respuesta debe ser <3 segundos en el 95% de los casos (RNF-Rendimiento).                                                                                                                        |
 | **Requisitos Asociados:**           | **RF1, RF3.** RNF (Rendimiento: <3s), RNF (Confiabilidad: 99% uptime).                                                                                                                                                                                                                                      |
 
-#### **CU-002: Visualizar Historial y Evolución de Precios**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +37,6 @@
 | **Requisitos Asociados:**           | **RF2.**                                                                                                                                          
 
 
-#### **CU-003: Recibir Predicción de Precios con IA**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,7 +55,6 @@
 | **Reglas de Negocio:**              | **RN-004:** Las predicciones deben generarse utilizando modelos de IA entrenados con el historial de precios. (RF4).                                                                                                                                                                                           |
 | **Requisitos Asociados:**           | **RF4.**                                                                                                                                                                                                                                                                                                    |
 
-#### **CU-004: Validar Confiabilidad de una Oferta**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -76,7 +73,6 @@
 | **Reglas de Negocio:**              | **RN-005:** El nivel de validez se asigna en función de la duración histórica y vigencia de la oferta. (RF5).<br>**RN-006:** Una oferta se marca como vencida automáticamente al pasar su fecha de fin.                                                                                                        |
 | **Requisitos Asociados:**           | **RF5.**                                                                                                                                                                                                                                                                                                    |
 
-#### **CU-005: Recomendar Tienda Más Conveniente**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -97,7 +93,6 @@
 | **Requisitos Asociados:**           | **RF6.**                                                                                                                                                                                                                                                                                                    |
 
 
-#### **CU-006: Interactuar con el Asistente Inteligente (Chatbot)**
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -116,7 +111,6 @@
 | **Reglas de Negocio:**              | **RN-008:** El chatbot debe utilizar información verificada de la base de datos interna y de Profeco. (RF7).                                                                                                                                                                                                   |
 | **Requisitos Asociados:**           | **RF7.**                                                                                                                                                                                                                                                                                                    |
 
-#### **CU-007: Integrar y Validar Datos con Profeco (Versión Simplificada)**
 
 | **Elemento**                        | **Descripción** |
 |---|---|
@@ -136,7 +130,6 @@
 | **Requisitos Asociados:** | **RF8**, RNF (Legales) |
 
 
-#### **CU-008: Gestionar Perfil de Usuario**
 
 | **Elemento** | **Descripción** |
 |---|---|
@@ -148,7 +141,6 @@
 | **Reglas de Negocio:** | Los datos personales se protegen según la Ley Federal de Protección de Datos |
 | **Requisitos Asociados:** | **RF9**, RNF (Protección de datos) |
 
-#### **CU-009: Recibir Notificaciones de Ofertas**
 
 | **Elemento** | **Descripción** |
 |---|---|
