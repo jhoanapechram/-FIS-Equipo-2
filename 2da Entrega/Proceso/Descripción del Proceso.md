@@ -78,10 +78,9 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 | **Actividad** | **Tareas y Participantes** | **Entregable** |
 |----------------|------------------|----------------|
-| Elaborar presentación final (diapositivas, diagramas, ritmo y claridad). | Jhoana Pech y Alejandra Aguilar (aportan ajustes visuales y fluidez en el contenido), Emilio Arellano (revisa el ritmo y la coherencia del discurso), Bianca Ramos (estructura la presentación visual con transiciones y orden lógico). | `Presentacion_Final.pptx` |
+| Elaborar un video de presentación final para la segunda entrega. | Jhoana Pech y Alejandra Aguilar (aportan ajustes visuales y fluidez en el contenido), Emilio Arellano (revisa el ritmo y la coherencia del discurso), Bianca Ramos (estructura la presentación visual con transiciones y orden lógico). | `Presentacion_Final` |
 | Redactar competencias genéricas desarrolladas durante el proyecto. | Ana Angulo (redacta las competencias con base en el desempeño del equipo), Kevin Morales (verifica coherencia y redacción final). | `Competencias_Genericas.md` |
 | Redactar competencias específicas desarrolladas durante el proyecto. | José Correa (redacta el desarrollo de competencias técnicas observadas), Alejandra Aguilar (verifica claridad y cohesión). | `Competencias_Especificas.md` |
 | Elaborar y documentar métrica de contribución individual con evidencias. | José Correa (calcula y organiza la métrica de contribución de cada integrante), Alejandra Aguilar (verifica los datos y sube los archivos al repositorio). | `Metrica_Contribucion.md` |
-| Revisar organización final del repositorio y subir evidencia de cierre. | José Correa (organiza la estructura final del repositorio), Emilio Arellano (verifica la consistencia y elimina duplicados o archivos innecesarios). | Repositorio final limpio y documentado |
 | Registrar bitácora final de acuerdos y cierre de sprints. | Alejandra Aguilar (redacta los acuerdos y conclusiones finales), Jhoana Pech (verifica contenido y aprueba cierre). | `Bitacora_Final.md` |
-| Realizar un resumen de los cambios completados del producto entre la primera y la segunda entrega. | José Correa (resume y documenta los cambios en funcionalidad, diseño y estructura del proyecto). | `Evolución_Producto.md` |
+| Realizar un resumen de los cambios completados del producto entre la primera y la segunda entrega. | Kevin Morales (resume y documenta los cambios en funcionalidad, diseño y estructura del proyecto). | `Evolución_Producto.md` |
