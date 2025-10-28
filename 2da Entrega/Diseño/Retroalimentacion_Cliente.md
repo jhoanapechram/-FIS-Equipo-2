@@ -11,7 +11,7 @@
 | Usuarios que entendieron el propósito | Mayoría |
 | Claridad inmediata | Alta |
 
-#### Elementos que Facilitaron el Entendimiento
+#### Elementos que facilitaron el entendimiento
 - Nombre "SmartPrice" (mencionado 8+ veces)
 - Descripción/landing page (mencionado 6+ veces)
 - Logo y diseño (mencionado 5+ veces)
