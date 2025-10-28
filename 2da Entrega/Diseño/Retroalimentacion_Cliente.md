@@ -76,7 +76,7 @@
 
 #### Funcionalidades valoradas
 ✓ Historial de precios
-✓ Predicciones de precios ("bajará en 7 días, confianza: 85%")
+✓ Predicciones de precios
 ✓ Comparación entre múltiples tiendas
 ✓ Distancias y ubicaciones
 
@@ -98,7 +98,7 @@
 ✓ Comparación entre supermercados
 
 #### Puntos de confusión 
-- "Las alertas de precio" (mencionado como potencialmente confuso)
+- "Las alertas de precio" 
 - "La comparativa de varios productos en conjunto con distintos precios"
 - Proceso percibido como "lento" por algunos usuarios
 
@@ -133,7 +133,7 @@
 |---------|------------|
 | Diseño visual | Atractivo |
 | Facilidad de uso | Moderada a Alta |
-| Utilidad de respuestas | Variable (Crítico) |
+| Utilidad de respuestas | Variable |
 | Velocidad | Necesita mejora |
 
 #### Funcionalidades solicitadas para el ChatBot
