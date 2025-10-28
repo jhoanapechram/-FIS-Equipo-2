@@ -61,7 +61,8 @@ El prototipo de SmartPrice es de **fidelidad media**, ya que combina elementos d
 ## 🛠️ **Herramientas utilizadas**
 - **Lenguajes:** HTML, CSS y JavaScript.  
 - **Editor:** Visual Studio Code.  
-- **Plataforma:** GitHub Pages.  
+- **Plataforma:** GitHub Pages.
+- **IA:** DeepSeek.
 - **Enlace del prototipo:**  
   🔗 [https://jhoanapechram.github.io/Mockup-SmartPrice/](https://jhoanapechram.github.io/Mockup-SmartPrice/)
 
