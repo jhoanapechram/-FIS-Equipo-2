@@ -27,12 +27,4 @@ Los archivos aquí contenidos permiten:
 
 ---
 
-## Resumen del Sprint 1 en el aparado de requisitos
 
-Durante este sprint se realizaron las siguientes actividades:
-- Refinamiento y validación de los **requisitos funcionales y no funcionales**.  
-- Redacción de **historias de usuario con criterios de aceptación medibles**.  
-- Definición y documentación de **casos de uso** y su **diagrama visual**.  
-- **Priorización de los requisitos** según su impacto y necesidad para el funcionamiento básico del sistema.
-
----
