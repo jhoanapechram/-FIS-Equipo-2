@@ -161,7 +161,7 @@
 4. **Experiencia de registro sencilla**
 5. **Interfaz general considerada atractiva**
 
-### Debilidades Recurrentes
+### Debilidades 
 1. **ChatBot con problemas fundamentales**
 2. **Problemas de legibilidad (tamaño de fuente)**
 3. **Falta de información contextual (horarios, envíos)**
@@ -171,5 +171,3 @@
 1. **Integración completa del ChatBot con funcionalidades**
 2. **Información en tiempo real (tráfico, horarios)**
 3. **Experiencia personalizada basada en preferencias**
-4. **Características sociales o comunitarias**
-
