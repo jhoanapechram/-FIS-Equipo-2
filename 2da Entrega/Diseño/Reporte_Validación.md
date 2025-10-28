@@ -7,7 +7,7 @@
 
 ## 👥 Participantes
 - Equipo de desarrollo del proyecto Smart Price.  
-- Usuarios finales: hombres y mujeres consumidores frecuentes y estudiantes universitarios de edades entre **22 a 35 años**.
+- 16 Usuarios finales: hombres y mujeres consumidores frecuentes y estudiantes universitarios de edades entre **22 a 35 años**.
 
 ---
 
