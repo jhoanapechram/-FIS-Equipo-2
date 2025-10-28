@@ -78,7 +78,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 | **Actividad** | **Tareas y Participantes** | **Entregable** |
 |----------------|------------------|----------------|
-| Elaborar un video de presentación final para la segunda entrega. | Jhoana Pech y Alejandra Aguilar (aportan ajustes visuales y fluidez en el contenido), Emilio Arellano (revisa el ritmo y la coherencia del discurso), Bianca Ramos (estructura la presentación visual con transiciones y orden lógico). | `Presentacion_Final` |
+| Elaborar un video de presentación final para la segunda entrega. | Jhoana Pech y Alejandra Aguilar (aportan ajustes visuales y fluidez en la edición del contenido), Emilio Arellano (narra el video y revisa el ritmo y la coherencia del discurso), Bianca Ramos (estructura el contenido del video con orden lógico). | `Presentacion_Final` |
 | Redactar competencias genéricas desarrolladas durante el proyecto. | Ana Angulo (redacta las competencias con base en el desempeño del equipo), Kevin Morales (verifica coherencia y redacción final). | `Competencias_Genericas.md` |
 | Redactar competencias específicas desarrolladas durante el proyecto. | José Correa (redacta el desarrollo de competencias técnicas observadas), Emilio Arellano (verifica claridad y cohesión). | `Competencias_Especificas.md` |
 | Elaborar y documentar métrica de contribución individual con evidencias. | José Correa (calcula y organiza la métrica de contribución de cada integrante), Alejandra Aguilar (verifica los datos y sube los archivos al repositorio). | `Metrica_Contribucion.md` |
