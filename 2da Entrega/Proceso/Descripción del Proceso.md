@@ -32,9 +32,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 ## 🗓️ **Cronograma de Sprints con Actividades, Entregables y Responsables**
 
-# **Planificación de Entregables — Proyecto SmartPrice**
-
-## **Sprint 1 — 7 al 13 de octubre**
+### **Sprint 1 — 7 al 13 de octubre**
 
 | **Actividad** | **Tareas y Participantes** | **Entregable** |
 |----------------|------------------|----------------|
@@ -48,7 +46,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 ---
 
-## **Sprint 2 — 14 al 20 de octubre**
+### **Sprint 2 — 14 al 20 de octubre**
 
 | **Actividad** | **Tareas y Participantes** | **Entregable** |
 |----------------|------------------|----------------|
@@ -59,7 +57,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 ---
 
-## **Sprint 3 — 21 al 27 de octubre**
+### **Sprint 3 — 21 al 27 de octubre**
 
 | **Actividad** | **Tareas y Participantes** | **Entregable** |
 |----------------|------------------|----------------|
@@ -73,7 +71,7 @@ Mejorar el producto desarrollado en la primera entrega, asegurando la evolución
 
 ---
 
-## **Sprint 4 — 28 al 31 de octubre**
+### **Sprint 4 — 28 al 31 de octubre**
 
 | **Actividad** | **Tareas y Participantes** | **Entregable** |
 |----------------|------------------|----------------|
