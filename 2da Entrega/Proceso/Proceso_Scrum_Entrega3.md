@@ -18,7 +18,7 @@
 | Proceso: Gestión | Organizar bitácoras de reuniones, acuerdos y tareas. | Bianca Ramos | Bitacoras_Completas/ |
 | Proceso: Métrica de Contribución | Actualizar métrica porcentual por integrante. | Emilio Arellano | Metrica_Contribucion_Entrega3.md |
 | Proceso: Repositorio | Organizar branch de la tercera entrega. | Jhoana Pech | Branch Tercera-Entrega |
-| | Actualizar README principal. | Ana Angulo | README.md |
+| | Actualizar README principal y crear carpetas nuevas. | Ana Angulo | README.md |
 
 
 # 📌 Sprint 2 – 8 al 13 de noviembre
