@@ -73,5 +73,5 @@
 | Competencias Específicas | Describir habilidades técnicas desarrolladas. | José Correa | Competencias_Especificas_Entrega3.md |
 | Crítica Constructiva | Redactar observaciones y sugerencias para mejorar el curso. | Emilio Arellano | Critica_Curso_Entrega3.md |
 | Evolución de Interfaces | Actualizar prototipos (baja, media, alta fidelidad). | Alejandra Aguilar | Evolución_Interfaces.md| Evolución_Interfaces.md |
-| | Refinar guías de diseño | Emilio Arellano ||
+| | Refinar guías de diseño | Emilio Arellano |
 | | Resumir cambios entre segunda y tercera entrega. | Jhoana Pech. Alejandra Aguilar | |
