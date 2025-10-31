@@ -1,6 +1,6 @@
 # -FIS-Equipo-2
-Segunda Entrega
-Prueba de Desempeño
+Tercera Entrega
+
 | **Integrante** | **Responsabilidad Principal** |
 |----------------|------------------------------|
 | Jhoana Pech ![Jhoana Pech](imagenes/Foto%20Jhoana.jpeg)| Coordinación y seguimiento del proceso |
