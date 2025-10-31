@@ -1,0 +1,2 @@
+# Video presentación de la primera entrega
+[![Video](https://i.ibb.co/KpzbhX2S/Whats-App-Image-2025-10-30-at-16-53-40.jpg)](https://alumnosuady-my.sharepoint.com/:v:/g/personal/a22201473_alumnos_uady_mx/EWcBB6zrgONMlkuzQB8wXRYBfZvfgHE0q7oKeKFIWJu05A?e=vRoIcz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
