@@ -1,14 +1,7 @@
-# Reporte de Análisis - Encuesta de Validación del Prototipo SmartPrice
+# Reporte de Análisis - Encuesta de validación del prototipo SmartPrice
 
-## Resumen
 
-### Estado General del Prototipo
-**Evaluación Global**: Positiva  
-**Nivel de Comprensión**: Alto  
-**Facilidad de Uso**: Buena a Excelente  
-**Áreas Críticas**: ChatBot y Legibilidad
-
-## Análisis por Sección
+## Análisis por cada sección 
 
 ### 1. Página de Inicio y Propósito de la App
 
@@ -18,19 +11,19 @@
 | Usuarios que entendieron el propósito | Mayoría |
 | Claridad inmediata | Alta |
 
-#### Elementos que Facilitaron el Entendimiento
+#### Elementos que facilitaron el entendimiento
 - Nombre "SmartPrice" (mencionado 8+ veces)
 - Descripción/landing page (mencionado 6+ veces)
 - Logo y diseño (mencionado 5+ veces)
 - Eslogan "Tu compra inteligente"
 - Diseño intuitivo general
 
-#### Barreras Identificadas
+#### Barreras identificadas
 - **Tamaño de fuente**: "las letras chiquitas" (múltiples usuarios)
 - **Falta de ejemplos visuales**: "no encontré un elemento que parezca que es de comparación"
 - **Minimalismo excesivo**: "diseño es un poco minimalista y puede que no sea tan claro qué pasos seguir"
 
-#### Sugerencias de Mejora
+#### Sugerencias de mejora
 - Aumentar tamaño de fuente en elementos críticos
 - Añadir ejemplos visuales de comparación de precios
 - Mejorar el eslogan para ser más específico
@@ -45,7 +38,7 @@
 | 3 (Neutral) | Minoría | ~10% |
 | 1-2 (Poco Clara) | Mínima | ~5% |
 
-#### Comentarios Destacados
+#### Comentarios destacados
 **Positivos**:
 - "Para nada confusa"
 - "Interfaz clara y sencilla"
@@ -59,13 +52,13 @@
 #### Claridad de Información
 **Calificación Promedio**: 4.2/5
 
-#### Elementos Considerados Suficientes
+#### Elementos considerados suficientes
 - Nombre del producto
 - Imagen
 - Precio
 - Supermercado
 
-#### Sugerencias de Mejora Identificadas
+#### Sugerencias de mejora
 1. **Información adicional solicitada**:
    - Cantidad del producto
    - Información nutrimental
@@ -81,13 +74,13 @@
 #### Efectividad de la Comparación
 **Calificación**: 4.3/5
 
-#### Funcionalidades Valoradas
+#### Funcionalidades valoradas
 ✓ Historial de precios
-✓ Predicciones de precios ("bajará en 7 días, confianza: 85%")
+✓ Predicciones de precios
 ✓ Comparación entre múltiples tiendas
 ✓ Distancias y ubicaciones
 
-#### Sugerencias para Mejorar Comparación
+#### Sugerencias para mejorar 
 - "Mostrar en grande los comparativos de precios actuales con históricos"
 - "Incorporaría comparaciones visuales como gráficos"
 - "Precios de envío ya que al final se busca ahorrar"
@@ -98,23 +91,23 @@
 #### Facilidad de Gestión
 **Calificación**: 4.1/5
 
-#### Elementos Apreciados
+#### Elementos apreciados
 ✓ Resumen de compras claro
 ✓ Ahorro estimado visible
 ✓ Alertas de precio integradas
 ✓ Comparación entre supermercados
 
-#### Puntos de Confusión Identificados
-- "Las alertas de precio" (mencionado como potencialmente confuso)
+#### Puntos de confusión 
+- "Las alertas de precio" 
 - "La comparativa de varios productos en conjunto con distintos precios"
 - Proceso percibido como "lento" por algunos usuarios
 
 ### 6. Mapa de Tiendas
 
-#### Evaluación de Usabilidad
+#### Evaluación de usabilidad
 **Aprobación**: Mayoritaria (Sí)
 
-#### Funcionalidades Solicitadas
+#### Funcionalidades solicitadas
 1. **Horarios de apertura** (mencionado 6+ veces)
 2. **Información de tráfico** (mencionado 3+ veces)
 3. **Tiempo de llegada estimado**
@@ -122,28 +115,28 @@
 5. **Costo de envío**
 6. **Adaptación automática a ubicación usuario**
 
-### 7. Preferencias de Usuario
+### 7. Preferencias de usuario
 
-#### Evaluación de Suficiencia
-**Consideradas Suficientes**: Mayoría de usuarios
+#### Evaluación de suficiencia
+**Consideradas suficientes**: Mayoría de usuarios
 
-#### Preferencias Adicionales Sugeridas
+#### Preferencias adicionales que se sugirieron 
 - Configuración de radio de búsqueda específico
 - Costos de envío en preferencias
 - Filtros más detallados por tiendas favoritas
 
-### 8. Asistente Virtual (ChatBot)
+### 8. Asistente virtual
 
-#### Evaluación General del ChatBot
+#### Evaluación del ChatBot
 
 | Aspecto | Evaluación |
 |---------|------------|
 | Diseño visual | Atractivo |
 | Facilidad de uso | Moderada a Alta |
-| Utilidad de respuestas | Variable (Crítico) |
+| Utilidad de respuestas | Variable |
 | Velocidad | Necesita mejora |
 
-#### Funcionalidades Solicitadas para el ChatBot
+#### Funcionalidades solicitadas para el ChatBot
 1. **Integración con pedidos**:
    - "Que haya una opción para pedir a domicilio"
    - "Si es entrega a domicilio o para pasar a buscar"
@@ -159,7 +152,7 @@
    - "Más opciones de respuesta"
    - "Más acceso a información"
 
-## Tendencias y Patrones Identificados
+## Patrones Identificados
 
 ### Fortalezas 
 1. **Propósito claro e inmediato**
@@ -168,15 +161,13 @@
 4. **Experiencia de registro sencilla**
 5. **Interfaz general considerada atractiva**
 
-### Debilidades Recurrentes
+### Debilidades 
 1. **ChatBot con problemas fundamentales**
 2. **Problemas de legibilidad (tamaño de fuente)**
 3. **Falta de información contextual (horarios, envíos)**
 4. **Minimalismo que oculta funcionalidades**
 
-### Oportunidades No Explotadas
+### Oportunidades que no han sido explotadas 
 1. **Integración completa del ChatBot con funcionalidades**
 2. **Información en tiempo real (tráfico, horarios)**
 3. **Experiencia personalizada basada en preferencias**
-4. **Características sociales o comunitarias**
-

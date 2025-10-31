@@ -38,9 +38,3 @@ Cada sprint genera evidencias y documentos almacenados en esta carpeta (`proceso
 
 
 ---
-
-##  Conclusión
-El documenta de la descripción del proceso explica cómo se estructuró el trabajo, las fases y la colaboración del equipo bajo el marco **Scrum**.  
-Gracias a este documento, el desarrollo de **SmartPrice** mantiene un flujo ágil, ordenado y sustentado en evidencias, asegurando la calidad y coherencia del producto final.
-
----

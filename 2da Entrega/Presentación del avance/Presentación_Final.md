@@ -1,0 +1,2 @@
+# Video Presentación De La Segunda Entrega
+[![Video](https://i.ibb.co/WvCdNwz0/Captura-de-pantalla-104.png)](https://alumnosuady-my.sharepoint.com/:v:/g/personal/a22201473_alumnos_uady_mx/EUhKoYztmNdPrJ6aVUHXJUAB2SP8RA02XLsvIwBwA0sHuw?e=xfKfnh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
