@@ -1,4 +1,4 @@
-# Requisitos del Proyecto - SmartPrice
+# Producto - SmartPrice
 
 Esta carpeta reúne la documentación elaborada durante el primer sprint del proyecto **SmartPrice**, enfocada en los cambios en el producto.
 
