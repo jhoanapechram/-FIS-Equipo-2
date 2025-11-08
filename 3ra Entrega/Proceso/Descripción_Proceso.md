@@ -193,7 +193,6 @@ Incluye:
 Incluye:
 
 * Participación porcentual de cada integrante.
-* Evidencias rastreables en GitHub y el tablero de Monday.com.
 
 ### **Organización del Repositorio**
 
