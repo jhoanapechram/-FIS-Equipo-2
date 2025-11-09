@@ -1,4 +1,4 @@
-# Presentación dl avance – Proyecto SmartPrice
+# Presentación del avance – Proyecto SmartPrice
 
 ---
 
