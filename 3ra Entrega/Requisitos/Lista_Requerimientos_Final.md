@@ -23,7 +23,7 @@
 
 ## ⚙️ Requisitos No Funcionales
 
-| Categoría                  | Requisito                                               | Experiencia Esperada                  | Verificación Adaptada                                 | Verificable en el mockup         |
+| Categoría                  | Requisito                                               | Experiencia Esperada                  | Verificación Propuesta                                 | Verificable en el mockup         |
 |---------------------------|------------------------------------------------------------------|---------------------------------------|--------------------------------------------------------|----------------------------------|
 | Usabilidad                | El sistema debe permitir realizar una búsqueda en ≤4 clics desde la pantalla principal. | Navegación rápida y clara             | Simulación manual contando clics                       | ✅ Verificable                   |
 | Usabilidad                | Todos los botones y textos deben tener etiquetas claras que describan su función. | Comprensión inmediata de funciones    | Revisión visual + encuesta informal                    | ✅ Verificable                   |
