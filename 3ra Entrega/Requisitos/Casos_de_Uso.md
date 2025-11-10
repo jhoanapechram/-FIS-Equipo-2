@@ -109,7 +109,7 @@
 | **Elemento**                        | **Descripción** |
 |---|---|
 | **Identificador:** | CU-007 |
-| **Nombre:** | Integrar y Validar Datos con Profeco |
+| **Nombre:** | Verificar productos con base Profeco |
 | **Actor Principal:** | Sistema (Proceso Automatizado) |
 | **Actores Secundarios:** | Fuente de Datos de Profeco, Administrador |
 | **Propósito:** | Consultar información de la Profeco automáticamente para asegurar que los precios y ofertas en SmartPrice sean reales y confiables. |
