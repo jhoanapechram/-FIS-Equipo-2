@@ -23,17 +23,18 @@
 
 ## ⚙️ Requisitos No Funcionales
 
-| Categoría                  | Requisito                                               | Experiencia Esperada                  | Verificación Propuesta                                 | Verificable en el mockup         |
-|---------------------------|------------------------------------------------------------------|---------------------------------------|--------------------------------------------------------|----------------------------------|
-| Usabilidad                | El sistema debe permitir realizar una búsqueda en ≤4 clics desde la pantalla principal. | Navegación rápida y clara             | Simulación manual contando clics                       | ✅ Verificable                   |
-| Usabilidad                | Todos los botones y textos deben tener etiquetas claras que describan su función. | Comprensión inmediata de funciones    | Revisión visual + encuesta informal                    | ✅ Verificable                   |
-| Usabilidad                | El sistema debe mostrar mensajes comprensibles cuando no hay resultados o se produce un error. | Evita frustración                     | Simulación de búsqueda vacía                           | ✅ Parcialmente verificable                |
-| Usabilidad         | Cada acción realizada por el usuario (como agregar producto o alerta) debe generar una confirmación visual o textual. | Seguridad de que la acción fue registrada | Observación de cambios visuales                        | ✅ Parcialmente verificable     |
-| Usabilidad             | El diseño visual debe mantener coherencia en íconos, colores y distribución en todas las pantallas. | Navegación fluida y familiar          | Revisión visual de pantallas                           | ✅ Verificable                   |
-| Usabilidad             | Todo texto, nombre de producto y precio debe tener contraste mínimo 4.5:1 para facilitar la lectura. | Lectura cómoda                        | Herramienta de contraste (ej. WebAIM)                  | ✅ Verificable                   |
-| Usabilidad              | Un usuario nuevo debe poder realizar su primera búsqueda en menos de 2 minutos sin ayuda ni tutorial. | Facilidad de uso                      | Prueba con usuarios nuevos                             | ✅ Verificable                   |
-| Rendimiento     | La pantalla principal debe cargar en menos de 3 segundos.         | Sensación de fluidez                  | Cronómetro manual                                      | ✅ Verificable                   |
-| Rendimiento     | Los resultados de búsqueda deben mostrarse en menos de 5 segundos. | Experiencia ágil                      | Cronómetro manual                                      | ✅ Verificable                   |
-| Usabilidad             | Las imágenes e íconos deben contar con texto alternativo (`alt`) que describa su función. | Comprensión con lectores de pantalla | Inspección del HTML                                    | ✅ Verificable                   |
-| Rendimiento     | El chatbot debe mostrar una respuesta en menos de 2 segundos tras cada consulta. | Interacción fluida                    | Cronómetro manual                                      | ✅ Verificable                   |
+| Categoría     | Requisito | Experiencia Esperada | Verificación Propuesta | Verificable en el mockup |
+|----------------|------------|----------------------|-------------------------|---------------------------|
+| Usabilidad | El sistema debe permitir realizar una búsqueda en ≤4 clics desde la pantalla principal. | Navegación rápida y clara | Simulación manual contando clics | ✅ Verificable |
+| Usabilidad | Todos los botones, iconos y textos deben tener etiquetas claras que describan su función. | Comprensión inmediata de funciones | Revisión visual + encuesta informal | ✅ Verificable |
+| Usabilidad | El sistema debe mostrar mensajes comprensibles cuando no hay resultados o se produce un error. | Evita frustración del usuario | Simulación de búsqueda vacía | ✅ Parcialmente verificable |
+| Usabilidad | Cada acción realizada por el usuario (como agregar producto o alerta) debe generar una confirmación visual o textual. | Seguridad de que la acción fue registrada | Observación de cambios visuales | ✅ Parcialmente verificable |
+| Usabilidad | El diseño visual debe mantener coherencia en íconos, colores, fuentes y distribución en todas las pantallas. | Navegación fluida y familiar | Revisión visual de pantallas | ✅ Verificable |
+| Usabilidad | El diseño debe ser completamente responsivo y adaptarse a diferentes tamaños de pantalla (PC, tablet, móvil). | Visualización óptima en distintos dispositivos | Redimensionamiento manual del mockup | ✅ Verificable |
+| Usabilidad | Los botones y enlaces deben mostrar retroalimentación visual (cambio de color o animación) al pasar el cursor o hacer clic. | Interacción intuitiva | Simulación visual de interacciones | ✅ Verificable |
+| Usabilidad | Todo texto, nombre de producto y precio debe tener contraste mínimo 4.5:1 para facilitar la lectura. | Lectura cómoda | Herramienta de contraste (ej. WebAIM) | ✅ Verificable |
+| Usabilidad | Las fuentes deben mantener un tamaño mínimo de 14 px y ser legibles en todos los dispositivos. | Lectura accesible | Revisión visual del mockup | ✅ Verificable |
+| Usabilidad | Los elementos principales deben estar visibles sin necesidad de hacer scroll excesivo en pantallas estándar. | Acceso rápido a la información | Prueba visual en mockup | ✅ Verificable |
+| Usabilidad | Las imágenes e íconos deben contar con texto alternativo (`alt`) que describa su función. | Comprensión con lectores de pantalla | Inspección del HTML | ✅ Verificable |
+| Rendimiento | La pantalla principal debe cargar en menos de 3 segundos. | Sensación de fluidez | Cronómetro manual | ✅ Parcialmente verificable |
 
