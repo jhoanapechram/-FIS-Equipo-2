@@ -1,4 +1,4 @@
-#### **Casos de Uso de la Plataforma Digital SmartPrice**
+# **Casos de Uso de la Plataforma Digital SmartPrice**
 
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
@@ -7,7 +7,7 @@
 | **Nombre:**                         | Consultar y Comparar Precios en Tiempo Real                                                                                                                                                                                                                                                                 |
 | **Actor Principal:**                | Cliente / Usuario Final.                                                                                                                                                                                                                                                                                    |
 | **Actores Secundarios:**            | Sistema de APIs de Supermercados (Walmart, Soriana, Chedraui, etc.).                                                                                                                                                                                                                                        |
-| **Propósito:**                      | Permitir al usuario buscar un producto y obtener una lista consolidada y comparativa de sus precios, disponibilidad y ubicación en diferentes cadenas de supermercados, en tiempo real. **(Corresponde a RF1 y RF3)**                                                                                        |
+| **Propósito:**                      | Permitir al usuario buscar un producto y obtener una lista consolidada y comparativa de sus precios, disponibilidad y ubicación en diferentes cadenas de supermercados, en tiempo real.                                                                                        |
 | **Alcance:**                        | Módulo de Consulta y Comparación en Tiempo Real.                                                                                                                                                                                                                                                            |
 | **Nivel:**                          | Objetivo de Usuario.                                                                                                                                                                                                                                                                                        |
 | **Disparador:**                     | El usuario ingresa un criterio de búsqueda en la interfaz principal.                                                                                                                                                                                                                                        |
@@ -15,8 +15,7 @@
 | **Postcondiciones:**                | 1. Se muestra una lista comparativa de productos.<br>2. La consulta se registra para análisis histórico (RF2).                                                                                                                                                                                               |
 | **Flujo Principal:**                | 1. El usuario ingresa el nombre o código de un producto.<br>2. El sistema consulta **concurrentemente** las APIs de los supermercados configurados.<br>3. Se consolidan y normalizan los datos (precio, tienda, disponibilidad, ubicación).<br>4. Se muestran los resultados en una vista unificada, ordenables por precio. |
 | **Flujos de Excepción:**            | **E-1: Fallo de API:**<br>1. Si una API no responde, se omite esa tienda de los resultados y se muestra un aviso al usuario.<br>**E-2: Producto no encontrado:**<br>1. El sistema sugiere productos similares.                                                                                                |
-| **Reglas de Negocio:**              | **RN-001:** Los precios se deben obtener en tiempo real de las APIs. (RF1).<br>**RN-002:** El tiempo total de respuesta debe ser <3 segundos en el 95% de los casos (RNF-Rendimiento).                                                                                                                        |
-| **Requisitos Asociados:**           | **RF1, RF3.** RNF (Rendimiento: <3s), RNF (Confiabilidad: 99% uptime).                                                                                                                                                                                                                                      |
+
 
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
@@ -25,7 +24,7 @@
 | **Nombre:**                         | Visualizar Historial y Evolución de Precios                                                                                                                                                                                                                                                                 |
 | **Actor Principal:**                | Usuario Frecuente / Registrado.                                                                                                                                                                                                                                                                             |
 | **Actores Secundarios:**            | Base de Datos Histórica.                                                                                                                                                                                                                                                                                    |
-| **Propósito:**                      | Permitir al usuario visualizar la fluctuación histórica del precio de un producto específico para identificar tendencias y decidir el mejor momento de compra. **(Corresponde a RF2)**                                                                                                                      |
+| **Propósito:**                      | Permitir al usuario visualizar la fluctuación histórica del precio de un producto específico para identificar tendencias y decidir el mejor momento de compra.                                                                                                                     |
 | **Alcance:**                        | Módulo de Análisis Histórico.                                                                                                                                                                                                                                                                               |
 | **Nivel:**                          | Objetivo de Usuario.                                                                                                                                                                                                                                                                                        |
 | **Disparador:**                     | El usuario selecciona la opción "Ver Historial" desde la página de detalles de un producto.                                                                                                                                                                                                                  |
@@ -33,8 +32,8 @@
 | **Postcondiciones:**                | 1. Se muestra la gráfica de evolución de precios y/o una tabla con datos históricos.                                                                                                                                                                                                                          |
 | **Flujo Principal:**                | 1. El usuario navega a la página de un producto.<br>2. El usuario hace clic en el botón "Ver Historial de Precios".<br>3. El sistema recupera los datos históricos del producto desde la BD.<br>4. El sistema presenta los datos en una visualización clara (gráfica o tabla).                                         |
 | **Flujos de Excepción:**            | **E-1: Sin Datos Históricos:**<br>1. Si el producto no tiene historial, se muestra un mensaje: "Aún no hay datos históricos para este producto".                                                                                                                                                              |
-| **Reglas de Negocio:**              | **RN-003:** La base de datos debe almacenar cada actualización de precio. (RF2).                                                                                                                                                                                                                              |
-| **Requisitos Asociados:**           | **RF2.**                                                                                                                                          
+                                                                                                                                                                                                                       
+                                                                                                                                  
 
 
 
@@ -52,8 +51,6 @@
 | **Postcondiciones:**                | 1. El usuario recibe una notificación o visualización con la tendencia prevista.                                                                                                                                                                                                                              |
 | **Flujo Principal:**                | 1. El usuario activa el "Seguimiento" de un producto.<br>2. El sistema analiza los datos históricos del producto utilizando el modelo de IA.<br>3. El sistema muestra una predicción (ej., "Se prevé una bajada de precios la próxima semana") o programa una alerta automática.                                   |
 | **Flujos de Excepción:**            | **E-1: Historial Insuficiente:**<br>1. El sistema muestra un mensaje indicando que no hay suficientes datos para realizar una predicción.                                                                                                                                                                      |
-| **Reglas de Negocio:**              | **RN-004:** Las predicciones deben generarse utilizando modelos de IA entrenados con el historial de precios. (RF4).                                                                                                                                                                                           |
-| **Requisitos Asociados:**           | **RF4.**                                                                                                                                                                                                                                                                                                    |
 
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
@@ -70,8 +67,7 @@
 | **Postcondiciones:**                | 1. La oferta se muestra con una etiqueta de confiabilidad (ej. Alta, Media, Baja).                                                                                                                                                                                                                            |
 | **Flujo Principal:**                | 1. El sistema detecta un precio promocional.<br>2. El sistema consulta el historial del producto: duración de ofertas pasadas y fecha de vigencia actual.<br>3. El sistema asigna un nivel de validez basado en reglas predefinidas.<br>4. La etiqueta de confiabilidad se muestra junto al precio de oferta. |
 | **Flujos de Excepción:**            | **E-1: Sin Historial de Ofertas:**<br>1. Se asigna la etiqueta "Desconocida" o "Nueva Oferta".                                                                                                                                                                                                                |
-| **Reglas de Negocio:**              | **RN-005:** El nivel de validez se asigna en función de la duración histórica y vigencia de la oferta. (RF5).<br>**RN-006:** Una oferta se marca como vencida automáticamente al pasar su fecha de fin.                                                                                                        |
-| **Requisitos Asociados:**           | **RF5.**                                                                                                                                                                                                                                                                                                    |
+                                                                                                     |
 
 
 | **Elemento**                        | **Descripción**                                                                                                                                                                                                                                                                                             |
@@ -80,7 +76,7 @@
 | **Nombre:**                         | Recomendar Tienda Más Conveniente                                                                                                                                                                                                                                                                           |
 | **Actor Principal:**                | Cliente.                                                                                                                                                                                                                                                                                                    |
 | **Actores Secundarios:**            | Sistema de Geolocalización.                                                                                                                                                                                                                                                                                 |
-| **Propósito:**                      | Analizar el precio del producto y la distancia a la tienda para recomendar la mejor opción, considerando la preferencia del usuario (precio vs. distancia). **(Corresponde a RF6)**                                                                                                                         |
+| **Propósito:**                      | Analizar el precio del producto y la distancia a la tienda para recomendar la mejor opción, considerando la preferencia del usuario (precio vs. distancia).                                                                                                                        |
 | **Alcance:**                        | Módulo de Optimización de Compra.                                                                                                                                                                                                                                                                           |
 | **Nivel:**                          | Objetivo de Usuario.                                                                                                                                                                                                                                                                                        |
 | **Disparador:**                     | El usuario realiza una búsqueda de producto con la geolocalización activada.                                                                                                                                                                                                                                |
@@ -89,8 +85,8 @@
 | **Flujo Principal:**                | 1. El usuario busca un producto.<br>2. El sistema obtiene los precios y ubicaciones de las tiendas.<br>3. El sistema calcula la distancia del usuario a cada tienda.<br>4. El sistema aplica un algoritmo de ranking que pondera precio y distancia.<br>5. La tienda con el mejor ranking se sugiere como "Recomendada". |
 | **Flujos Alternos:**                | **A-1: Usuario prioriza distancia:**<br>1. El usuario ajusta un filtro para "Priorizar cercanía".<br>2. El sistema reordena los resultados, dando mayor peso a la distancia en el algoritmo.                                                                                                                   |
 | **Flujos de Excepción:**            | **E-1: Geolocalización no activa:**<br>1. El sistema muestra los resultados ordenados solo por precio y pide activar la ubicación para una mejor recomendación.                                                                                                                                                |
-| **Reglas de Negocio:**              | **RN-007:** La recomendación debe basarse en el menor costo total (precio + transporte implícito por distancia). (RF6).                                                                                                                                                                                       |
-| **Requisitos Asociados:**           | **RF6.**                                                                                                                                                                                                                                                                                                    |
+                 
+                                                                                                                                                                                                                                                                                     
 
 
 
@@ -108,9 +104,7 @@
 | **Postcondiciones:**                | 1. El usuario recibe una respuesta útil y contextual a su consulta.                                                                                                                                                                                                                                           |
 | **Flujo Principal:**                | 1. El usuario escribe una pregunta (ej., "¿Dónde están las manzanas más baratas?").<br>2. El chatbot procesa la consulta utilizando el LLM, enriquecido con RAG que accede a la base de datos de precios e información de Profeco.<br>3. El chatbot devuelve una respuesta precisa, con datos concretos y, si es apropiado, enlaces a productos o comparativas. |
 | **Flujos de Excepción:**            | **E-1: Consulta no entendida:**<br>1. El chatbot pide amablemente reformular la pregunta o ofrece una lista de opciones comunes de búsqueda.                                                                                                                                                                   |
-| **Reglas de Negocio:**              | **RN-008:** El chatbot debe utilizar información verificada de la base de datos interna y de Profeco. (RF7).                                                                                                                                                                                                   |
-| **Requisitos Asociados:**           | **RF7.**                                                                                                                                                                                                                                                                                                    |
-
+                                                                                                                                                                                                      
 
 | **Elemento**                        | **Descripción** |
 |---|---|
@@ -126,8 +120,8 @@
 | **Postcondiciones:** | 1. La base de datos de SmartPrice se actualiza con información verificada<br>2. Los precios pueden mostrar un sello de "Verificado por Profeco" |
 | **Flujo Principal:** | 1. El sistema revisa automáticamente la información de Profeco cada 24 horas<br>2. Compara los precios y ofertas de Profeco con los que tiene en su base de datos<br>3. Si encuentra diferencias, actualiza los precios y marca aquellos que coinciden como "verificados" |
 | **Flujos de Excepción:** | **E-1: Profeco no está disponible:**<br>1. El sistema lo intenta de nuevo en 1 hora<br>2. Si después de 3 intentos no funciona, envía un correo de alerta al administrador |
-| **Reglas de Negocio:** | **RN-009:** La verificación con Profeco se debe hacer al menos una vez al día |
-| **Requisitos Asociados:** | **RF8**, RNF (Legales) |
+
+
 
 
 | **Elemento** | **Descripción** |
@@ -141,8 +135,8 @@
 | **Flujo Principal:** | 1. El usuario selecciona la opción **“Iniciar Sesión”**.<br>2. El sistema muestra el formulario de autenticación.<br>3. El usuario introduce su **correo electrónico** y **contraseña**.<br>4. El sistema valida las credenciales comparándolas con la base de datos.<br>5. Si las credenciales son correctas, el sistema permite el acceso y muestra la interfaz principal personalizada.<br>6. El sistema registra la fecha y hora del inicio de sesión. |
 | **Flujos de Excepción:** | - **E1:** Si el usuario introduce credenciales incorrectas, el sistema muestra el mensaje: *“Correo o contraseña incorrectos”* y permite reintentar.<br>- **E2:** Si el usuario no posee una cuenta registrada, el sistema muestra el mensaje: *“No se encontró una cuenta con este correo”* y ofrece la opción **“Registrarse”*.<br>- **E3:** Si no hay conexión a internet, el sistema muestra el mensaje: *“No hay conexión, inténtelo más tarde”*.<br>- **E4:** Si la cuenta se encuentra bloqueada por múltiples intentos fallidos, el sistema muestra: *“Su cuenta ha sido temporalmente bloqueada por seguridad”*. |
 | **Postcondiciones:** | - El usuario accede correctamente a su cuenta y puede gestionar sus preferencias o utilizar las funciones del sistema.<br>- El sistema registra la sesión activa y actualiza el historial de accesos. |
-| **Reglas de Negocio:** | - Las credenciales deben coincidir exactamente con las registradas en la base de datos.<br>- Después de **tres intentos fallidos**, la cuenta se bloquea temporalmente por motivos de seguridad.<br>- Las contraseñas deben almacenarse de forma **cifrada** conforme a la **Ley Federal de Protección de Datos Personales**. |
-| **Requisitos Asociados:** | RF8, RNF (Protección de datos) |
+
+
 
 
 | **Elemento** | **Descripción** |
@@ -156,9 +150,8 @@
 | **Flujo Principal:** | 1. El usuario activa la opción **“Seguir producto”** desde la página del producto.<br>2. El sistema registra el producto en la lista de seguimiento del usuario.<br>3. El sistema monitorea periódicamente los precios de los productos seguidos.<br>4. Si se detecta una reducción de **≥ 5%**, el sistema genera una notificación.<br>5. El usuario recibe la alerta en la aplicación o por el canal de comunicación configurado. |
 | **Flujos de Excepción:** | - **E1:** Si el producto deja de estar disponible, el sistema elimina el seguimiento y notifica al usuario.<br>- **E2:** Si las notificaciones están desactivadas, el sistema guarda el evento pero no envía alerta.<br>- **E3:** Si el sistema no puede acceder a la base de datos, muestra un mensaje de error y registra el fallo para revisión. |
 | **Postcondiciones:** | - El usuario recibe la notificación correspondiente cuando se cumple la condición de descuento.<br>- El sistema mantiene actualizada la lista de productos seguidos. |
-| **Reglas de Negocio:** | - Solo se enviarán notificaciones cuando el precio del producto disminuya en **al menos un 5%**.<br>- Las notificaciones deben entregarse al usuario en tiempo razonable después de detectarse la baja de precio. |
-| **Requisitos Asociados:** | RF10 |
----
+
+
 
 | **Elemento** | **Descripción** |
 |---------------|----------------|
@@ -166,7 +159,7 @@
 | **Nombre:** | Gestionar Cuenta y Preferencias del Usuario |
 | **Actor Principal:** | Usuario Registrado |
 | **Actores Secundarios:** | Base de Datos de Usuarios |
-| **Propósito:** | Permitir que el usuario cree su cuenta, inicie sesión y gestione sus preferencias personales, como supermercados favoritos, ubicación habitual, productos seguidos y alertas personalizadas. **(Corresponde a RF9)** |
+| **Propósito:** | Permitir que el usuario cree su cuenta, inicie sesión y gestione sus preferencias personales, como supermercados favoritos, ubicación habitual, productos seguidos y alertas personalizadas. |
 | **Alcance:** | Módulo de Gestión de Usuarios y Preferencias |
 | **Nivel:** | Objetivo de Usuario |
 | **Disparador:** | El usuario selecciona la opción “Mi Cuenta” o “Registrarse” desde la interfaz principal. |
@@ -174,10 +167,8 @@
 | **Postcondiciones:** | 1. La cuenta del usuario se crea o actualiza exitosamente.<br>2. Las preferencias quedan guardadas en la base de datos. |
 | **Flujo Principal:** | 1. El usuario accede a la interfaz principal y selecciona el ícono **“Perfil”** en la barra de navegación.<br>2. El sistema presenta la pantalla **“Mi Perfil”** con las opciones *Iniciar Sesión*, *Registrarse* o *Editar Perfil*.<br>3. El usuario selecciona la opción deseada.<br>4. Si elige *Registrarse*, el sistema muestra un formulario con campos de correo y contraseña.<br>5. Si elige *Editar Perfil*, el sistema muestra sus preferencias actuales.<br>6. El usuario puede modificar supermercados favoritos, ubicación, canal de notificaciones y radio de búsqueda.<br>7. El usuario presiona el botón **“Guardar cambios”**.<br>8. El sistema valida los datos ingresados.<br>9. El sistema guarda los cambios en la base de datos.<br>10. El sistema muestra el mensaje de confirmación **“Cambios guardados con éxito”**. |
 | **Flujos de Excepción:** | **E-1:** Correo ya registrado → *“El correo ya existe, intente Iniciar Sesión”*.<br>**E-2:** Error de conexión con base de datos → *“Error al conectar con el servidor, inténtelo más tarde”*.<br>**E-3:** Campos incompletos o formato inválido → *“Verifique los datos ingresados”*. |
-| **Reglas de Negocio:** | **RN-010:** Los datos personales deben almacenarse cifrados.<br>**RN-011:** El usuario puede modificar sus preferencias en cualquier momento.<br>**RN-012:** Las alertas personalizadas se aplican automáticamente al guardar cambios. |
-| **Requisitos Asociados:** | **RF9**, RNF (Protección de datos, Usabilidad) |
 
----
+
 
 | **Elemento** | **Descripción** |
 |---------------|----------------|
@@ -185,7 +176,7 @@
 | **Nombre:** | Gestionar Listas de Compra |
 | **Actor Principal:** | Usuario Registrado |
 | **Actores Secundarios:** | Base de Datos de Productos, Módulo de Comparación de Precios |
-| **Propósito:** | Permitir que el usuario cree, edite y elimine listas de compra personalizadas, mostrando el costo total estimado por supermercado, el ahorro potencial y los productos no disponibles. **(Corresponde a RF11)** |
+| **Propósito:** | Permitir que el usuario cree, edite y elimine listas de compra personalizadas, mostrando el costo total estimado por supermercado, el ahorro potencial y los productos no disponibles.  |
 | **Alcance:** | Módulo de Listas de Compra |
 | **Nivel:** | Objetivo de Usuario |
 | **Disparador:** | El usuario selecciona la opción “Carrito” o “Mis Listas” desde la barra de navegación. |
@@ -193,10 +184,8 @@
 | **Postcondiciones:** | 1. La lista de compra se guarda o actualiza correctamente.<br>2. El sistema muestra el costo total y el ahorro estimado por supermercado. |
 | **Flujo Principal:** | 1. El usuario selecciona **“Carrito”** en la barra de navegación principal.<br>2. El sistema muestra la pantalla **“Resumen de compra”** con las opciones *Crear nueva lista* o *Ver listas existentes*.<br>3. El usuario elige crear una nueva lista o editar una existente.<br>4. El usuario agrega productos desde la barra de búsqueda o desde su historial/favoritos.<br>5. El sistema obtiene los precios actualizados de los supermercados a través de las APIs.<br>6. El sistema muestra los precios individuales y el costo total por supermercado.<br>7. El usuario puede eliminar o agregar productos, renombrar la lista o cambiar el orden.<br>8. El usuario presiona **“Guardar lista”**.<br>9. El sistema guarda los cambios y muestra el mensaje *“Lista guardada correctamente”*.<br>10. El sistema recalcula el ahorro potencial y lo muestra en pantalla. |
 | **Flujos de Excepción:** | **E-1:** Producto no disponible → *“Algunos productos no están disponibles en esta tienda”*.<br>**E-2:** Error al guardar → *“No se pudo guardar la lista, inténtelo nuevamente”*.<br>**E-3:** Sesión expirada → Solicitar que el usuario inicie sesión nuevamente. |
-| **Reglas de Negocio:** | **RN-013:** Cada usuario puede tener hasta 10 listas activas.<br>**RN-014:** El ahorro potencial se calcula comparando el total mínimo con el promedio de los demás supermercados. |
-| **Requisitos Asociados:** | **RF11**, RNF (Rendimiento, Confiabilidad) |
 
----
+
 
 | **Elemento** | **Descripción** |
 |---------------|----------------|
@@ -204,7 +193,7 @@
 | **Nombre:** | Reportar Discrepancia de Precios |
 | **Actor Principal:** | Usuario Registrado |
 | **Actores Secundarios:** | Base de Datos de Reportes |
-| **Propósito:** | Permitir que el usuario reporte precios incorrectos o inconsistencias observadas en productos, incluyendo evidencia fotográfica y comentarios. **(Corresponde a RF12)** |
+| **Propósito:** | Permitir que el usuario reporte precios incorrectos o inconsistencias observadas en productos, incluyendo evidencia fotográfica y comentarios.  |
 | **Alcance:** | Módulo de Reporte de Discrepancias |
 | **Nivel:** | Objetivo de Usuario |
 | **Disparador:** | El usuario selecciona el botón “Reportar precio incorrecto” en la vista de un producto. |
@@ -212,8 +201,4 @@
 | **Postcondiciones:** | 1. El reporte queda registrado para revisión.<br>2. Si hay múltiples reportes del mismo producto, se marca como “prioritario”. |
 | **Flujo Principal:** | 1. El usuario visualiza la página del producto.<br>2. El usuario selecciona el botón **“Reportar precio incorrecto”**.<br>3. El sistema muestra un formulario con los campos: tienda, precio observado, evidencia (foto) y comentarios.<br>4. El usuario completa los campos requeridos.<br>5. El usuario presiona **“Enviar reporte”**.<br>6. El sistema valida los datos e imagen cargada.<br>7. El sistema almacena el reporte en la base de datos.<br>8. Si existen otros reportes del mismo producto, se marca como **“prioritario”**.<br>9. El sistema muestra el mensaje de confirmación *“Gracias por tu reporte, será revisado por el equipo de SmartPrice”*. |
 | **Flujos de Excepción:** | **E-1:** Imagen no válida o formato no soportado → *“Formato de imagen no compatible”*.<br>**E-2:** Error de conexión → *“No se pudo enviar el reporte, inténtelo más tarde”*.<br>**E-3:** Campos incompletos → *“Debe completar los campos obligatorios”*. |
-| **Reglas de Negocio:** | **RN-015:** Tres o más reportes del mismo producto generan una alerta automática al administrador.<br>**RN-016:** Las evidencias deben almacenarse cifradas y con acceso restringido.<br>**RN-018:** El usuario solo puede reportar una discrepancia por producto cada 24 horas. |
-| **Requisitos Asociados:** | **RF12**, RNF (Seguridad, Protección de Datos) |
-
----
 
