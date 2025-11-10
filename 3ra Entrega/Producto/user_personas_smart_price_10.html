@@ -1,0 +1,1275 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Personas - Smart Price Mérida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .stats {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .personas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .persona-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .persona-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .persona-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            position: relative;
+        }
+
+        .persona-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .persona-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .persona-type {
+            text-align: center;
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .persona-body {
+            padding: 25px;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-label {
+            font-size: 0.75em;
+            color: #888;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-value {
+            font-size: 1em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-content {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .quote {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px 15px;
+            margin: 15px 0;
+            font-style: italic;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+        }
+
+        .goals-frustrations {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .goal-item, .frustration-item {
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .goal-item {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .frustration-item {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+
+        .emoji {
+            font-size: 1.3em;
+        }
+
+        @media (max-width: 768px) {
+            .personas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-row {
+                grid-template-columns: 1fr;
+            }
+
+            .goals-frustrations {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .persona-card {
+                page-break-inside: avoid;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 User Personas</h1>
+            <p>Smart Price - Mérida, Yucatán</p>
+        </div>
+
+        <div class="stats">
+            <h3>📊 10 Perfiles Representativos de Usuarios</h3>
+            <p>Basados en datos sintéticos de 100 usuarios reales de Mérida</p>
+        </div>
+
+        <div class="personas-grid">
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">💼</div>
+                    <div class="persona-name">Alejandro Pech Canul</div>
+                    <div class="persona-type">Profesional joven</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">28 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Empleado</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Medio</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Centro</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">3 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">Sí</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Quiero comparar precios para reducir gastos"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Ahorrar dinero<br>
+                            <strong>Necesidad:</strong> Reducir gastos del hogar<br>
+                            <strong>Meta:</strong> Reducir gastos en compras semanales<br>
+                            <strong>También:</strong> Disfrutar de descuentos ocasionales
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Semanal | 
+                            <strong>Presupuesto:</strong> $520 MXN<br>
+                            <strong>Prefiere:</strong> Walmart<br>
+                            <strong>Decide por:</strong> Ofertas | 
+                            <strong>Estilo:</strong> Planifica con anticipación
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diario | 
+                            <strong>Sesión:</strong> 12 min<br>
+                            <strong>Horario:</strong> Tarde (12-18) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> La app facilita ver ofertas
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Encontrar mejores precios y promociones
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Pocas ofertas en tiendas cercanas
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Falta de tiempo para revisar apps
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Práctico</span>
+                        <span class="tag">Satisfecho</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Soltero/a</span>
+                        <span class="tag">Masculino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">👨‍👩‍👧‍👦</div>
+                    <div class="persona-name">Martha Chi May</div>
+                    <div class="persona-type">Familia joven</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">32 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Empleado</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Medio-Alto</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Altabrisa</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">4 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">Sí</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Simplificar compras"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Ahorrar tiempo<br>
+                            <strong>Necesidad:</strong> Planificar compras familiares<br>
+                            <strong>Meta:</strong> Ahorro en snacks para la familia<br>
+                            <strong>También:</strong> Recibir ofertas personalizadas
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Quincenal | 
+                            <strong>Presupuesto:</strong> $800 MXN<br>
+                            <strong>Prefiere:</strong> La Comer<br>
+                            <strong>Decide por:</strong> Cercanía | 
+                            <strong>Estilo:</strong> Mezcla de ambos
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diario | 
+                            <strong>Sesión:</strong> 9 min<br>
+                            <strong>Horario:</strong> Noche (18-24) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Interfaz amigable
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Velocidad y ofertas relevantes
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Pocas opciones de pago
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Errores en sincronización
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Analítico</span>
+                        <span class="tag">Muy satisfecho</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Casado/a</span>
+                        <span class="tag">Femenino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🎓</div>
+                    <div class="persona-name">Ana Isabel Canul Uc</div>
+                    <div class="persona-type">Estudiante universitario</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">24 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Estudiante</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Bajo</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Altabrisa</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">2 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">No</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Quiero encontrar rápidamente precios de mis productos habituales"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Ahorrar tiempo<br>
+                            <strong>Necesidad:</strong> Optimizar presupuesto estudiantil<br>
+                            <strong>Meta:</strong> Reducir gasto mensual en snacks<br>
+                            <strong>También:</strong> Mantener control de gastos
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diaria | 
+                            <strong>Presupuesto:</strong> $2,000 MXN<br>
+                            <strong>Prefiere:</strong> Soriana<br>
+                            <strong>Decide por:</strong> Combinación de factores | 
+                            <strong>Estilo:</strong> Compra cuando hace falta
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diario | 
+                            <strong>Sesión:</strong> 6 min<br>
+                            <strong>Horario:</strong> Mañana (6-12) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> La app facilita comparar precios entre tiendas
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Esperaba ver ofertas rápidas y claras
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Pocas promociones
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Poco tiempo libre
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Planificador</span>
+                        <span class="tag">Satisfecho</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Soltero/a</span>
+                        <span class="tag">Femenino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🏃</div>
+                    <div class="persona-name">Ana Verónica Chi</div>
+                    <div class="persona-type">Adulto independiente</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">34 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Profesionista</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Medio</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Cholul</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">3 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">Sí</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Organizar compras mensuales"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Planificar mejor<br>
+                            <strong>Necesidad:</strong> Planificar compras familiares<br>
+                            <strong>Meta:</strong> Mantener control de gastos<br>
+                            <strong>También:</strong> Monitorear precios de productos básicos
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Semanal | 
+                            <strong>Presupuesto:</strong> $1,200 MXN<br>
+                            <strong>Prefiere:</strong> Chedraui<br>
+                            <strong>Decide por:</strong> Precio | 
+                            <strong>Estilo:</strong> Planifica con anticipación
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diario | 
+                            <strong>Sesión:</strong> 14 min<br>
+                            <strong>Horario:</strong> Tarde (12-18) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Cobertura amplia de productos
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Ver historial de precios y predicciones
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Promociones falsas
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Errores en stock
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Planificador</span>
+                        <span class="tag">Satisfecho</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Casado/a</span>
+                        <span class="tag">Femenino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🎓</div>
+                    <div class="persona-name">Isabel Uc May</div>
+                    <div class="persona-type">Estudiante universitario</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">27 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Estudiante</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Bajo</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Temozon Norte</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">1 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">No</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Rápidas compras en la uni"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Ahorrar tiempo<br>
+                            <strong>Necesidad:</strong> Optimizar presupuesto estudiantil<br>
+                            <strong>Meta:</strong> Ahorro extra en snacks<br>
+                            <strong>También:</strong> Probar nuevos productos
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diaria | 
+                            <strong>Presupuesto:</strong> $300 MXN<br>
+                            <strong>Prefiere:</strong> Soriana<br>
+                            <strong>Decide por:</strong> Precio | 
+                            <strong>Estilo:</strong> Compra cuando hace falta
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Varias veces al día | 
+                            <strong>Sesión:</strong> 5 min<br>
+                            <strong>Horario:</strong> Mañana (6-12) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Velocidad y facilidad
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Listas de compra rápidas
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Pocas opciones de pago
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Conectividad intermitente
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Práctico</span>
+                        <span class="tag">Neutral</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Soltero/a</span>
+                        <span class="tag">Femenino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🏃</div>
+                    <div class="persona-name">Carlos Canul Uc</div>
+                    <div class="persona-type">Adulto independiente</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">34 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Empleado</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Alto</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Vergel</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">6 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">Sí</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Mantener estilo de vida"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Ahorrar dinero<br>
+                            <strong>Necesidad:</strong> Encontrar mejores precios<br>
+                            <strong>Meta:</strong> Viaje familiar<br>
+                            <strong>También:</strong> Mejores ofertas
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Semanal | 
+                            <strong>Presupuesto:</strong> $12,000 MXN<br>
+                            <strong>Prefiere:</strong> Walmart<br>
+                            <strong>Decide por:</strong> Ofertas | 
+                            <strong>Estilo:</strong> Planifica con anticipación
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Varias veces al día | 
+                            <strong>Sesión:</strong> 15 min<br>
+                            <strong>Horario:</strong> Tarde (12-18) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Gran variedad de ofertas
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Quiero ahorrar sin sacrificar calidad
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Promociones no confiables
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Interrupciones
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Cazador de ofertas</span>
+                        <span class="tag">Muy satisfecho</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Casado/a</span>
+                        <span class="tag">Masculino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🏃</div>
+                    <div class="persona-name">Miguel Ángel May Chi</div>
+                    <div class="persona-type">Adulto independiente</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">32 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Empleado</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Medio-Alto</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Cholul</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">4 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">Sí</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Quiero ver promociones semanales"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Encontrar ofertas<br>
+                            <strong>Necesidad:</strong> Encontrar mejores precios<br>
+                            <strong>Meta:</strong> Ahorrar para viaje<br>
+                            <strong>También:</strong> Planificar compras de la semana
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Semanal | 
+                            <strong>Presupuesto:</strong> $8,000 MXN<br>
+                            <strong>Prefiere:</strong> La Comer<br>
+                            <strong>Decide por:</strong> Ofertas | 
+                            <strong>Estilo:</strong> Planifica con anticipación
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Varias veces al día | 
+                            <strong>Sesión:</strong> 12 min<br>
+                            <strong>Horario:</strong> Tarde (12-18) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> La app facilita seguimiento de precios en diferentes tiendas
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Ver ofertas completas y actualizadas
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Descuentos que cambian constantemente
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Cambios de inventario
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Cazador de ofertas</span>
+                        <span class="tag">Muy satisfecho</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Casado/a</span>
+                        <span class="tag">Masculino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🎓</div>
+                    <div class="persona-name">Julieta Canul May</div>
+                    <div class="persona-type">Estudiante universitario</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">24 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Estudiante</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Bajo</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Francisco de Montejo</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">2 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">No</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Ahorro diario"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Encontrar ofertas<br>
+                            <strong>Necesidad:</strong> Encontrar mejores precios<br>
+                            <strong>Meta:</strong> Ahorro en snacks y bebidas<br>
+                            <strong>También:</strong> Descubrir nuevos productos
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diaria | 
+                            <strong>Presupuesto:</strong> $200 MXN<br>
+                            <strong>Prefiere:</strong> Aki<br>
+                            <strong>Decide por:</strong> Precio | 
+                            <strong>Estilo:</strong> Compra cuando hace falta
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Varias veces al día | 
+                            <strong>Sesión:</strong> 7 min<br>
+                            <strong>Horario:</strong> Mañana (6-12) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Promociones diarias
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Rápidas ofertas y stock
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Promociones engañosas
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Conectividad
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Impulsivo</span>
+                        <span class="tag">Neutral</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Soltero/a</span>
+                        <span class="tag">Femenino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">🎓</div>
+                    <div class="persona-name">Rosa Chi May</div>
+                    <div class="persona-type">Estudiante universitario</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">26 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Estudiante</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Bajo</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">Pensiones</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">1 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">No</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Comprar con presupuesto limitado"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Encontrar ofertas<br>
+                            <strong>Necesidad:</strong> Reducir gastos del hogar<br>
+                            <strong>Meta:</strong> Ahorro diario<br>
+                            <strong>También:</strong> Probar nuevos productos
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diaria | 
+                            <strong>Presupuesto:</strong> $260 MXN<br>
+                            <strong>Prefiere:</strong> Walmart<br>
+                            <strong>Decide por:</strong> Precio | 
+                            <strong>Estilo:</strong> Compra cuando hace falta
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diario | 
+                            <strong>Sesión:</strong> 5 min<br>
+                            <strong>Horario:</strong> Mañana (6-12) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Ofertas inmediatas
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Ofertas rápidas y stock estable
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Promociones con stock limitado
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Conectividad
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Práctico</span>
+                        <span class="tag">Neutral</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Soltero/a</span>
+                        <span class="tag">Femenino</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="persona-card">
+                <div class="persona-header">
+                    <div class="persona-avatar">💼</div>
+                    <div class="persona-name">David Canul May</div>
+                    <div class="persona-type">Profesional joven</div>
+                </div>
+
+                <div class="persona-body">
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Edad</div>
+                            <div class="info-value">29 años</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ocupación</div>
+                            <div class="info-value">Empleado</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Ingresos</div>
+                            <div class="info-value">Medio</div>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-item">
+                            <div class="info-label">Colonia</div>
+                            <div class="info-value">García Ginerés</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Hogar</div>
+                            <div class="info-value">2 personas</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Vehículo</div>
+                            <div class="info-value">Sí</div>
+                        </div>
+                    </div>
+
+                    <div class="quote">
+                        "Comparar precios para encontrar ofertas"
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🎯</span> Objetivos y Motivaciones</div>
+                        <div class="section-content">
+                            <strong>Objetivo:</strong> Ahorrar dinero<br>
+                            <strong>Necesidad:</strong> Optimizar presupuesto estudiantil<br>
+                            <strong>Meta:</strong> Ahorro para proyectos<br>
+                            <strong>También:</strong> Revisar historial de compras
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🛒</span> Comportamiento de Compra</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Quincenal | 
+                            <strong>Presupuesto:</strong> $640 MXN<br>
+                            <strong>Prefiere:</strong> Walmart<br>
+                            <strong>Decide por:</strong> Precio | 
+                            <strong>Estilo:</strong> Planifica con anticipación
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">📱</span> Uso de la App</div>
+                        <div class="section-content">
+                            <strong>Frecuencia:</strong> Diario | 
+                            <strong>Sesión:</strong> 11 min<br>
+                            <strong>Horario:</strong> Noche (18-24) | 
+                            <strong>Dispositivo:</strong> Android<br>
+                            <strong>Valora:</strong> Facilidad de uso
+                        </div>
+                    </div>
+
+                    <div class="goals-frustrations">
+                        <div class="goal-item">
+                            <strong>✅ Expectativas</strong><br>
+                            Mejores ofertas y stock estable
+                        </div>
+                        <div class="frustration-item">
+                            <strong>😤 Frustraciones</strong><br>
+                            Stock limitado
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-title"><span class="emoji">🚧</span> Barreras</div>
+                        <div class="section-content">
+                            Pago móvil poco confiable
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Analítico</span>
+                        <span class="tag">Neutral</span>
+                        <span class="tag">✓ Recomienda</span>
+                        <span class="tag">Unión libre</span>
+                        <span class="tag">Masculino</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
