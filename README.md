@@ -86,13 +86,11 @@ Incluye lo siguiente:
 | Carpeta | Descripción |
 |----------|-------------|
 | [**Competencias**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Competencias) | El propósito de esta carpeta es documentar las competencias desarrolladas durante el desarrollo del producto. |
-| [**Diseño**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Dise%C3%B1o) | La carpeta Diseño reúne la documentación elaborada durante el Tercer Sprint del proyecto SmartPrice, centrada en el diseño visual, la arquitectura de interfaz y la validación con usuarios finales.
-Los documentos aquí contenidos transforman los requisitos en prototipos, guías y reportes de validación que orientan la implementación y las iteraciones de UX/UI. |
+| [**Diseño**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Dise%C3%B1o) | La carpeta Diseño reúne la documentación elaborada durante el Tercer Sprint del proyecto SmartPrice, centrada en el diseño visual, la arquitectura de interfaz y la validación con usuarios finales. Los documentos aquí contenidos transforman los requisitos en prototipos, guías y reportes de validación que orientan la implementación y las iteraciones de UX/UI. |
 | [**Presentación del avance**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Presentaci%C3%B3n%20del%20avance) | Esta carpeta contiene los recursos correspondientes a la presentación final del avance del proyecto SmartPrice, donde se expone el estado actual del desarrollo, los módulos implementados, las validaciones realizadas y los próximos pasos del proyecto. |
 | [**Proceso**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Proceso) | Su propósito es establecer la estructura de trabajo basada en la metodología Scrum, detallando cómo el equipo gestionará los sprints, los entregables y la evolución del producto durante la segunda fase del desarrollo. |
 | [**Producto**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Producto) | Esta carpeta tiene como objetivo documentar los cambios del producto SmartPrice de forma estructurada y verificable. |
-| [**Requisitos**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Requisitos) | Esta carpeta reúne la documentación elaborada durante el primer sprint del proyecto SmartPrice, enfocada en el análisis, definición y priorización de los requisitos del sistema.
-Su propósito es establecer una base sólida para el desarrollo, diseño y validación del producto. |
+| [**Requisitos**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Readme/2da%20Entrega/Requisitos) | Esta carpeta reúne la documentación elaborada durante el primer sprint del proyecto SmartPrice, enfocada en el análisis, definición y priorización de los requisitos del sistema. Su propósito es establecer una base sólida para el desarrollo, diseño y validación del producto. |
 
 ---
 
