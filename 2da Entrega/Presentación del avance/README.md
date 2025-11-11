@@ -1,19 +1,32 @@
-# Presentación del avance – Proyecto SmartPrice
+# Presentación del Avance – SmartPrice
+
+## Descripción
+Esta carpeta contiene los recursos correspondientes a la **presentación final del avance** del proyecto **SmartPrice**, donde se expone el estado actual del desarrollo, los módulos implementados, las validaciones realizadas y los próximos pasos del proyecto.
 
 ---
 
-##  Descripción general
+## Contenido
 
-La carpeta **Presentación del avance** contiene el link a la presentación
-
-
----
-
-##  Contenido de la carpeta
-
-| Archivo | Descripción breve |
-|---------|-------------------|
-| [**Presentación-final.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Actualizar-y-a%C3%B1adir-readme-de-la-segunda-entrega/2da%20Entrega/Presentaci%C3%B3n%20del%20avance/Presentaci%C3%B3n_Final.md) | Contiene el link de la presentación final |
+-  [Presentación Final (Documento)](./Presentación_Final.md)
 
 ---
 
+##  Resumen del contenido del video
+Durante la presentación se aborda:
+
+-  Avances del sistema SmartPrice
+-  Módulos implementados e integrados
+-  Validación de interfaz y experiencia de usuario
+-  Retroalimentación obtenida por parte del cliente
+-  Documentación generada durante los sprints
+
+---
+
+##  Objetivo de la presentación
+Comunicar los avances logrados en el desarrollo del proyecto, mostrar evidencias funcionales del producto y demostrar el cumplimiento de los requisitos establecidos hasta esta etapa.
+
+---
+
+##  Presentado por
+Equipo 2 – Proyecto SmartPrice  
+Facultad de Ingeniería, Universidad Autónoma de Yucatán (UADY)
