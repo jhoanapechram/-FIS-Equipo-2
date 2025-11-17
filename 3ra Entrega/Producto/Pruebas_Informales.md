@@ -111,187 +111,256 @@ El moderador no interviene durante la ejecución, excepto para registrar métric
 
 ---
 
-# CU-001 – Consultar y Comparar Precios  
+# 1. CU-001 – Consultar y Comparar Precios
 
-### **Tarea 1: Buscar un producto**
-**Indicador:**  
-- Tiempo de búsqueda del producto.
+## Tarea 1 – Buscar un producto
+### Acción del usuario:
+- Localizar la barra o ícono de búsqueda.
+- Escribir el nombre del producto.
+- Ejecutar la búsqueda.
 
-**Criterios:**  
-- Identifica la barra de búsqueda.  
-- Escribe correctamente el nombre del producto.  
-- Los resultados coinciden con lo escrito.  
-- No muestra confusión en el procedimiento.
+### Indicador:
+- Tiempo de búsqueda del producto (segundos).
 
-**Indicaciones del moderador:**  
-- “Por favor, busca el producto indicado.”  
-- Registrar tiempo.  
-- No guiar la ubicación de la barra de búsqueda.  
+### Criterios:
+- Encuentra la barra sin ayuda.
+- Escribe correctamente el producto.
+- Los resultados son coherentes.
+- No muestra confusión.
 
----
-
-### **Tarea 2: Interpretar los resultados**
-**Indicador:**  
-- Tiempo para identificar el precio más bajo.
-
-**Criterios:**  
-- Comprende precios, tiendas y estructura de la lista.  
-- Identifica correctamente cuál oferta conviene más.  
-- La información se lee con claridad.
-
-**Moderador:**  
-- “Indica cuando encuentres el precio más bajo.”  
-- Registrar dudas verbales.  
+### Indicaciones del moderador:
+- “Por favor, busca el producto indicado.”
+- Registrar tiempo total.
+- Registrar dudas o errores verbales.
+- No guiar ubicación de la barra de búsqueda.
 
 ---
 
-### **Tarea 3: Evaluar facilidad del comparador**
-**Indicador:**  
-- Claridad de la vista comparativa (escala 1–5).
+## Tarea 2 – Identificar el precio más bajo
+### Acción del usuario:
+- Revisar los resultados.
+- Señalar el producto con el precio más bajo.
 
-**Criterios:**  
-- Explica si la comparación fue clara o confusa.  
-- Reconoce diferencias de precios sin problema.  
-- Identifica si la interfaz ayudó (orden, colores, íconos).
+### Indicador:
+- Tiempo para identificar el precio más económico.
 
-**Moderador:**  
-- Pregunta abierta: “¿Te pareció clara la comparación de precios? ¿Por qué?”  
+### Criterios:
+- Comprende precios y tiendas.
+- Identifica correctamente cuál oferta conviene más.
+- No expresa confusión.
+
+### Indicaciones del moderador:
+- “Revisa los resultados y avísame cuando encuentres el precio más bajo.”
+- Registrar tiempo.
+- Registrar confusiones o clics erróneos.
+- No ayudar a interpretar precios.
 
 ---
 
-# CU-005 – Recomendar Tienda Más Conveniente  
+## Tarea 3 – Explorar la vista comparativa
+### Acción del usuario:
+- Observar la pantalla comparativa antes de avanzar.
 
-### **Tarea 1: Seleccionar la tienda recomendada**
-**Indicador:**  
-- Tasa de selección correcta.
+### Indicador:
+- Claridad percibida de la vista comparativa (escala 1–5).
 
-**Criterios:**  
-- Identifica la etiqueta “Recomendada”.  
-- La tienda está visualmente destacada.  
+### Criterios:
+- Percibe la estructura como clara.
+- Identifica diferencias entre precios sin confusión.
+
+### Indicaciones del moderador:
+- “Por favor, explora la pantalla comparativa.”
+- Registrar comportamientos de duda.
+- No explicar la estructura de la tabla.
+- Pregunta posterior:  
+  “¿La comparación de precios te pareció clara? ¿Por qué?”
+
+---
+
+# 2. CU-005 – Recomendar Tienda Más Conveniente
+
+## Tarea 1 – Seleccionar la tienda recomendada
+### Acción del usuario:
+- Identificar la tienda marcada como “Recomendada”.
+- Seleccionarla.
+
+### Indicador:
+- Tasa de selección correcta de la tienda recomendada.
+
+### Criterios:
+- Reconoce la etiqueta sin ayuda.
 - La selecciona sin dudar ni buscar demasiado.
+- No confunde otra tienda como recomendada.
 
-**Moderador:**  
-- “Selecciona la tienda que consideres más conveniente.”  
-- No decir cuál está recomendada.  
-
----
-
-### **Tarea 2: Verificar la lógica de la recomendación**
-**Indicador:**  
-- Comprensión de la razón de la recomendación.
-
-**Criterios:**  
-- Comprende los factores: precio + distancia.  
-- La explicación coincide con los datos en interfaz.  
-- No expresa confusión sobre la lógica.
-
-**Moderador:**  
-- Pregunta abierta: “¿Por qué crees que el sistema recomendó esa tienda?”  
+### Indicaciones del moderador:
+- “Selecciona la tienda que consideres más conveniente.”
+- Registrar si selecciona la correcta.
+- Registrar errores o dudas.
+- No indicar cuál tienda está recomendada.
 
 ---
 
-### **Tarea 3: Identificar visualmente la tienda recomendada**
-**Indicador:**  
-- Tiempo de identificación visual de la tienda recomendada.
+## Tarea 2 – Revisar los datos de la tienda recomendada
+### Acción del usuario:
+- Observar precio, distancia y ahorro.
 
-**Criterios:**  
-- Reconoce la etiqueta o distintivo sin confusión.  
-- Interpreta correctamente el resultado.  
-- No selecciona por error otra tienda.
+### Indicador:
+- Comprensión de la lógica de la recomendación.
 
-**Moderador:**  
-- Registrar tiempo desde que observa la pantalla.  
+### Criterios:
+- Relaciona precio + distancia como factores clave.
+- Explica posteriormente la lógica sin confusión.
+
+### Indicaciones del moderador:
+- “Observa los datos de la tienda seleccionada para continuar.”
+- Registrar si explora correctamente la información.
+- Pregunta posterior:  
+  “¿Por qué crees que el sistema recomendó esa tienda?”
 
 ---
- 
-# CU-006 – Interactuar con el Asistente Inteligente  
 
-### **Tarea 1: Abrir el chatbot**
-**Indicador:**  
+## Tarea 3 – Agregar producto al carrito
+### Acción del usuario:
+- Agregar el producto desde la tienda seleccionada al carrito.
+
+### Indicador:
+- Tiempo y errores en el proceso.
+
+### Criterios:
+- Encuentra el botón sin dificultad.
+- Sistema confirma el agregado del producto.
+- No selecciona otra tienda por error.
+
+### Indicaciones del moderador:
+- “Agrega este producto al carrito desde la tienda seleccionada.”
+- Registrar errores y retrocesos.
+- No señalar dónde está el botón.
+
+---
+
+# 3. CU-006 – Interactuar con el Asistente Inteligente
+
+## Tarea 1 – Abrir el chatbot
+### Acción del usuario:
+- Localizar y acceder al asistente inteligente.
+
+### Indicador:
 - Tiempo para abrir el chatbot.
 
-**Criterios:**  
-- Encuentra el ícono sin ayuda.  
-- Accede sin pasos adicionales.  
-- No abre secciones equivocadas.
+### Criterios:
+- Reconoce el ícono sin ayuda.
+- Entra sin abrir secciones equivocadas.
 
-**Moderador:**  
-- “Por favor, accede al asistente inteligente.”  
+### Indicaciones del moderador:
+- “Accede al asistente inteligente, por favor.”
+- Registrar tiempo.
+- No señalar el ícono.
 
 ---
 
-### **Tarea 2: Conversar con el chatbot**
-Preguntas obligatorias:
-1. ¿Dónde encuentro el precio más bajo para este producto?  
-2. ¿Qué tienda está más cerca con buen precio?  
-3. ¿Este producto tiene alguna oferta o promoción?
+## Tarea 2 – Realizar tres preguntas dentro del chatbot
+### Acción del usuario:
+Dentro del asistente, hacer estas preguntas:
+1. ¿Dónde encuentro el precio más bajo?
+2. ¿Qué tienda está más cerca?
+3. ¿Hay alguna promoción para este producto?
 
-**Indicador:**  
+### Indicador:
 - Exactitud percibida de la respuesta del chatbot.
 
-**Criterios:**  
-- Entiende las respuestas.  
-- Navega sin perderse entre chatbot y pantalla principal.  
-- Interpreta correctamente sugerencias o enlaces.
+### Criterios:
+- Lee y comprende las respuestas.
+- Navega sin perderse entre pantallas.
+- Interpreta correctamente enlaces o sugerencias.
 
-**Moderador:**  
-- “Realiza las tres preguntas indicadas previamente.”  
+### Indicaciones del moderador:
+- “Dentro del asistente, formula estas tres preguntas:
+  1) ¿Dónde encuentro el precio más bajo?
+  2) ¿Qué tienda está más cerca?
+  3) ¿Hay alguna promoción disponible?”
+- Registrar si completa las preguntas.
+- No apoyar en escritura o interpretación.
+
+---
+
+## Tarea 3 – Seguir una recomendación del chatbot
+### Acción del usuario:
+- Seleccionar una recomendación o enlace sugerido.
+
+### Indicador:
+- Utilidad percibida de la recomendación.
+
+### Criterios:
+- Comprende la acción sugerida.
+- Navega sin perderse.
+
+### Indicaciones del moderador:
+- “Sigue una de las recomendaciones del asistente.”
+- Registrar si logra realizar la acción.
+- Pregunta posterior:  
+  “¿Qué tan útil te parecieron las respuestas del asistente?”
 
 ---
 
-### **Tarea 3: Opinión del chatbot**
-**Indicador:**  
-- Utilidad percibida de las respuestas del chatbot.
+# 4. CU-011 – Gestionar Lista de Compras
 
-**Criterios:**  
-- Entiende la información.  
-- Reconoce si es útil o insuficiente.  
-- No muestra confusión relevante sobre el contenido.
+## Tarea 1 – Crear una nueva lista
+### Acción del usuario:
+- Crear una nueva lista desde el carrito.
+- Asignar nombre.
 
-**Moderador:**  
-- Pregunta abierta: “¿Qué tan útil consideras la respuesta del asistente?”  
+### Indicador:
+- Tiempo para crear la lista.
 
----
- 
-# CU-011 – Gestionar Lista de Compras  
-
-### **Tarea 1: Crear una lista**
-**Indicador:**  
-- Tiempo para crear una nueva lista.
-
-**Criterios:**  
-- Agrega productos sin errores.  
-- Encuentra “Crear nueva lista”.  
+### Criterios:
+- Encuentra la opción “Crear nueva lista”.
+- Añade productos sin errores.
 - La lista se guarda correctamente.
 
-**Moderador:**  
-- “Crea una nueva lista con los productos que seleccionaste.”  
+### Indicaciones del moderador:
+- “Crea una nueva lista con los productos que seleccionaste.”
+- Registrar tiempo y errores.
+- No indicar la ubicación del botón.
 
 ---
 
-### **Tarea 2: Visualizar total**
-**Indicador:**  
-- Claridad del total y desglose  
-  *(≥85% deben identificarlo correctamente).*
+## Tarea 2 – Visualizar el total de la lista
+### Acción del usuario:
+- Localizar el precio total.
+- Abrir desglose si aplica.
 
-**Criterios:**  
-- Identifica el total fácilmente.  
-- Comprende el desglose.  
-- Interpreta correctamente el ahorro.
+### Indicador:
+- Claridad del total (≥85% deben identificarlo).
 
-**Moderador:**  
-- “Indica cuando puedas visualizar el total de la lista.”  
+### Criterios:
+- Identifica el total rápidamente.
+- Comprende precios y desglose.
+
+### Indicaciones del moderador:
+- “Indica cuando puedas ver el total de la lista.”
+- Registrar si hubo confusión.
+- No señalar la ubicación del total.
 
 ---
 
-### **Tarea 3: Dificultad percibida al crear una lista**
-**Indicador:**  
-- Nivel de dificultad percibida de crear una lista.
+## Tarea 3 – Guardar la lista
+### Acción del usuario:
+- Guardar la lista creada.
 
-**Criterios:**  
-- Explica si fue fácil o difícil.  
-- Identifica cualquier paso confuso.  
+### Indicador:
+- Dificultad percibida (pregunta posterior).
+
+### Criterios:
+- Explica si fue fácil o difícil.
+- Identifica pasos confusos.
 - Evalúa si usaría esta función en la vida real.
 
-**Moderador:**  
-- Pregunta abierta: “¿Fue fácil crear una lista? ¿Por qué?”  
+### Indicaciones del moderador:
+- “Guarda la lista que acabas de crear.”
+- Registrar errores o pasos innecesarios.
+- Pregunta posterior:  
+  “¿Te pareció fácil crear y guardar la lista? ¿Por qué?”
+
+---
+
+
