@@ -1,34 +1,13 @@
-# Documentación del Prompt y Guía de Diseño — SmartPrice
+# Prompt y Guía de Diseño — SmartPrice
 
-## Índice
-1. [Introducción](#introducción)
-2. [Prompt utilizado para generar el prototipo](#1-prompt-utilizado-para-generar-el-prototipo)
-3. [Guía de Diseño completa](#2-guía-de-diseño-completa)
-   - [1. Sistema de Diseño](#21-sistema-de-diseño)
-   - [2. Componentes UI](#22-componentes-ui)
-   - [3. Patrones de Interacción](#23-patrones-de-interacción)
-   - [4. Layout y Grid System](#24-layout-y-grid-system)
-   - [5. Componentes Específicos](#25-componentes-específicos)
-   - [6. Guías Responsive](#26-guías-responsive)
-   - [7. Accesibilidad](#27-accesibilidad)
-   - [8. Iconografía](#28-iconografía)
-   - [9. Animaciones](#29-animaciones)
-   - [10. Guías de Contenido](#210-guías-de-contenido)
-   - [11. Sistema de Estados](#211-sistema-de-estados)
-   - [12. Consideraciones Técnicas](#212-consideraciones-técnicas)
+## Introducción
+Para el desarrollo del prototipo de SmartPrice, se utilizaron herramientas de Inteligencia Artificial tanto para generar la estructura del código como para definir la interfaz visual inicial.  
+Este documento reúne dos elementos fundamentales del proceso:
 
----
+1. El **prompt completo** que se proporcionó a la IA para generar el diseño y la estructura base del proyecto.
+2. La **guía de diseño** utilizada para dar forma a la identidad visual y a los componentes UI del proyecto.
 
-# Introducción
-
-Durante el desarrollo del prototipo de SmartPrice, se emplearon herramientas de Inteligencia Artificial para generar tanto el código base como la estructura visual del diseño.
-
-Este documento integra:
-
-- El **prompt original** utilizado para solicitar el prototipo a la IA.  
-- La **guía de diseño completa**, que establece los lineamientos visuales, tipográficos, espaciales y de interacción para la interfaz.
-
-Toda la información se presenta a continuación en formato Markdown, tal como se usará en el repositorio del proyecto.
+Toda la información fue extraída directamente de los documentos originales.
 
 ---
 
