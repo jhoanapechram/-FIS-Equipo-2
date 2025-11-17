@@ -63,6 +63,8 @@ Objetivo final
 Crear un mockup completo, visualmente atractivo y ordenado que simule los procesos principales de SmartPrice.
 
 
+## Guía de diseño
+
 # 2. Guía de Diseño completa
 
 A continuación se presenta íntegramente la guía de diseño utilizada para el prototipo.  
