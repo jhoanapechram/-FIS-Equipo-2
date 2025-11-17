@@ -1,0 +1,353 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, Segunda-Entrega, TERCERA-ENTREGA-V2 ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout all branches
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: false
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Create site structure
+        run: |
+          # Crear estructura de directorios
+          mkdir -p _site/_branches
+          mkdir -p _site/assets/images
+          
+          # Checkout y copiar cada rama
+          git checkout main
+          cp -r ./* _site/_branches/main/ 2>/dev/null || true
+          
+          git checkout Segunda-Entrega
+          cp -r ./* _site/_branches/Segunda-Entrega/ 2>/dev/null || true
+          
+          git checkout TERCERA-ENTREGA-V2
+          cp -r ./* _site/_branches/TERCERA-ENTREGA-V2/ 2>/dev/null || true
+          
+          # Crear archivo de configuración con información de ramas
+          echo '{
+            "branches": {
+              "main": "1era Entrega - Pruebas de Desempeño",
+              "Segunda-Entrega": "2da Entrega - Imágenes", 
+              "TERCERA-ENTREGA-V2": "3ra Entrega - Sesión Práctica"
+            },
+            "lastUpdated": "$(date)"
+          }' > _site/branches-info.json
+
+      - name: Create main index page
+        run: |
+          cat > _site/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="es">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>FIS - Equipo 2</title>
+              <style>
+                  * { margin: 0; padding: 0; box-sizing: border-box; }
+                  body { 
+                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                      line-height: 1.6; 
+                      color: #333; 
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      min-height: 100vh;
+                  }
+                  .container { 
+                      max-width: 1200px; 
+                      margin: 0 auto; 
+                      padding: 20px; 
+                  }
+                  header { 
+                      text-align: center; 
+                      padding: 3rem 0; 
+                      color: white;
+                  }
+                  header h1 { 
+                      font-size: 3rem; 
+                      margin-bottom: 1rem;
+                      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                  }
+                  header p { 
+                      font-size: 1.2rem; 
+                      opacity: 0.9;
+                  }
+                  .nav-cards { 
+                      display: grid; 
+                      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+                      gap: 2rem; 
+                      margin: 3rem 0;
+                  }
+                  .card { 
+                      background: white; 
+                      border-radius: 15px; 
+                      padding: 2rem; 
+                      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      text-decoration: none;
+                      color: inherit;
+                      display: block;
+                  }
+                  .card:hover { 
+                      transform: translateY(-10px); 
+                      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                  }
+                  .card h3 { 
+                      color: #4a5568; 
+                      margin-bottom: 1rem;
+                      font-size: 1.5rem;
+                  }
+                  .card p { 
+                      color: #718096; 
+                      margin-bottom: 1.5rem;
+                  }
+                  .badge { 
+                      display: inline-block; 
+                      background: #667eea; 
+                      color: white; 
+                      padding: 0.3rem 0.8rem; 
+                      border-radius: 20px; 
+                      font-size: 0.8rem; 
+                      margin-top: 1rem;
+                  }
+                  .branch-content { 
+                      background: white; 
+                      border-radius: 15px; 
+                      padding: 2rem; 
+                      margin: 2rem 0;
+                      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                  }
+                  .branch-header { 
+                      border-bottom: 2px solid #667eea; 
+                      padding-bottom: 1rem; 
+                      margin-bottom: 1.5rem;
+                  }
+                  .readme-content { 
+                      background: #f7fafc; 
+                      padding: 1.5rem; 
+                      border-radius: 10px; 
+                      border-left: 4px solid #667eea;
+                  }
+                  footer { 
+                      text-align: center; 
+                      padding: 2rem; 
+                      color: white; 
+                      margin-top: 3rem;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <header>
+                      <h1>🧪 FIS - Equipo 2</h1>
+                      <p>Proyecto de Fundamentos de Ingeniería de Software</p>
+                  </header>
+
+                  <section class="nav-cards">
+                      <a href="#objetivos" class="card">
+                          <h3>🎯 Objetivos</h3>
+                          <p>Conoce los objetivos y metas de nuestro proyecto</p>
+                          <span class="badge">Información General</span>
+                      </a>
+
+                      <a href="#equipo" class="card">
+                          <h3>👥 Nuestro Equipo</h3>
+                          <p>Conoce a los miembros del equipo de trabajo</p>
+                          <span class="badge">Integrantes</span>
+                      </a>
+
+                      <a href="#entregas" class="card">
+                          <h3>📦 Entregas</h3>
+                          <p>Accede a todas las entregas del proyecto</p>
+                          <span class="badge">3 Entregas</span>
+                      </a>
+                  </section>
+
+                  <!-- Sección Objetivos -->
+                  <section id="objetivos" class="branch-content">
+                      <div class="branch-header">
+                          <h2>🎯 Objetivos del Proyecto</h2>
+                      </div>
+                      <div class="readme-content">
+                          <p>Este proyecto tiene como objetivo principal aplicar los fundamentos de ingeniería de software en el desarrollo de soluciones tecnológicas.</p>
+                          <h3>Objetivos Específicos:</h3>
+                          <ul>
+                              <li>Implementar metodologías ágiles en el desarrollo</li>
+                              <li>Aplicar pruebas de desempeño y calidad</li>
+                              <li>Documentar el proceso de desarrollo</li>
+                              <li>Colaborar eficientemente en equipo</li>
+                          </ul>
+                      </div>
+                  </section>
+
+                  <!-- Sección Equipo -->
+                  <section id="equipo" class="branch-content">
+                      <div class="branch-header">
+                          <h2>👥 Miembros del Equipo</h2>
+                      </div>
+                      <div class="readme-content">
+                          <p>Nuestro equipo está compuesto por estudiantes dedicados de ingeniería de software.</p>
+                          <!-- Las imágenes se cargarán dinámicamente -->
+                          <div id="team-members"></div>
+                      </div>
+                  </section>
+
+                  <!-- Sección Entregas -->
+                  <section id="entregas" class="branch-content">
+                      <div class="branch-header">
+                          <h2>📦 Entregas del Proyecto</h2>
+                      </div>
+                      
+                      <!-- Entrega 1 -->
+                      <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f0f4f8; border-radius: 10px;">
+                          <h3>🚀 Entrega 1 - Pruebas de Desempeño</h3>
+                          <p>Primera entrega enfocada en pruebas y fundamentos del proyecto.</p>
+                          <div style="margin-top: 1rem;">
+                              <a href="#entrega-1" style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-right: 1rem;">
+                                  Ver Contenido
+                              </a>
+                              <a href="./_branches/main/" style="background: #48bb78; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none;">
+                                  Explorar Archivos
+                              </a>
+                          </div>
+                      </div>
+
+                      <!-- Entrega 2 -->
+                      <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f0f4f8; border-radius: 10px;">
+                          <h3>🖼️ Entrega 2 - Imágenes y Avances</h3>
+                          <p>Segunda entrega con documentación visual y avances del proyecto.</p>
+                          <div style="margin-top: 1rem;">
+                              <a href="#entrega-2" style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-right: 1rem;">
+                                  Ver Contenido
+                              </a>
+                              <a href="./_branches/Segunda-Entrega/" style="background: #48bb78; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none;">
+                                  Explorar Archivos
+                              </a>
+                          </div>
+                      </div>
+
+                      <!-- Entrega 3 -->
+                      <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f0f4f8; border-radius: 10px;">
+                          <h3>🔬 Entrega 3 - Sesión Práctica</h3>
+                          <p>Tercera entrega con sesiones prácticas y implementaciones.</p>
+                          <div style="margin-top: 1rem;">
+                              <a href="#entrega-3" style="background: #667eea; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-right: 1rem;">
+                                  Ver Contenido
+                              </a>
+                              <a href="./_branches/TERCERA-ENTREGA-V2/" style="background: #48bb78; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none;">
+                                  Explorar Archivos
+                              </a>
+                          </div>
+                      </div>
+                  </section>
+
+                  <!-- Contenido específico de cada entrega -->
+                  <div id="entrega-1" class="branch-content">
+                      <div class="branch-header">
+                          <h2>🚀 Entrega 1 - Pruebas de Desempeño</h2>
+                      </div>
+                      <div class="readme-content" id="content-main">
+                          <p>Cargando contenido de la primera entrega...</p>
+                      </div>
+                  </div>
+
+                  <div id="entrega-2" class="branch-content">
+                      <div class="branch-header">
+                          <h2>🖼️ Entrega 2 - Imágenes y Avances</h2>
+                      </div>
+                      <div class="readme-content" id="content-segunda">
+                          <p>Cargando contenido de la segunda entrega...</p>
+                      </div>
+                  </div>
+
+                  <div id="entrega-3" class="branch-content">
+                      <div class="branch-header">
+                          <h2>🔬 Entrega 3 - Sesión Práctica</h2>
+                      </div>
+                      <div class="readme-content" id="content-tercera">
+                          <p>Cargando contenido de la tercera entrega...</p>
+                      </div>
+                  </div>
+
+                  <footer>
+                      <p>© 2024 FIS - Equipo 2 | Universidad [Nombre]</p>
+                      <p>Última actualización: <span id="last-update"></span></p>
+                  </footer>
+              </div>
+
+              <script>
+                  // Cargar READMEs dinámicamente
+                  async function loadReadme(branch, elementId) {
+                      try {
+                          const response = await fetch(`./_branches/${branch}/README.md`);
+                          if (response.ok) {
+                              const readme = await response.text();
+                              document.getElementById(elementId).innerHTML = 
+                                  `<pre>${readme}</pre>`;
+                          } else {
+                              document.getElementById(elementId).innerHTML = 
+                                  '<p>No se pudo cargar el README de esta entrega.</p>';
+                          }
+                      } catch (error) {
+                          document.getElementById(elementId).innerHTML = 
+                              '<p>Error al cargar el contenido.</p>';
+                      }
+                  }
+
+                  // Cargar todos los READMEs cuando la página esté lista
+                  document.addEventListener('DOMContentLoaded', function() {
+                      loadReadme('main', 'content-main');
+                      loadReadme('Segunda-Entrega', 'content-segunda');
+                      loadReadme('TERCERA-ENTREGA-V2', 'content-tercera');
+                      
+                      // Actualizar fecha
+                      document.getElementById('last-update').textContent = new Date().toLocaleDateString();
+                  });
+
+                  // Smooth scroll para navegación
+                  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                      anchor.addEventListener('click', function (e) {
+                          e.preventDefault();
+                          const target = document.querySelector(this.getAttribute('href'));
+                          if (target) {
+                              target.scrollIntoView({
+                                  behavior: 'smooth',
+                                  block: 'start'
+                              });
+                          }
+                      });
+                  });
+              </script>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build-and-deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
