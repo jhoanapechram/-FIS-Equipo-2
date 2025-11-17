@@ -1,27 +1,61 @@
 # Cambios Solicitados al Prototipo de SmartPrice
 
-A continuación se describen los ajustes y mejoras solicitadas para el prototipo de SmartPrice. Estos cambios abarcan funcionalidades de historial de precios, predicciones, perfil del usuario, gestión de listas y mensajes de confirmación dentro del sistema.
+Este documento describe los cambios solicitados para mejorar la funcionalidad y experiencia del usuario dentro del prototipo de SmartPrice. Las modificaciones incluyen ajustes en historial de precios, predicciones, perfil, carrito y mensajes de confirmación.
+
+---
 
 ## Cambios Realizados
 
-- El usuario hace clic en el botón **"Ver Historial de Precios"** y se despliega la gráfica correspondiente.
+- **Historial de precios**
+  - El usuario hace clic en el botón **"Ver Historial de Precios"**.
+  - El sistema despliega la gráfica de historial de precios.
 
-- El sistema muestra una predicción (por ejemplo, “Se prevé una bajada de precios la próxima semana”) o programa una alerta automática cuando se presiona el botón **"Seguir producto"**.
+- **Predicciones y alertas**
+  - El sistema muestra una predicción del comportamiento del precio (por ejemplo: “Se prevé una bajada de precios la próxima semana”).
+  - Al presionar el botón **"Seguir producto"**, el sistema programa una alerta automática.
 
-- **En el apartado de Perfil:**
+---
+
+## Perfil del Usuario
+
+- **Opciones de acceso**
   - Si el usuario selecciona **Registrarse**, se muestra un formulario con campos de correo y contraseña.
-  - Si selecciona **Editar Perfil**, el sistema despliega sus preferencias actuales.
-  - El usuario puede modificar supermercados favoritos, ubicación, canal de notificaciones y radio de búsqueda.
-  - El usuario presiona **“Guardar cambios”**.
-  - El sistema muestra el mensaje de confirmación: “Cambios guardados con éxito”.
+  - Si el usuario selecciona **Editar Perfil**, el sistema muestra sus preferencias actuales.
 
-- **En la sección Carrito de la barra de navegación:**
-  - El sistema muestra la pantalla **“Resumen de compra”** con las opciones **Crear nueva lista** o **Ver listas existentes**.
-  - El usuario puede crear una nueva lista o editar una existente.
-  - El usuario agrega productos desde la barra de búsqueda o desde su historial/favoritos.
-  - El usuario puede eliminar o agregar productos, renombrar la lista o cambiar el orden.
-  - Al presionar **“Guardar lista”**, el sistema guarda los cambios y muestra el mensaje “Lista guardada correctamente”, además de ofrecer la opción de exportarla.
-  - El sistema recalcula el ahorro potencial y lo muestra en pantalla.
+- **Preferencias editables**
+  - Supermercados favoritos.
+  - Ubicación.
+  - Canal de notificaciones.
+  - Radio de búsqueda.
 
-- Cuando se reporte un precio exitosamente, el sistema debe mostrar el mensaje:  
+- **Confirmación**
+  - El usuario presiona **"Guardar cambios"**.
+  - El sistema muestra el mensaje:  
+    **“Cambios guardados con éxito”.**
+
+---
+
+## Carrito y Listas de Compra
+
+- El usuario selecciona **"Carrito"** en la barra de navegación principal.
+- El sistema muestra la pantalla **"Resumen de compra"** con:
+  - **Crear nueva lista**
+  - **Ver listas existentes**
+- El usuario puede:
+  - Crear una lista o editar una existente.
+  - Agregar productos desde la barra de búsqueda, historial o favoritos.
+  - Eliminar o agregar productos.
+  - Renombrar la lista.
+  - Cambiar el orden de los productos.
+- Al presionar **"Guardar lista"**, el sistema:
+  - Guarda los cambios.
+  - Muestra el mensaje: **“Lista guardada correctamente”**.
+  - Ofrece la opción de exportarla.
+  - Recalcula el ahorro potencial y lo muestra en pantalla.
+
+---
+
+## Reporte de Precios
+
+- Cuando el usuario reporta un precio exitosamente, el sistema debe mostrar:  
   **“Gracias por tu reporte, será revisado por el equipo de SmartPrice”.**
