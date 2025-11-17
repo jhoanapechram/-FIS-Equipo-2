@@ -93,7 +93,7 @@ Aquí se documentan los entregables, avances, evidencias y artefactos producidos
 
 ## 📌 Objetivos del Proyecto
 
-*(Agrega aquí los objetivos principales de SmartPrice.)*
+*Desarrollar una plataforma que permita comparar precios de productos en supermercados para optimizar la toma de decisiones del consumidor, mediante una interfaz accesible, actualizada y centrada en el usuario.*
 
 ---
 
