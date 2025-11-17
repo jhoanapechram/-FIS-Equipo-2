@@ -64,6 +64,7 @@ Crear un mockup completo, visualmente atractivo y ordenado que simule los proces
 
 
 ## Guía de diseño
+---
 
 # 2. Guía de Diseño completa
 
