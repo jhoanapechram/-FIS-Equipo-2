@@ -61,3 +61,196 @@ README.md incluido.
 
 Objetivo final  
 Crear un mockup completo, visualmente atractivo y ordenado que simule los procesos principales de SmartPrice.
+
+
+# 2. Guía de Diseño completa
+
+A continuación se presenta íntegramente la guía de diseño utilizada para el prototipo.  
+Se conservaron los emojis, la estructura y el contenido original.
+
+---
+
+## Sistema de Diseño 🎨
+
+### Paleta de Colores
+**Colores principales:**  
+- Azul primario (#1e88e5)  
+- Naranja acento (#ff6d00)  
+- Morado secundario (#5e35b1)  
+- Verde éxito (#43a047)
+
+**Colores neutros:**  
+- Fondo muy claro (#f8fafc)  
+- Paneles (#ffffff)  
+- Texto principal (#333333)  
+- Texto secundario (#546e7a)  
+- Texto claro (#78909c)
+
+**Efectos visuales:**  
+- Sombra  
+- Sombra hover  
+- Glassmorphism ❄️
+
+---
+
+## Tipografía ✍️
+
+**Familia:** "Poppins", sans-serif  
+
+**Escala tipográfica:**  
+- h1 — 44.8px  
+- h2 — 37.3px  
+- h3 — 31.1px  
+- h4 — 24.8px  
+- h5 — 20.7px  
+- h6 — 17.3px  
+- Texto base — 14.4px  
+- Texto pequeño — 12px  
+
+**Pesos:** desde 300 hasta 800.
+
+---
+
+## Espaciado y Bordes 📏
+
+Unidades:  
+- 4px  
+- 8px  
+- 16px  
+- 24px  
+- 32px  
+
+Border radius:  
+- 8px  
+- 12px  
+- 16px  
+- 20px  
+- Circular  
+
+---
+
+# Componentes UI 🧩
+
+## Botones  
+- Botones primarios con gradiente azul → morado ✨  
+- Botones secundarios en color naranja  
+- Estados: normal, hover, active, disabled  
+- Transiciones suaves  
+
+## Tarjetas  
+- Fondo con gradiente  
+- Sombra suave  
+- Bordes redondeados  
+- Elevación en hover  
+
+## Campos de formulario  
+- Inputs con sombra ligera  
+- Bordes redondeados  
+- Estados: focus, error, éxito  
+
+## Navegación  
+- Barra superior con glassmorphism  
+- Navegación inferior para dispositivos móviles 📱  
+
+---
+
+# Patrones de Interacción 🔁
+
+## Hover  
+- Aumento de elevación  
+- Cambio de sombra  
+
+## Transiciones  
+- Animaciones suaves  
+
+## Feedback visual  
+- Notificaciones tipo toast 🔔  
+
+---
+
+# Layout y Grid System 📐
+
+## Rejilla  
+- Grid responsive  
+- Columnas auto-ajustables  
+
+## Contenedores  
+- Máximo de 1200px  
+- Padding lateral  
+
+---
+
+# Componentes Específicos 🛒
+
+## Tarjetas de producto  
+- Imagen del producto  
+- Nombre  
+- Precio  
+- Badge de oferta 🔖  
+
+## Badges  
+Colores según significado:  
+- Verde: ahorro  
+- Naranja: tendencia  
+- Morado: información  
+
+## Gráficas  
+- Barras animadas  
+- Comparación de precios 📊  
+
+---
+
+# Guías Responsive 📱💻
+
+Breakpoints para:  
+- Móvil  
+- Móvil pequeño  
+- Tablet  
+
+Patrones móviles:  
+- Navegación inferior  
+- Contenido apilado  
+- Elementos táctiles amplios  
+
+---
+
+# Accesibilidad ♿  
+- Cumplimiento de contraste AA  
+- Estados de foco visibles  
+- Accesibilidad por teclado  
+
+---
+
+# Iconografía 🔣  
+- Uso de emojis como iconos  
+- Representación visual mediante símbolos  
+
+---
+
+# Animaciones ✨  
+- Fade-in  
+- Estado de carga del chat  
+- Transiciones suaves  
+
+---
+
+# Guías de Contenido 📝  
+- Tono cercano y claro  
+- Placeholders descriptivos  
+- Textos de error orientados al usuario  
+
+---
+
+# Sistema de Estados 📈  
+- Tendencia al alza  
+- Tendencia a la baja  
+- Ofertas  
+- Estados de validación  
+
+---
+
+# Consideraciones Técnicas 🛠️  
+- Optimización de imágenes  
+- Persistencia con localStorage  
+- Lazy loading  
+- Arquitectura modular en JavaScript  
