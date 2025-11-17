@@ -1,19 +1,100 @@
-# Información de las carpetas:
+# 📘 SmartPrice  
+## Equipo 2 – Fundamentos de Ingeniería de Software
 
-## - [Competencias](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Competencias)
-- [Competencias genéricas y específicas_1](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Competencias/Competencias%20genericas%20y%20especificas_1.pdf)
-## - [Presentación del  avance](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Presentaci%C3%B3n%20del%20avance)
--  [Primera entrega video](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Presentaci%C3%B3n%20del%20avance/Primera_Entrega.md)
-## - [Proceso](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Proceso)
-- [Sprints](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Proceso/Sprints)
-    - [Resultados Reunión Sprint #1](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Sprints/Resultados_Reuni%C3%B3n_Sprint%20%231.docx)
-    - [Resultados Reunión Sprint #2](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Sprints/Resultados%20Reuni%C3%B3n%20Sprint%20%232.docx)
-  - [Bitácora_de_Actividades](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Bit%C3%A1cora_de_actividades.pdf)
-## - [Producto](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Producto)
-  - [Fis producto](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/FIS%20producto.pdf)
-  - [Video_presentación](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/Video_Presentaci%C3%B3n.md)
-## - [Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Requisitos)
-  - [Fis_Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf)
-  - [Historias-de-usuario](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/Historias_de_usuario.pdf)
-  - [Requisitos Priorización](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACI%C3%93N.pdf)
-     
+---
+
+## 📝 Descripción General
+
+Este repositorio contiene el desarrollo del proyecto **SmartPrice**, realizado por el **Equipo 2** como parte de la asignatura *Fundamentos de Ingeniería de Software*.  
+Aquí se documentan los entregables, avances, evidencias y artefactos producidos durante el proceso.
+
+---
+
+## 👥 Integrantes del Equipo 2  
+### Segunda Entrega – Prueba de Desempeño
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Integrante</th>
+    <th>Responsabilidad Principal</th>
+  </tr>
+
+  <tr>
+    <td><b>Jhoana Pech</b><br>
+        <img src="imagenes/Foto%20Jhoana.jpeg" width="120">
+    </td>
+    <td>Coordinación y seguimiento del proceso</td>
+  </tr>
+
+  <tr>
+    <td><b>Ana Angulo</b><br>
+        <img src="imagenes/ImagenVale.jpg" width="120">
+    </td>
+    <td>Definición de objetivos y criterios</td>
+  </tr>
+
+  <tr>
+    <td><b>Alejandra Aguilar</b><br>
+        <img src="imagenes/Imagen_Ale.jpg" width="120">
+    </td>
+    <td>Diseño visual y prototipos</td>
+  </tr>
+
+  <tr>
+    <td><b>Kevin Morales</b><br>
+        <img src="imagenes/K1.jpg" width="120">
+    </td>
+    <td>Requerimientos técnicos y calidad</td>
+  </tr>
+
+  <tr>
+    <td><b>Bianca Ramos</b><br>
+        <img src="imagenes/Bianca.jpg" width="120">
+    </td>
+    <td>Análisis funcional y desarrollo</td>
+  </tr>
+
+  <tr>
+    <td><b>Emilio Arellano</b><br>
+        <img src="imagenes/WhatsApp%20Image%202025-10-14%20at%2008.10.56_93906e61.jpg" width="120">
+    </td>
+    <td>Gestión del backlog y prioridades</td>
+  </tr>
+
+  <tr>
+    <td><b>José Correa</b><br>
+        <img src="imagenes/WhatsApp%20Image%202025-10-14%20at%2008.10.56_cc984aa9.jpg" width="120">
+    </td>
+    <td>Control de calidad y coherencia</td>
+  </tr>
+
+</table>
+
+</div>
+
+---
+
+## 📁 Estructura del Repositorio
+
+
+
+---
+
+## 📌 Objetivos del Proyecto
+
+*Desarrollar una plataforma que permita comparar precios de productos en supermercados para optimizar la toma de decisiones del consumidor, mediante una interfaz accesible, actualizada y centrada en el usuario.*
+
+---
+
+## 📬 Contacto
+
+Para dudas o seguimiento, contactar al equipo mediante la sección de *Issues* del repositorio o vía correo institucional.
+
+---
+
+<p align="center">
+  <b>Gracias por visitar nuestro proyecto SmartPrice 💡</b>
+</p>
+
