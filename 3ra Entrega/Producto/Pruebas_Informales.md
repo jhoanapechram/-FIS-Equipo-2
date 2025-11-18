@@ -103,264 +103,150 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 
 ## 8. Desarrollo de la Prueba
 
-El moderador explicará al inicio:
+### Instrucciones para el Moderador
 
-“Esta prueba no evalúa tus habilidades, sino qué tan clara es la plataforma. Puedes pensar en voz alta. Realiza cada tarea como lo harías de forma natural.”
-
-El moderador no interviene durante la ejecución, excepto para registrar métricas.
-
----
-
-# 1. CU-001 – Consultar y Comparar Precios
-
-## Tarea 1 – Buscar un producto
-### Acción del usuario:
-- Localizar la barra o ícono de búsqueda.
-- Escribir el nombre del producto.
-- Ejecutar la búsqueda.
-
-### Indicador:
-- Tiempo de búsqueda del producto (segundos).
-
-### Criterios:
-- Encuentra la barra sin ayuda.
-- Escribe correctamente el producto.
-- Los resultados son coherentes.
-- No muestra confusión.
-
-### Indicaciones del moderador:
-- “Por favor, busca el producto indicado.”
-- Registrar tiempo total.
-- Registrar dudas o errores verbales.
-- No guiar ubicación de la barra de búsqueda.
+**Contexto:**  
+“Hoy vas a probar una plataforma llamada SmartPrice que te ayuda a comparar precios de supermercados en tiempo real. Te voy a pedir que completes algunas tareas concretas mientras piensas en voz alto. No hay respuestas correctas o incorrectas — estamos probando el sistema, no a ti.”
 
 ---
 
-## Tarea 2 – Identificar el precio más bajo
-### Acción del usuario:
-- Revisar los resultados.
-- Señalar el producto con el precio más bajo.
+## **Tarea 1: Comparar Precios de un Producto Específico (CU-001)**
 
-### Indicador:
-- Tiempo para identificar el precio más económico.
+**Escenario:**  
+“Imagina que necesitas comprar aceite en mayoreo y quieres encontrar la opción más económica disponible hoy. Usando la barra de búsqueda en la parte superior, busca ‘aceite’ y selecciona la opción más barata que encuentres entre todos los supermercados.”
 
-### Criterios:
-- Comprende precios y tiendas.
-- Identifica correctamente cuál oferta conviene más.
-- No expresa confusión.
+**Preguntas durante la tarea:**
+- ¿Cómo decidiste cuál opción era la más barata?  
+- ¿La información de precios y supermercados te pareció clara a simple vista?  
+- ¿Qué fue lo primero que miraste al ver los resultados?  
 
-### Indicaciones del moderador:
-- “Revisa los resultados y avísame cuando encuentres el precio más bajo.”
-- Registrar tiempo.
-- Registrar confusiones o clics erróneos.
-- No ayudar a interpretar precios.
+**Meta/expectativa:**  
+Los usuarios deben percibir la información proporcionada como clara, entendible y fácil de analizar.
 
----
+### Indicador: **Tiempo de búsqueda y selección**
+Mide el tiempo desde que escribe “aceite de oliva” hasta que selecciona la opción más económica.
 
-## Tarea 3 – Explorar la vista comparativa
-### Acción del usuario:
-- Observar la pantalla comparativa antes de avanzar.
-
-### Indicador:
-- Claridad percibida de la vista comparativa (escala 1–5).
-
-### Criterios:
-- Percibe la estructura como clara.
-- Identifica diferencias entre precios sin confusión.
-
-### Indicaciones del moderador:
-- “Por favor, explora la pantalla comparativa.”
-- Registrar comportamientos de duda.
-- No explicar la estructura de la tabla.
-- Pregunta posterior:  
-  “¿La comparación de precios te pareció clara? ¿Por qué?”
+**Criterios:**  
+- Completa la tarea sin ayuda del moderador.  
+- Identifica correctamente la opción más económica.  
+- Respuestas coherentes con lo observado.  
+- Tiempo esperado: **20 segundos o menos**.  
 
 ---
 
-# 2. CU-005 – Recomendar Tienda Más Conveniente
+## **Tarea 2: Revisar Evolución de Precios (CU-002)**
 
-## Tarea 1 – Seleccionar la tienda recomendada
-### Acción del usuario:
-- Identificar la tienda marcada como “Recomendada”.
-- Seleccionarla.
+**Escenario:**  
+“Estás considerando comprar arroz pero quieres saber si los precios han estado subiendo o bajando. Desde la página de resultados del arroz, accede al historial de precios e identifica cuál ha sido el precio más bajo de los últimos 6 meses.”
 
-### Indicador:
-- Tasa de selección correcta de la tienda recomendada.
+**Preguntas durante la tarea:**
+- ¿Fue fácil encontrar el historial de precios?  
+- ¿La gráfica ayuda a entender la tendencia?  
+- ¿Comprarías hoy o esperarías?  
 
-### Criterios:
-- Reconoce la etiqueta sin ayuda.
-- La selecciona sin dudar ni buscar demasiado.
-- No confunde otra tienda como recomendada.
+**Meta/expectativa:**  
+Acceder al historial sin pasos innecesarios o errores.
 
-### Indicaciones del moderador:
-- “Selecciona la tienda que consideres más conveniente.”
-- Registrar si selecciona la correcta.
-- Registrar errores o dudas.
-- No indicar cuál tienda está recomendada.
+### Indicador: **Número de errores**
+Cuenta clics incorrectos, secciones equivocadas o confusiones.
 
----
-
-## Tarea 2 – Revisar los datos de la tienda recomendada
-### Acción del usuario:
-- Observar precio, distancia y ahorro.
-
-### Indicador:
-- Comprensión de la lógica de la recomendación.
-
-### Criterios:
-- Relaciona precio + distancia como factores clave.
-- Explica posteriormente la lógica sin confusión.
-
-### Indicaciones del moderador:
-- “Observa los datos de la tienda seleccionada para continuar.”
-- Registrar si explora correctamente la información.
-- Pregunta posterior:  
-  “¿Por qué crees que el sistema recomendó esa tienda?”
+**Criterios:**  
+- Encuentra el historial sin ayuda.  
+- Interpreta la gráfica sin confusión.  
+- Coherencia entre análisis y decisión.  
+- Tiempo esperado: **15 segundos o menos**.  
 
 ---
 
-## Tarea 3 – Agregar producto al carrito
-### Acción del usuario:
-- Agregar el producto desde la tienda seleccionada al carrito.
+## **Tarea 3: Encontrar la Mejor Opción por Ubicación (CU-005)**
 
-### Indicador:
-- Tiempo y errores en el proceso.
+**Escenario:**  
+“Necesitas comprar leche urgentemente y quieres el equilibrio perfecto entre precio y cercanía. Dirígete a la sección de comparar precios, busca ‘leche’ y agrega al carrito el producto que el sistema recomiende como más conveniente.”
 
-### Criterios:
-- Encuentra el botón sin dificultad.
-- Sistema confirma el agregado del producto.
-- No selecciona otra tienda por error.
+**Preguntas durante la tarea:**
+- ¿Entiendes por qué recomienda esa tienda?  
+- ¿La información de distancia y precio es clara?  
+- ¿Confiarías en esta recomendación?  
 
-### Indicaciones del moderador:
-- “Agrega este producto al carrito desde la tienda seleccionada.”
-- Registrar errores y retrocesos.
-- No señalar dónde está el botón.
+**Meta/expectativa:**  
+El usuario debe comprender y confiar en la recomendación.
 
----
+### Indicador: **Tiempo en realizar la comparación**
+Mide el tiempo en identificar la sección, comprender la recomendación y agregar el producto.
 
-# 3. CU-006 – Interactuar con el Asistente Inteligente
-
-## Tarea 1 – Abrir el chatbot
-### Acción del usuario:
-- Localizar y acceder al asistente inteligente.
-
-### Indicador:
-- Tiempo para abrir el chatbot.
-
-### Criterios:
-- Reconoce el ícono sin ayuda.
-- Entra sin abrir secciones equivocadas.
-
-### Indicaciones del moderador:
-- “Accede al asistente inteligente, por favor.”
-- Registrar tiempo.
-- No señalar el ícono.
+**Criterios:**  
+- Encuentra la sección sin dificultades.  
+- Comprende por qué se recomienda esa tienda.  
+- Compara precios y distancia sin problemas.  
+- Tiempo esperado: **30 segundos o menos**.  
 
 ---
 
-## Tarea 2 – Realizar tres preguntas dentro del chatbot
-### Acción del usuario:
-Dentro del asistente, hacer estas preguntas:
-1. ¿Dónde encuentro el precio más bajo?
-2. ¿Qué tienda está más cerca?
-3. ¿Hay alguna promoción para este producto?
+## **Tarea 4: Consultar al Asistente Virtual (CU-006)**
 
-### Indicador:
-- Exactitud percibida de la respuesta del chatbot.
+**Escenario:**  
+“Tienes preguntas sobre productos en oferta esta semana.”
 
-### Criterios:
-- Lee y comprende las respuestas.
-- Navega sin perderse entre pantallas.
-- Interpreta correctamente enlaces o sugerencias.
+**Tarea concreta:**  
+“Haz clic en el ícono del chatbot y pregúntale: ‘¿Dónde encuentro la mejor oferta en leche?’ Luego sigue una recomendación.”
 
-### Indicaciones del moderador:
-- “Dentro del asistente, formula estas tres preguntas:
-  1) ¿Dónde encuentro el precio más bajo?
-  2) ¿Qué tienda está más cerca?
-  3) ¿Hay alguna promoción disponible?”
-- Registrar si completa las preguntas.
-- No apoyar en escritura o interpretación.
+**Preguntas durante la tarea:**
+- ¿La respuesta fue útil?  
+- ¿La interacción se sintió natural?  
+- ¿Preferirías esta búsqueda sobre la tradicional?  
 
----
+**Meta/expectativa:**  
+Encontrar e interactuar con el chatbot fácilmente.
 
-## Tarea 3 – Seguir una recomendación del chatbot
-### Acción del usuario:
-- Seleccionar una recomendación o enlace sugerido.
+### Indicador: **Número de errores al localizar y usar el chatbot**
+Cuenta clics incorrectos o confusiones.
 
-### Indicador:
-- Utilidad percibida de la recomendación.
-
-### Criterios:
-- Comprende la acción sugerida.
-- Navega sin perderse.
-
-### Indicaciones del moderador:
-- “Sigue una de las recomendaciones del asistente.”
-- Registrar si logra realizar la acción.
-- Pregunta posterior:  
-  “¿Qué tan útil te parecieron las respuestas del asistente?”
+**Criterios:**  
+- Localiza el chatbot sin ayuda.  
+- Usa preguntas sugeridas sin dificultad.  
+- Comprende la información dada.  
+- Tiempo esperado: **35 segundos o menos**.  
 
 ---
 
-# 4. CU-011 – Gestionar Lista de Compras
+## **Tarea 5: Crear y Calcular una Lista de Compra (CU-011)**
 
-## Tarea 1 – Crear una nueva lista
-### Acción del usuario:
-- Crear una nueva lista desde el carrito.
-- Asignar nombre.
+**Escenario:**  
+“Estás planificando tu compra semanal. Crea una lista llamada ‘Mi compra semanal’, agrega 3 productos y revisa en qué supermercado es más económica.”
 
-### Indicador:
-- Tiempo para crear la lista.
+**Preguntas durante la tarea:**
+- ¿Fue sencillo crear la lista y agregar productos?  
+- ¿La comparación de totales es clara?  
+- ¿Usarías esta función en la vida real?  
 
-### Criterios:
-- Encuentra la opción “Crear nueva lista”.
-- Añade productos sin errores.
-- La lista se guarda correctamente.
+**Meta/expectativa:**  
+Completar todo el flujo sin confusión.
 
-### Indicaciones del moderador:
-- “Crea una nueva lista con los productos que seleccionaste.”
-- Registrar tiempo y errores.
-- No indicar la ubicación del botón.
+### Indicador: **Número de errores**
+Clics incorrectos, dudas al nombrar lista, errores al agregar productos o localizar la comparación.
 
----
-
-## Tarea 2 – Visualizar el total de la lista
-### Acción del usuario:
-- Localizar el precio total.
-- Abrir desglose si aplica.
-
-### Indicador:
-- Claridad del total (≥85% deben identificarlo).
-
-### Criterios:
-- Identifica el total rápidamente.
-- Comprende precios y desglose.
-
-### Indicaciones del moderador:
-- “Indica cuando puedas ver el total de la lista.”
-- Registrar si hubo confusión.
-- No señalar la ubicación del total.
+**Criterios:**  
+- Crea la lista sin ayuda.  
+- Agrega al menos 2 productos.  
+- Entiende la comparación.  
+- Identifica supermercados más económicos.  
 
 ---
 
-## Tarea 3 – Guardar la lista
-### Acción del usuario:
-- Guardar la lista creada.
-
-### Indicador:
-- Dificultad percibida (pregunta posterior).
-
-### Criterios:
-- Explica si fue fácil o difícil.
-- Identifica pasos confusos.
-- Evalúa si usaría esta función en la vida real.
-
-### Indicaciones del moderador:
-- “Guarda la lista que acabas de crear.”
-- Registrar errores o pasos innecesarios.
-- Pregunta posterior:  
-  “¿Te pareció fácil crear y guardar la lista? ¿Por qué?”
+# Preguntas Finales de Retroalimentación
+1. ¿Qué funcionalidad te pareció más útil y por qué?  
+2. ¿Qué te frustró o confundió más durante las tareas?  
+3. ¿Qué tan probable es que uses SmartPrice regularmente? (1 a 5)  
+4. ¿Qué funcionalidad extra agregarías?  
+5. ¿Recomendarías la plataforma? ¿Por qué?  
 
 ---
+
+# Checklist del Moderador
+- [ ] Verificar que el mockup esté cargado correctamente  
+- [ ] Asegurar que el participante piense en voz alta  
+- [ ] Tomar notas sobre confusiones o pausas  
+- [ ] Mantener actitud neutral y de apoyo
+
 
 
