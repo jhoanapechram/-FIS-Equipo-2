@@ -233,7 +233,7 @@ Clics incorrectos, dudas al nombrar lista, errores al agregar productos o locali
 
 ---
 
-# Preguntas Finales de Retroalimentación
+## Preguntas Finales de Retroalimentación
 1. ¿Qué funcionalidad te pareció más útil y por qué?  
 2. ¿Qué te frustró o confundió más durante las tareas?  
 3. ¿Qué tan probable es que uses SmartPrice regularmente? (1 a 5)  
@@ -242,7 +242,7 @@ Clics incorrectos, dudas al nombrar lista, errores al agregar productos o locali
 
 ---
 
-# Checklist del Moderador
+## Checklist del Moderador
 - [ ] Verificar que el mockup esté cargado correctamente  
 - [ ] Asegurar que el participante piense en voz alta  
 - [ ] Tomar notas sobre confusiones o pausas  
