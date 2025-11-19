@@ -110,28 +110,7 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 **Contexto:**  
 “Hoy vas a probar una plataforma llamada SmartPrice que te ayuda a comparar precios de supermercados en tiempo real. Te voy a pedir que completes algunas tareas concretas mientras piensas en voz alto. No hay respuestas correctas o incorrectas — estamos probando el sistema, no a ti.”
 
----
-
-# Protocolo de Evaluación de Usabilidad: Definición de Indicadores y Criterios
-
-## Propósito
-Este documento define formalmente los indicadores, criterios de éxito y protocolo de recolección para cada tarea de evaluación de usabilidad. El objetivo es estandarizar la recolección de datos métricos y cualitativos para un análisis integral.
-
-## Metodología de Recolección Completa
-Para cada tarea, se utilizará la siguiente plantilla de recolección:
-
-```
-- ✅ COMPLETÓ SIN AYUDA: ☐ SÍ ☐ NO
-- ❌ ERRORES COMETIDOS: ______
-- 😤 FRUSTRACIÓN: ☐ 1 ☐ 2 ☐ 3 ☐ 4 ☐ 5
-- ⏱️ TIEMPO: ______ segundos
-- 🖱️ CLICKS: ______
-- 📝 OBSERVACIONES: _________________________
-```
-
----
-
-## Definiciones por Tarea
+## Indicadores y Criterios por Tarea
 
 ### Tarea 1: CU-001 - Comparar Precios de un Producto Específico
 
