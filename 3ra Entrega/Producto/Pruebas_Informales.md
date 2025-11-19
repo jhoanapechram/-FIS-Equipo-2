@@ -1,5 +1,7 @@
 # PROTOCOLO COMPLETO DE PRUEBAS DE USABILIDAD – SMARTPRICE
 
+
+
 ## 1. Introducción
 El presente protocolo describe el proceso metodológico para llevar a cabo una prueba de usabilidad del prototipo **SmartPrice**. La evaluación se centrará en observar la eficiencia, claridad y satisfacción del usuario al completar tareas relacionadas con la comparación de precios, recomendación de tienda, uso del asistente inteligente y gestión de listas de compra.
 
