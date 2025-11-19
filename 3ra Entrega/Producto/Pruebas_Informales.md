@@ -112,143 +112,173 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 
 ---
 
-## **Tarea 1: Comparar Precios de un Producto Específico (CU-001)**
+# Protocolo de Evaluación de Usabilidad: Definición de Indicadores y Criterios
 
-**Escenario:**  
-“Imagina que necesitas comprar aceite en mayoreo y quieres encontrar la opción más económica disponible hoy. Usando la barra de búsqueda en la parte superior, busca ‘aceite’ y selecciona la opción más barata que encuentres entre todos los supermercados.”
+## Propósito
+Este documento define formalmente los indicadores, criterios de éxito y protocolo de recolección para cada tarea de evaluación de usabilidad. El objetivo es estandarizar la recolección de datos métricos y cualitativos para un análisis integral.
+
+## Metodología de Recolección Completa
+Para cada tarea, se utilizará la siguiente plantilla de recolección:
+
+```
+- ✅ COMPLETÓ SIN AYUDA: ☐ SÍ ☐ NO
+- ❌ ERRORES COMETIDOS: ______
+- 😤 FRUSTRACIÓN: ☐ 1 ☐ 2 ☐ 3 ☐ 4 ☐ 5
+- ⏱️ TIEMPO: ______ segundos
+- 🖱️ CLICKS: ______
+- 📝 OBSERVACIONES: _________________________
+```
+
+---
+
+## Definiciones por Tarea
+
+### Tarea 1: CU-001 - Comparar Precios de un Producto Específico
+
+**Escenario:** 
+"Imagina que necesitas comprar aceite en mayoreo y quieres encontrar la opción más económica disponible hoy. Usando la barra de búsqueda en la parte superior, busca 'aceite' y selecciona la opción más barata que encuentres entre todos los supermercados."
 
 **Preguntas durante la tarea:**
-- ¿Cómo decidiste cuál opción era la más barata?  
-- ¿La información de precios y supermercados te pareció clara a simple vista?  
-- ¿Qué fue lo primero que miraste al ver los resultados?  
+- ¿Cómo decidiste cuál opción era la más barata?
+- ¿La información de precios y supermercados te pareció clara a simple vista?
+- ¿Qué fue lo primero que miraste al ver los resultados?
 
-**Meta/expectativa:**  
-Los usuarios deben percibir la información proporcionada como clara, entendible y fácil de analizar.
+**Indicadores Específicos:**
+- **Precisión en la selección:** Capacidad para identificar correctamente el producto más barato
+- **Velocidad de toma de decisión:** Eficiencia en encontrar y seleccionar la opción correcta
+- **Autonomía del usuario:** Grado en que puede completar la tarea sin asistencia
 
-### Indicador: **Tiempo de búsqueda y selección**
-Mide el tiempo desde que escribe “aceite de oliva” hasta que selecciona la opción más económica.
-
-**Criterios:**  
-- Completa la tarea sin ayuda del moderador.  
-- Identifica correctamente la opción más económica.  
-- Respuestas coherentes con lo observado.  
-- Tiempo esperado: **20 segundos o menos**.  
+| Criterio de Éxito | Métrica Esperada | Variable |
+| :--- | :--- | :--- |
+| Completitud autónoma | Selecciona la opción más barata sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
+| Tolerancia a errores | Comete 2 o menos errores | **ERRORES COMETIDOS ≤ 2** |
+| Eficiencia temporal | Completa la tarea en ≤ 20 segundos | **TIEMPO ≤ 20s** |
+| Eficiencia en clicks | Realiza ≤ 5 clicks para completar la tarea | **CLICKS ≤ 5** |
+| Satisfacción subjetiva | Muestra nivel de frustración bajo (Nivel 1 o 2) | **FRUSTRACIÓN = 1 o 2** |
 
 ---
 
-## **Tarea 2: Revisar Evolución de Precios (CU-002)**
+### Tarea 2: CU-002 - Revisar Evolución de Precios
 
-**Escenario:**  
-“Estás considerando comprar arroz pero quieres saber si los precios han estado subiendo o bajando. Desde la página de resultados del arroz, accede al historial de precios e identifica cuál ha sido el precio más bajo de los últimos 6 meses.”
+**Escenario:**
+"Estás considerando comprar arroz pero quieres saber si los precios han estado subiendo o bajando. Desde la página de resultados del arroz, accede al historial de precios e identifica cuál ha sido el precio más bajo de los últimos 6 meses."
 
 **Preguntas durante la tarea:**
-- ¿Fue fácil encontrar el historial de precios?  
-- ¿La gráfica ayuda a entender la tendencia?  
-- ¿Comprarías hoy o esperarías?  
+- ¿Fue fácil encontrar el historial de precios?
+- ¿La gráfica ayuda a entender la tendencia?
+- ¿Comprarías hoy o esperarías?
 
-**Meta/expectativa:**  
-Acceder al historial sin pasos innecesarios o errores.
+**Indicadores Específicos:**
+- **Navegación exitosa al historial:** Capacidad para encontrar la funcionalidad de historial de precios
+- **Interpretación correcta de datos:** Comprensión de la gráfica y extracción de información solicitada
+- **Eficiencia en el flujo:** Número de errores cometidos durante la navegación
 
-### Indicador: **Número de errores**
-Cuenta clics incorrectos, secciones equivocadas o confusiones.
-
-**Criterios:**  
-- Encuentra el historial sin ayuda.  
-- Interpreta la gráfica sin confusión.  
-- Coherencia entre análisis y decisión.  
-- Tiempo esperado: **15 segundos o menos**.  
+| Criterio de Éxito | Métrica Esperada | Variable|
+| :--- | :--- | :--- |
+| Acceso autónomo | Accede al historial sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
+| Precisión interpretativa | Identifica correctamente el precio más bajo | *(Verificar en **OBSERVACIONES**)* |
+| Tolerancia a errores | Comete 1 o menos errores de navegación | **ERRORES COMETIDOS ≤ 1** |
+| Eficiencia temporal | Completa la tarea en ≤ 15 segundos | **TIEMPO ≤ 15s** |
+| Eficiencia en clicks | Realiza ≤ 3 clicks para acceder al historial | **CLICKS ≤ 3** |
+| Coherencia decisional | Decisión coherente con tendencia observada | *(Verificar en **OBSERVACIONES**)* |
+| Satisfacción subjetiva | Muestra nivel de frustración bajo (Nivel 1 o 2) | **FRUSTRACIÓN = 1 o 2** |
 
 ---
 
-## **Tarea 3: Encontrar la Mejor Opción por Ubicación (CU-005)**
+### Tarea 3: CU-005 - Encontrar la Mejor Opción por Ubicación
 
-**Escenario:**  
-“Necesitas comprar leche urgentemente y quieres el equilibrio perfecto entre precio y cercanía. Dirígete a la sección de comparar precios, busca ‘leche’ y agrega al carrito el producto que el sistema recomiende como más conveniente.”
+**Escenario:**
+"Necesitas comprar leche urgentemente y quieres el equilibrio perfecto entre precio y cercanía. Dirígete a la sección de comparar precios, busca 'leche' y agrega al carrito el producto que el sistema recomiende como más conveniente."
 
 **Preguntas durante la tarea:**
-- ¿Entiendes por qué recomienda esa tienda?  
-- ¿La información de distancia y precio es clara?  
-- ¿Confiarías en esta recomendación?  
+- ¿Entiendes por qué recomienda esa tienda?
+- ¿La información de distancia y precio es clara?
+- ¿Confiarías en esta recomendación?
 
-**Meta/expectativa:**  
-El usuario debe comprender y confiar en la recomendación.
+**Indicadores Específicos:**
+- **Comprensión del algoritmo de recomendación:** Entiende los criterios detrás de la sugerencia del sistema
+- **Confianza en la sugerencia del sistema:** Grado de aceptación y actuación sobre la recomendación
+- **Evaluación de criterios múltiples:** Capacidad para considerar precio y ubicación simultáneamente
 
-### Indicador: **Tiempo en realizar la comparación**
-Mide el tiempo en identificar la sección, comprender la recomendación y agregar el producto.
-
-**Criterios:**  
-- Encuentra la sección sin dificultades.  
-- Comprende por qué se recomienda esa tienda.  
-- Compara precios y distancia sin problemas.  
-- Tiempo esperado: **30 segundos o menos**.  
+| Criterio de Éxito | Métrica Esperada | Variable |
+| :--- | :--- | :--- |
+| Acción basada en recomendación | Agrega producto recomendado sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
+| Comprensión transparente | Explica con sus palabras por qué se recomienda | *(Verificar en **OBSERVACIONES**)* |
+| Tolerancia a errores | Comete 1 o menos errores en el proceso | **ERRORES COMETIDOS ≤ 1** |
+| Eficiencia temporal | Completa la tarea en ≤ 30 segundos | **TIEMPO ≤ 30s** |
+| Eficiencia en clicks | Realiza ≤ 8 clicks para completar la tarea | **CLICKS ≤ 8** |
+| Confianza demostrada | Expresa confianza en la recomendación | **FRUSTRACIÓN = 1 o 2** |
 
 ---
 
-## **Tarea 4: Consultar al Asistente Virtual (CU-006)**
+### Tarea 4: CU-006 - Consultar al Asistente Virtual
 
-**Escenario:**  
-“Tienes preguntas sobre productos en oferta esta semana.”
+**Escenario:**
+"Tienes preguntas sobre productos en oferta esta semana."
 
-**Tarea concreta:**  
-“Haz clic en el ícono del chatbot y pregúntale: ‘¿Dónde encuentro la mejor oferta en leche?’ Luego sigue una recomendación.”
+**Tarea concreta:**
+"Haz clic en el ícono del chatbot y pregúntale: '¿Dónde encuentro la mejor oferta en leche?' Luego sigue una recomendación."
 
 **Preguntas durante la tarea:**
-- ¿La respuesta fue útil?  
-- ¿La interacción se sintió natural?  
-- ¿Preferirías esta búsqueda sobre la tradicional?  
+- ¿La respuesta fue útil?
+- ¿La interacción se sintió natural?
+- ¿Preferirías esta búsqueda sobre la tradicional?
 
-**Meta/expectativa:**  
-Encontrar e interactuar con el chatbot fácilmente.
+**Indicadores Específicos:**
+- **Descubribilidad del chatbot:** Facilidad para encontrar y acceder al asistente virtual
+- **Efectividad de la interacción:** Capacidad para obtener información útil mediante el chatbot
+- **Calidad de la experiencia conversacional:** Naturalidad y utilidad percibida de la interacción
 
-### Indicador: **Número de errores al localizar y usar el chatbot**
-Cuenta clics incorrectos o confusiones.
-
-**Criterios:**  
-- Localiza el chatbot sin ayuda.  
-- Usa preguntas sugeridas sin dificultad.  
-- Comprende la información dada.  
-- Tiempo esperado: **35 segundos o menos**.  
+| Criterio de Éxito | Métrica Esperada | Variable|
+| :--- | :--- | :--- |
+| Acceso autónomo | Localiza chatbot y envía pregunta sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
+| Eficiencia en interacción | Comete 1 o menos errores en el proceso | **ERRORES COMETIDOS ≤ 1** |
+| Eficiencia temporal | Completa la interacción en ≤ 35 segundos | **TIEMPO ≤ 35s** |
+| Eficiencia en clicks | Realiza ≤ 4 clicks para iniciar conversación | **CLICKS ≤ 4** |
+| Utilidad percibida | Considera la respuesta como útil | **FRUSTRACIÓN = 1 o 2** |
+| Naturalidad de uso | La interacción se siente fluida y natural | *(Verificar en **OBSERVACIONES**)* |
 
 ---
 
-## **Tarea 5: Crear y Calcular una Lista de Compra (CU-011)**
+### Tarea 5: CU-011 - Crear y Calcular una Lista de Compra
 
-**Escenario:**  
-“Estás planificando tu compra semanal. Crea una lista llamada ‘Mi compra semanal’, agrega 3 productos y revisa en qué supermercado es más económica.”
+**Escenario:**
+"Estás planificando tu compra semanal. Crea una lista llamada 'Mi compra semanal', agrega 3 productos y revisa en qué supermercado es más económica."
 
 **Preguntas durante la tarea:**
-- ¿Fue sencillo crear la lista y agregar productos?  
-- ¿La comparación de totales es clara?  
-- ¿Usarías esta función en la vida real?  
+- ¿Fue sencillo crear la lista y agregar productos?
+- ¿La comparación de totales es clara?
+- ¿Usarías esta función en la vida real?
 
-**Meta/expectativa:**  
-Completar todo el flujo sin confusión.
+**Indicadores Específicos:**
+- **Finalización exitosa del flujo multi-paso:** Capacidad para completar secuencia compleja de acciones
+- **Manejo de funcionalidades complejas:** Competencia en usar múltiples herramientas integradas
+- **Comprensión de resultados comparativos:** Interpretación correcta de análisis entre supermercados
 
-### Indicador: **Número de errores**
-Clics incorrectos, dudas al nombrar lista, errores al agregar productos o localizar la comparación.
-
-**Criterios:**  
-- Crea la lista sin ayuda.  
-- Agrega al menos 2 productos.  
-- Entiende la comparación.  
-- Identifica supermercados más económicos.  
-
----
-
-## Preguntas Finales de Retroalimentación
-1. ¿Qué funcionalidad te pareció más útil y por qué?  
-2. ¿Qué te frustró o confundió más durante las tareas?  
-3. ¿Qué tan probable es que uses SmartPrice regularmente? (1 a 5)  
-4. ¿Qué funcionalidad extra o mejora agregarías?  
-5. ¿Recomendarías la plataforma? ¿Por qué?  
+| Criterio de Éxito | Métrica Esperada | Variable|
+| :--- | :--- | :--- |
+| Completitud del flujo | Crea lista con +2 productos y revisa comparación | **COMPLETÓ SIN AYUDA = SÍ** |
+| Manejo de complejidad | Comete 2 o menos errores en todo el flujo | **ERRORES COMETIDOS ≤ 2** |
+| Eficiencia temporal | Completa la tarea en ≤ 45 segundos | **TIEMPO ≤ 45s** |
+| Eficiencia en clicks | Realiza ≤ 12 clicks para completar todo el flujo | **CLICKS ≤ 12** |
+| Comprensión comparativa | Identifica correctamente supermercado más económico | *(Verificar en **OBSERVACIONES**)* |
+| Tolerancia a frustración | Muestra frustración baja o media (Nivel 1, 2 o 3) | **FRUSTRACIÓN ≤ 3** |
 
 ---
 
-## Checklist del Moderador
-- [ ] Verificar que el mockup esté cargado correctamente  
-- [ ] Asegurar que el participante piense en voz alta  
-- [ ] Tomar notas sobre confusiones o pausas  
-- [ ] Mantener actitud neutral y de apoyo
+### Instrucciones Generales:
+1. **Preparación:** Tener cronómetro y contador de clicks listos
+2. **Inicio:** Leer el escenario en voz clara y comenzar cronómetro cuando el usuario inicie la acción
+3. **Monitoreo:** Contar clicks en silencio y registrar errores discretamente
+4. **Preguntas:** Realizar preguntas específicas durante o inmediatamente después de cada tarea
+5. **Registro:** Completar plantilla inmediatamente después de cada tarea
 
+### Preguntas Finales de Retroalimentación:
+1. ¿Qué funcionalidad te pareció más útil y por qué?
+2. ¿Qué te frustró o confundió más durante las tareas?
+3. ¿Qué tan probable es que uses SmartPrice regularmente? (1 a 5)
+4. ¿Qué funcionalidad extra o mejora agregarías?
+5. ¿Recomendarías la plataforma? ¿Por qué?
 
+---
 
