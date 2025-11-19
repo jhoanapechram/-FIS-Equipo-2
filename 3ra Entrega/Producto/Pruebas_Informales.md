@@ -237,7 +237,7 @@ Clics incorrectos, dudas al nombrar lista, errores al agregar productos o locali
 1. ¿Qué funcionalidad te pareció más útil y por qué?  
 2. ¿Qué te frustró o confundió más durante las tareas?  
 3. ¿Qué tan probable es que uses SmartPrice regularmente? (1 a 5)  
-4. ¿Qué funcionalidad extra agregarías?  
+4. ¿Qué funcionalidad extra o mejora agregarías?  
 5. ¿Recomendarías la plataforma? ¿Por qué?  
 
 ---
