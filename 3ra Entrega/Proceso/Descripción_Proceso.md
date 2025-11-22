@@ -144,7 +144,7 @@ Incluye:
 
 ### **Pruebas Informales**
 
-**Entregable:** `Pruebas_Informales.md`
+**Entregable:** `Pruebas_Informales.md` y ´Análisis_Pruebas.md´
 
 Incluye:
 
