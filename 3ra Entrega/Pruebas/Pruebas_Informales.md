@@ -3,7 +3,7 @@
 ## 1. Introducción
 El presente protocolo describe el proceso metodológico para llevar a cabo una prueba de usabilidad del prototipo **SmartPrice**. La evaluación se centrará en observar la eficiencia, claridad y satisfacción del usuario al completar tareas relacionadas con la comparación de precios, recomendación de tienda, uso del asistente inteligente y gestión de listas de compra.
 
-Las pruebas se realizarán con 20 usuarios primarios y secundarios representantes del perfil de compradores habituales de supermercados. La herramienta empleada para facilitar las pruebas fue **Useberry**.
+Las pruebas se realizarán con 21 usuarios primarios y secundarios representantes del perfil de compradores habituales de supermercados. La herramienta empleada para facilitar las pruebas fue **Useberry**.
 
 **Link de la herramienta:**  
 https://app.useberry.com/preview/Jn759P8ZTPvENV/?createPreview  
