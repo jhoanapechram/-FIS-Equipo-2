@@ -1,7 +1,5 @@
 # PROTOCOLO DE PRUEBAS DE USABILIDAD – SMARTPRICE
 
-
-
 ## 1. Introducción
 El presente protocolo describe el proceso metodológico para llevar a cabo una prueba de usabilidad del prototipo **SmartPrice**. La evaluación se centrará en observar la eficiencia, claridad y satisfacción del usuario al completar tareas relacionadas con la comparación de precios, recomendación de tienda, uso del asistente inteligente y gestión de listas de compra.
 
@@ -110,7 +108,7 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 **Contexto:**  
 “Hoy vas a probar una plataforma llamada SmartPrice que te ayuda a comparar precios de supermercados en tiempo real. Te voy a pedir que completes algunas tareas concretas mientras piensas en voz alto. No hay respuestas correctas o incorrectas — estamos probando el sistema, no a ti.”
 
-## Indicadores y Criterios por Tarea
+## Escenarios y preguntas por tareas
 
 ### Tarea 1: CU-001 - Comparar Precios de un Producto Específico
 
@@ -121,19 +119,6 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 - ¿Cómo decidiste cuál opción era la más barata?
 - ¿La información de precios y supermercados te pareció clara a simple vista?
 - ¿Qué fue lo primero que miraste al ver los resultados?
-
-**Indicadores Específicos:**
-- **Precisión en la selección:** Capacidad para identificar correctamente el producto más barato
-- **Velocidad de toma de decisión:** Eficiencia en encontrar y seleccionar la opción correcta
-- **Autonomía del usuario:** Grado en que puede completar la tarea sin asistencia
-
-| Criterio de Éxito | Métrica Esperada | Variable |
-| :--- | :--- | :--- |
-| Completitud autónoma | Selecciona la opción más barata sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
-| Tolerancia a errores | Comete 2 o menos errores | **ERRORES COMETIDOS ≤ 2** |
-| Eficiencia temporal | Completa la tarea en ≤ 20 segundos | **TIEMPO ≤ 20s** |
-| Eficiencia en clicks | Realiza ≤ 5 clicks para completar la tarea | **CLICKS ≤ 5** |
-| Satisfacción subjetiva | Muestra nivel de frustración bajo (Nivel 1 o 2) | **FRUSTRACIÓN = 1 o 2** |
 
 ---
 
@@ -147,21 +132,6 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 - ¿La gráfica ayuda a entender la tendencia?
 - ¿Comprarías hoy o esperarías?
 
-**Indicadores Específicos:**
-- **Navegación exitosa al historial:** Capacidad para encontrar la funcionalidad de historial de precios
-- **Interpretación correcta de datos:** Comprensión de la gráfica y extracción de información solicitada
-- **Eficiencia en el flujo:** Número de errores cometidos durante la navegación
-
-| Criterio de Éxito | Métrica Esperada | Variable|
-| :--- | :--- | :--- |
-| Acceso autónomo | Accede al historial sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
-| Precisión interpretativa | Identifica correctamente el precio más bajo | *(Verificar en **OBSERVACIONES**)* |
-| Tolerancia a errores | Comete 1 o menos errores de navegación | **ERRORES COMETIDOS ≤ 1** |
-| Eficiencia temporal | Completa la tarea en ≤ 15 segundos | **TIEMPO ≤ 15s** |
-| Eficiencia en clicks | Realiza ≤ 3 clicks para acceder al historial | **CLICKS ≤ 3** |
-| Coherencia decisional | Decisión coherente con tendencia observada | *(Verificar en **OBSERVACIONES**)* |
-| Satisfacción subjetiva | Muestra nivel de frustración bajo (Nivel 1 o 2) | **FRUSTRACIÓN = 1 o 2** |
-
 ---
 
 ### Tarea 3: CU-005 - Encontrar la Mejor Opción por Ubicación
@@ -173,20 +143,6 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 - ¿Entiendes por qué recomienda esa tienda?
 - ¿La información de distancia y precio es clara?
 - ¿Confiarías en esta recomendación?
-
-**Indicadores Específicos:**
-- **Comprensión del algoritmo de recomendación:** Entiende los criterios detrás de la sugerencia del sistema
-- **Confianza en la sugerencia del sistema:** Grado de aceptación y actuación sobre la recomendación
-- **Evaluación de criterios múltiples:** Capacidad para considerar precio y ubicación simultáneamente
-
-| Criterio de Éxito | Métrica Esperada | Variable |
-| :--- | :--- | :--- |
-| Acción basada en recomendación | Agrega producto recomendado sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
-| Comprensión transparente | Explica con sus palabras por qué se recomienda | *(Verificar en **OBSERVACIONES**)* |
-| Tolerancia a errores | Comete 1 o menos errores en el proceso | **ERRORES COMETIDOS ≤ 1** |
-| Eficiencia temporal | Completa la tarea en ≤ 30 segundos | **TIEMPO ≤ 30s** |
-| Eficiencia en clicks | Realiza ≤ 8 clicks para completar la tarea | **CLICKS ≤ 8** |
-| Confianza demostrada | Expresa confianza en la recomendación | **FRUSTRACIÓN = 1 o 2** |
 
 ---
 
@@ -202,21 +158,7 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 - ¿La respuesta fue útil?
 - ¿La interacción se sintió natural?
 - ¿Preferirías esta búsqueda sobre la tradicional?
-
-**Indicadores Específicos:**
-- **Descubribilidad del chatbot:** Facilidad para encontrar y acceder al asistente virtual
-- **Efectividad de la interacción:** Capacidad para obtener información útil mediante el chatbot
-- **Calidad de la experiencia conversacional:** Naturalidad y utilidad percibida de la interacción
-
-| Criterio de Éxito | Métrica Esperada | Variable|
-| :--- | :--- | :--- |
-| Acceso autónomo | Localiza chatbot y envía pregunta sin ayuda | **COMPLETÓ SIN AYUDA = SÍ** |
-| Eficiencia en interacción | Comete 1 o menos errores en el proceso | **ERRORES COMETIDOS ≤ 1** |
-| Eficiencia temporal | Completa la interacción en ≤ 35 segundos | **TIEMPO ≤ 35s** |
-| Eficiencia en clicks | Realiza ≤ 4 clicks para iniciar conversación | **CLICKS ≤ 4** |
-| Utilidad percibida | Considera la respuesta como útil | **FRUSTRACIÓN = 1 o 2** |
-| Naturalidad de uso | La interacción se siente fluida y natural | *(Verificar en **OBSERVACIONES**)* |
-
+  
 ---
 
 ### Tarea 5: CU-011 - Crear y Calcular una Lista de Compra
@@ -228,29 +170,26 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 - ¿Fue sencillo crear la lista y agregar productos?
 - ¿La comparación de totales es clara?
 - ¿Usarías esta función en la vida real?
-
-**Indicadores Específicos:**
-- **Finalización exitosa del flujo multi-paso:** Capacidad para completar secuencia compleja de acciones
-- **Manejo de funcionalidades complejas:** Competencia en usar múltiples herramientas integradas
-- **Comprensión de resultados comparativos:** Interpretación correcta de análisis entre supermercados
-
-| Criterio de Éxito | Métrica Esperada | Variable|
-| :--- | :--- | :--- |
-| Completitud del flujo | Crea lista con +2 productos y revisa comparación | **COMPLETÓ SIN AYUDA = SÍ** |
-| Manejo de complejidad | Comete 2 o menos errores en todo el flujo | **ERRORES COMETIDOS ≤ 2** |
-| Eficiencia temporal | Completa la tarea en ≤ 45 segundos | **TIEMPO ≤ 45s** |
-| Eficiencia en clicks | Realiza ≤ 12 clicks para completar todo el flujo | **CLICKS ≤ 12** |
-| Comprensión comparativa | Identifica correctamente supermercado más económico | *(Verificar en **OBSERVACIONES**)* |
-| Tolerancia a frustración | Muestra frustración baja o media (Nivel 1, 2 o 3) | **FRUSTRACIÓN ≤ 3** |
-
+  
 ---
 
+# Criterios e Indicadores Por Tarea
+
+| Número de Tarea | Criterio | Indicadores |
+|-------------|---------------------------------|---------------------------------------|
+| **1 – Comparar precios de un producto específico** | El usuario identifica y selecciona el producto más económico de manera autónoma. | - Selecciona correctamente el producto más barato sin ayuda.<br>- Tiempo de ejecución ≤ 20s.<br>- ≤ 5 clics para completar.<br>- ≤ 1 errores.<br>- Nivel de frustración ≤ 2. |
+| **2 – Revisar evolución de precios** | El usuario accede al historial de precios e interpreta correctamente la tendencia. | - Accede al historial sin ayuda.<br>- Identifica correctamente el precio más bajo en 6 meses.<br>- ≤ 1 error de navegación.<br>- Tiempo de ejecución ≤ 35s.<br>- ≤ 6 clics.<br>- Explica decisión coherente con la tendencia.<br>- Nivel de frustración ≤ 2. |
+| **3 – Encontrar la mejor opción por ubicación** | El usuario comprende y actúa sobre la recomendación del sistema considerando precio y cercanía. | - Agrega producto recomendado sin ayuda.<br>- Explica con sus palabras el criterio de recomendación.<br>- ≤ 1 error.<br>- Tiempo de ejecución ≤ 30s.<br>- ≤ 8 clics.<br>- Expresa confianza en la recomendación.<br>- Nivel de frustración ≤ 2. |
+| **4 – Consultar al asistente virtual** | El usuario localiza y utiliza el chatbot para obtener información útil de manera natural. | - Localiza chatbot y envía pregunta sin ayuda.<br>- ≤ 1 error en la interacción.<br>- Tiempo de ejecución ≤ 25s.<br>- ≤ 6 clics.<br>- Considera la respuesta útil.<br>- Describe interacción como fluida/natural.<br>- Nivel de frustración ≤ 2. |
+| **5 – Crear y calcular una lista de compra** | El usuario completa un flujo complejo de creación de lista y comparación de totales. | - Crea lista con ≥ 3 productos.<br>- Revisa comparación de supermercados sin ayuda.<br>- ≤ 2 errores en todo el flujo.<br>- Tiempo de ejecución ≤ 45s.<br>- ≤ 15 clics.<br>- Identifica correctamente supermercado más económico.<br>- Nivel de frustración ≤ 3. |
+
+
 ### Instrucciones Generales:
-1. **Preparación:** Tener cronómetro y contador de clicks listos
-2. **Inicio:** Leer el escenario en voz clara y comenzar cronómetro cuando el usuario inicie la acción
-3. **Monitoreo:** Contar clicks en silencio y registrar errores discretamente
-4. **Preguntas:** Realizar preguntas específicas durante o inmediatamente después de cada tarea
-5. **Registro:** Completar plantilla inmediatamente después de cada tarea
+1. **Preparación:** Tener la herramienta Useberry habilitada para las pruebas.
+2. **Inicio:** Leer el escenario en voz clara.
+3. **Monitoreo:** Registrar errores discretamente.
+4. **Preguntas:** Realizar preguntas específicas durante o inmediatamente después de cada tarea.
+5. **Registro:** Completar plantilla inmediatamente después de cada tarea.
 
 ### Preguntas Finales de Retroalimentación:
 1. ¿Qué funcionalidad te pareció más útil y por qué?
