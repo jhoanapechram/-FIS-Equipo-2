@@ -1,21 +1,33 @@
-
 # 📊 Análisis de Resultados de las Pruebas Informales de Usabilidad de SmartPrice
 
 ## 📋 Índice
+1. [Análisis estadístico de los resultados – Métricas](#1-análisis-estadístico-de-los-resultados--métricas)  
+2. [Resumen General por Tarea](#2-resumen-general-por-tarea)  
+3. [Análisis por Tarea](#3-análisis-por-tarea)  
+   3.1 [Tarea 1: Comparación de Precios](#31-tarea-1-comparación-de-precios)  
+   3.2 [Tarea 2: Evolución de Precios](#32-tarea-2-evolución-de-precios)  
+   3.3 [Tarea 3: Mejor Opción por Ubicación](#33-tarea-3-mejor-opción-por-ubicación)  
+   3.4 [Tarea 4: Asistente Virtual](#34-tarea-4-asistente-virtual)  
+   3.5 [Tarea 5: Lista de Compra](#35-tarea-5-lista-de-compra)  
+4. [Métricas de Satisfacción Global](#4-métricas-de-satisfacción-global)  
+5. [Análisis Detallado de Cumplimiento por Usuario](#5-análisis-detallado-de-cumplimiento-por-usuario)  
+6. [Mejoras propuestas](#6-mejoras-propuestas)
 
-  * [1. Resumen General por Tarea](https://www.google.com/search?q=%231-resumen-general-por-tarea)
-  * [2. Análisis por Tarea](https://www.google.com/search?q=%232-an%C3%A1lisis-por-tarea)
-      * [2.1 Tarea 1: Comparación de Precios](https://www.google.com/search?q=%2321-tarea-1-comparaci%C3%B3n-de-precios)
-      * [2.2 Tarea 2: Evolución de Precios](https://www.google.com/search?q=%2322-tarea-2-evoluci%C3%B3n-de-precios)
-      * [2.3 Tarea 3: Mejor Opción por Ubicación](https://www.google.com/search?q=%2323-tarea-3-mejor-opci%C3%B3n-por-ubicaci%C3%B3n)
-      * [2.4 Tarea 4: Asistente Virtual](https://www.google.com/search?q=%2324-tarea-4-asistente-virtual)
-      * [2.5 Tarea 5: Lista de Compra](https://www.google.com/search?q=%2325-tarea-5-lista-de-compra)
-  * [3. Métricas de Satisfacción Global](https://www.google.com/search?q=%233-m%C3%A9tricas-de-satisfacci%C3%B3n-global)
-  * [4. Análisis Detallado de Cumplimiento por Usuario](https://www.google.com/search?q=%234-an%C3%A1lisis-detallado-de-cumplimiento-por-usuario)
+---
 
------
+## 1. Análisis estadístico de los resultados – Métricas
 
-## 1\. Resumen General por Tarea
+| Tarea                         | Tasa de completación | Tiempo promedio (rango)                  | Clics promedio | Tasa de error promedio | Tasa de error por usuario | Frustración promedio |
+|------------------------------|----------------------|------------------------------------------|----------------|------------------------|---------------------------|----------------------|
+| CU-001 Comparación de Precios | 100% (21/21)         | 52.4s (14.6s – 3m 16.2s)                 | 8.3            | 9.5% (2/21)            | 4.8% (1/21)               | 1.0/5                |
+| CU-002 Evolución de Precios   | 100% (21/21)         | 1m 17.8s (14.2s – 5m 0s)                 | 8.6            | 9.5% (2/21)            | 9.5% (2/21)               | 1.2/5                |
+| CU-005 Mejor opción por ubicación | 100% (21/21)     | 1m 13.4s (7.1s – 2m 45.5s)               | 7.4            | 33.3% (7/21)           | 19% (4/21)                | 1.4/5                |
+| CU-006 Asistente Virtual      | 100% (21/21)         | 1m 6.4s (11.1s – 2m 21.6s)               | 7.0            | 19% (4/21)             | 9.5% (2/21)               | 1.1/5                |
+| CU-011 Lista de Compra        | 100% (21/21)         | 2m 15.2s (23.2s – 4m 6.3s)               | 23.4           | 57% (12/21)            | 66% (14/21)               | 2.0/5                |
+
+---
+
+## 2. Resumen General por Tarea
 
 Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 
@@ -27,11 +39,11 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | **Tarea 2: Evolución de Precios** | **57.1%** | 🟡 Parcial |
 | **Tarea 5: Lista de Compra** | **23.8%** | ❌ No Cumplida |
 
------
+---
 
-## 2\. Análisis por Tarea
+## 3. Análisis por Tarea
 
-### 2.1 Tarea 1: Comparación de Precios
+### 3.1 Tarea 1: Comparación de Precios
 
 **✅ Cumplimiento: 85.7%** (18 de 21 usuarios)
 
@@ -49,9 +61,9 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
   * Tiempos dentro de rangos **aceptables**.
   * Alta satisfacción del usuario.
 
------
+---
 
-### 2.2 Tarea 2: Evolución de Precios
+### 3.2 Tarea 2: Evolución de Precios
 
 **🟡 Cumplimiento: 57.1%** (12 de 21 usuarios)
 
@@ -71,9 +83,9 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
   * **Tiempos de ejecución problemáticos** (principal causa del bajo cumplimiento).
   * Navegación requiere **optimización**.
 
------
+---
 
-### 2.3 Tarea 3: Mejor Opción por Ubicación
+### 3.3 Tarea 3: Mejor Opción por Ubicación
 
 **✅ Cumplimiento: 81.0%** (17 de 21 usuarios)
 
@@ -93,9 +105,9 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
   * Balance precio/distancia efectivo.
   * Tiempos de ejecución **optimizados**.
 
------
+---
 
-### 2.4 Tarea 4: Asistente Virtual
+### 3.4 Tarea 4: Asistente Virtual
 
 **🟡 Cumplimiento: 71.4%** (15 de 21 usuarios)
 
@@ -115,9 +127,9 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
   * Necesita **optimización de tiempos** para alcanzar la meta.
   * Respuestas consideradas **útiles**.
 
------
+---
 
-### 2.5 Tarea 5: Lista de Compra
+### 3.5 Tarea 5: Lista de Compra
 
 **❌ Cumplimiento: 23.8%** (5 de 21 usuarios)
 
@@ -137,9 +149,9 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
   * **Tiempos y número de clics muy por encima del objetivo** (principal causa de fracaso).
   * Alta **frustración** en usuarios.
 
------
+---
 
-## 3\. Métricas de Satisfacción Global
+## 4. Métricas de Satisfacción Global
 
 | Métrica | Resultado |
 | :--- | :---: |
@@ -148,11 +160,11 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | Probabilidad de Uso | **3.9/5** |
 | Tasa Recomendación | **90%** |
 
------
+---
 
-## 4\. Análisis Detallado de Cumplimiento por Usuario
+## 5. Análisis Detallado de Cumplimiento por Usuario
 
-### 4.1 Tarea 1: Comparación de Precios
+### 5.1 Tarea 1: Comparación de Precios
 
 > **Resumen:** 18 de 21 cumplen todos los indicadores (**85.7%**)
 
@@ -180,7 +192,7 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | U20 | 41 | 196.2s ❌ | 11 ✅ | 0 ✅ | 1 ✅ | NO |
 | U21 | 49 | 102.4s ❌ | 3 ✅ | 0 ✅ | 1 ✅ | NO |
 
-### 4.2 Tarea 2: Evolución de Precios
+### 5.2 Tarea 2: Evolución de Precios
 
 > **Resumen:** 12 de 21 cumplen todos los indicadores (**57.1%**)
 
@@ -208,7 +220,7 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | U20 | 41 | 112.5s ❌ | 7 ✅ | 0 ✅ | 1 ✅ | NO |
 | U21 | 49 | 92.1s ❌ | 4 ✅ | 0 ✅ | 1 ✅ | NO |
 
-### 4.3 Tarea 3: Mejor Opción por Ubicación
+### 5.3 Tarea 3: Mejor Opción por Ubicación
 
 > **Resumen:** 17 de 21 cumplen todos los indicadores (**81.0%**)
 
@@ -236,7 +248,7 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | U20 | 41 | 91.9s ✅ | 7 ✅ | 0 ✅ | 1 ✅ | SÍ |
 | U21 | 49 | 96.4s ✅ | 7 ✅ | 0 ✅ | 1 ✅ | SÍ |
 
-### 4.4 Tarea 4: Asistente Virtual
+### 5.4 Tarea 4: Asistente Virtual
 
 > **Resumen:** 15 de 21 cumplen todos los indicadores (**71.4%**)
 
@@ -264,7 +276,7 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | U20 | 41 | 90.5s ❌ | 7 ✅ | 0 ✅ | 1 ✅ | NO |
 | U21 | 49 | 53.0s ✅ | 4 ✅ | 0 ✅ | 1 ✅ | SÍ |
 
-### 4.5 Tarea 5: Lista de Compra
+### 5.5 Tarea 5: Lista de Compra
 
 > **Resumen:** 5 de 21 cumplen todos los indicadores (**23.8%**)
 
@@ -292,4 +304,14 @@ Este resumen muestra el nivel de alcance de los indicadores de cada tarea.
 | U20 | 41 | 132.0s ❌ | 21 ❌ | 0 ✅ | 1 ✅ | NO |
 | U21 | 49 | 126.5s ❌ | 14 ✅ | 0 ✅ | 1 ✅ | NO |
 
------
+---
+
+## 6. Mejoras propuestas
+
+| Tarea | Problemas clave | Mejoras identificadas a los problemas |
+|-------|------------------|----------------------------------------|
+| CU-001 | 1. Botones poco intuitivos (un usuario realizó 36 clics para encontrar la acción correcta).<br>2. Falta de indicadores visuales claros en algunos elementos. | 1. Se identifica la oportunidad de mejorar la intuición de los botones, por lo que se consideramos necesario rediseñar su forma, iconografía y microinteracciones para que la función de cada se comprenda de manera inmediata desde el primer contacto.<br>2. También se identifica que ciertos elementos no se perciben fácilmente como clicables, esto nos llevaría a proponer una optimización en los estados visuales, así como la incorporación de mejor contraste y etiquetas descriptivas que ayuden a interpretar más fácil la interfaz. |
+| CU-002 | 1. Imagen de historial muy pequeño y poco visible (mencionado por 5 usuarios).<br>2. Posicionamiento no intuitivo en la jerarquía visual.<br>3. Falta de iconos descriptivos (ícono de gráfica, texto explicativo). | 1. La situación de la imagen del historial nos lleva a la oportunidad de rediseñar el módulo para aumentar su tamaño, reposicionarlo dentro de un lugar visual más claro y alinearlo con los elementos principales de su sección dentro de la app.<br>2. También se cuestiona que el historial no destaca lo suficiente dentro de la estructura de la pantalla, por lo que proponemos ajustar su ubicación para facilitar su descubrimiento, esto permitiría identificar más rápido su utilidad y acceso.<br>3. Por otra parte, se detecta el escaso entendimiento del historial por los usuarios, lo que consideramos pertinente integrar iconos descriptivos y breves textos auxiliares que aclaren su propósito y refuercen la idea de que se trata de un elemento interactivo y accesible. |
+| CU-005 | 1. Concepto de “balance” poco claro (3 usuarios no entendieron el criterio).<br>2. Falta de transparencia en cómo se calcula precio + distancia. Nombre confuso (“balance” no comunica la lógica).<br>3. Ausencia de ayudas visuales (tooltips o explicaciones). | 1. El concepto de "balance" no comunica adecuadamente su función, lo que genera confusión, por lo que propone cambiar el nombre por uno más descriptivo como “Equilibrio entre el precio y la distancia”.<br>2. Se identifica una falta de transparencia en el proceso, por lo que se propone mostrar el desglose del cálculo (precio + distancia) para dar transparencia al proceso.<br>3. Finalmente, se plantea incorporar ayudas visuales como tipa y mensajes explicativos que orienten al usuario en la interpretación de los datos. |
+| CU-006 | 1. No se puede añadir productos directamente desde la respuesta del chatbot.<br>2. Pocas preguntas rápidas contextuales.<br>3. Historial de conversación no disponible. | 1. Se observa la limitación del chatbot para añadir productos directamente, por lo que se propone habilitar esta funcionalidad para agilizar la experiencia.<br>2. Se propone incluir preguntas rápidas contextuales que permitan al usuario interactuar de manera más eficiente con el chatbot.<br>3. También se plantea habilitar un historial de conversación accesible para mejorar continuidad en la interacción y acceder a búsquedas previas. |
+| CU-011 | 1. Flujo confuso (¿crear lista primero o añadir productos?).<br>2. Botón de creación de lista difícil de encontrar (mencionado por 8 usuarios).<br>3. Botones poco llamativos y mal ubicados.<br>4. Integración deficiente con el resto del sistema.<br>5. Elementos interactivos no se perciben como clicables.<br>6. Falta de confirmación visual (no hay feedback claro). | 1. El flujo actual genera confusión sobre el orden de las acciones, por lo que se propone simplificarlo mediante una guía clara y pasos secuenciales.<br>2. Se recomienda reubicar en una sección independiente y resaltar el botón de creación de lista, aumentando su visibilidad con diseño llamativo.<br>3. Además, se plantea mejorar la estética general (colores, tamaño, contraste) y añadir confirmaciones visuales para reforzar la percepción de éxito en cada acción. |
