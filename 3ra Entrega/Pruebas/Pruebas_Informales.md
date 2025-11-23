@@ -175,7 +175,7 @@ Si el usuario se detiene más de **20–25 segundos**, el moderador puede decir:
 
 #  Criterios e Indicadores por Tarea
 
-| Número de Tarea | Criterio | Indicadores | Umbral de Aceptación |
+| Número de Tarea | Criterio | Indicadores | Umbral de Aceptación para Indicadores Cuantitativos |
 |-----------------|----------|-------------|----------------------|
 | **1 – Comparar precios de un producto específico** | El usuario identifica y selecciona el producto más económico de manera autónoma. | - Selecciona correctamente el producto más barato sin ayuda.<br>- Tiempo de ejecución ≤ 85s.<br>- ≤ 12 clics para completar.<br>- ≤ 2 errores.<br>- Nivel de frustración ≤ 2. | Cumplido: ≥80% de usuarios alcanzan el indicador.<br>Parcial: 50–79%.<br>No cumplido: <50%. |
 | **2 – Revisar evolución de precios** | El usuario accede al historial de precios e interpreta correctamente la tendencia. | - Accede al historial sin ayuda.<br>- Identifica correctamente el precio más bajo en 6 meses.<br>- ≤ 2 error de navegación.<br>- Tiempo de ejecución ≤ 85s.<br>- ≤ 12 clics.<br>- Explica decisión coherente con la tendencia.<br>- Nivel de frustración ≤ 2. | Cumplido: ≥80% de usuarios alcanzan el indicador.<br>Parcial: 50–79%.<br>No cumplido: <50%. |
