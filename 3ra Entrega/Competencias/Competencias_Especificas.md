@@ -1,0 +1,7 @@
+# Competencias Especificas 
+
+| **Competencia** | **Justificación** |
+|-----------------|-------------------|
+| **Administración de Software** | La tercera entrega se mejoró el uso formal de Scrum, completando los cuatro sprints con planificación clara, asignación de roles y seguimiento mediante Monday; además, se estableció un protocolo estructurado de pruebas con criterios e indicadores basados en requisitos de usabilidad y se generó una bitácora final junto con la mejora de la organización del repositorio, mejorando la organización a comparación de entregas previas. |
+| **Desarrollo de Software** | Se integraron mejoras funcionales y visuales al prototipo basadas en retroalimentación de usuarios; además, se verificó el cumplimiento de requisitos y el refinamiento de historias de usuario. Por otra parte, se aplicaron los fundamentos teóricos de la Ingeniería de Software para analizar requerimientos, priorizarlos mejor, validar su alineación con el diseño y asegurar que el proyecto mantenga coherencia. También se realizó la documentación de los cambios de requisitos, historias y público mediante archivos “md” en GitHub, incluyendo las bitácoras de cada sprint y los resultados de las pruebas junto con las mejoras propuestas, asegurando un seguimiento detallado de las actividades realizadas. |
+| **Innovación de Software** | Incorporación de propuestas de mejora orientadas a optimizar la usabilidad y la experiencia del usuario tras la retroalimentación de los comentarios de los usuarios durante las pruebas, mejorando la calidad del producto. |
