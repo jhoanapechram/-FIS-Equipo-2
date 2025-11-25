@@ -1,4 +1,5 @@
 # Recopilación de Datos de la Prueba de Usabilidad
+[🔗Enlace del Word usado para la recopilación de datos](https://alumnosuady-my.sharepoint.com/:w:/g/personal/a22201473_alumnos_uady_mx/IQDWsBz7LeM7S7QZypMBi0ZMAUWMARoJTP4k7NBxzmNGSRk?e=82i2Ep)
 
 ## Tarea 1: Comparación de Precios
 
