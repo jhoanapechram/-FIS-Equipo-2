@@ -24,12 +24,12 @@ El proceso se gestionó mediante:
 | Integrante            | Rol Scrum      | Actividad Principal                                                                           |
 | --------------------- | -------------- | --------------------------------------------------------------------------------------------- |
 | **Jhoana Pech**       | *Scrum Master* | Coordinación del proceso, facilitación de reuniones, seguimiento del cumplimiento de sprints. |
-| **Bianca Ramos**      | Equipo Scrum   | Refinamiento y validación de requisitos funcionales.                                          |
-| **Ana Angulo**        | Equipo Scrum   | Definición de criterios, indicadores e insumos para pruebas.                                  |
-| **Alejandra Aguilar** | Equipo Scrum   | Desarrollo y refinamiento de prototipos y diseño visual.                                      |
-| **Kevin Morales**     | Equipo Scrum   | Revisión técnica, viabilidad y control de calidad funcional.                                  |
-| **Emilio Arellano**   | Equipo Scrum   | Gestión del backlog, ordenamiento y priorización de elementos.                                |
-| **José Correa**       | Equipo Scrum   | Integración documental y verificación de coherencia entre artefactos.                         |
+| **Bianca Ramos**      | Scrum team member  | Refinamiento y validación de requisitos funcionales.                                          |
+| **Ana Angulo**        | Scrum team member   | Definición de criterios, indicadores e insumos para pruebas.                                  |
+| **Alejandra Aguilar** | Scrum team member   | Desarrollo y refinamiento de prototipos y diseño visual.                                      |
+| **Kevin Morales**     | Scrum team member   | Revisión técnica, viabilidad y control de calidad funcional.                                  |
+| **Emilio Arellano**   | Scrum team member   | Gestión del backlog, ordenamiento y priorización de elementos.                                |
+| **José Correa**       | Scrum team member   | Integración documental y verificación de coherencia entre artefactos.                         |
 
 ---
 
