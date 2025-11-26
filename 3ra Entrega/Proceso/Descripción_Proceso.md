@@ -14,7 +14,7 @@ El proceso se gestionó mediante:
 
 * **Reuniones periódicas** (planeación, revisión, retrospectiva).
 * **Bitácoras detalladas por sprint**, incluyendo acuerdos y avances.
-* **Tablero centralizado en Monday.com** para seguimiento de tareas y responsables. [Enlace al la Tabla Principal de Monday.](https://view.monday.com/18370650649-93b20fda6baba009fe0c76d0dc4f78c6?r=use1) [Enlace al tablero Kanban](https://view.monday.com/18370650649-f2d20df4507e6547f12b39802621a1dc?r=use1)
+* **Tablero centralizado en Monday.com** para seguimiento de tareas y responsables. [Enlace al la Tabla Principal de Monday.](https://view.monday.com/18370650649-ab305c03f267013201e974278c58a8b1?r=use1) [Enlace al tablero Kanban](https://view.monday.com/18370650649-f2d20df4507e6547f12b39802621a1dc?r=use1)
 * **Evidencia continua en GitHub**, mediante commits y ramas organizadas.
 
 ---
