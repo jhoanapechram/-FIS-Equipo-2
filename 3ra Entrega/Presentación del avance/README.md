@@ -1,1 +1,1 @@
-[ ![Link del video de la tercera entrega](https://i.ibb.co/WvCdNwz0/Captura-de-pantalla-104.png) ](https://alumnosuady-my.sharepoint.com/:v:/g/personal/a22201473_alumnos_uady_mx/IQARB5m0FRvsSJfVrAzUa4nPAYHGCWe4cdKH3r6efSUN5Vw?e=jOZ6Vd)
+[ ![Link del video de la tercera entrega](https://i.ibb.co/WvCdNwz0/Captura-de-pantalla-104.png) ](https://alumnosuady-my.sharepoint.com/:v:/g/personal/a22201473_alumnos_uady_mx/IQCUE5zFVf-dTKCoh-M_j7j4AasFtg8A8ihQPqwC9b1MdMo?e=nulZfF)
