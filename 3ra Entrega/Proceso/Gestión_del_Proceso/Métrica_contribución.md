@@ -44,3 +44,17 @@
 | Bianca Ramos      | Redactar Bitácora Final                                                                           | 4      | 2     |
 |-------------------|----------------------------------------------------------------------------------------------------|--------|-------|
 | **TOTAL TAREAS:** | **43**                                                                                             |        |       |
+
+
+
+| Integrante        | Total de tareas | Puntos totales | Promedio |
+|-------------------|-----------------|----------------|----------|
+| Alejandra Aguilar | 6               | 10             | 14%      |
+| Ana Angulo        | 7               | 10             | 14%      |
+| Emilio Arellano   | 4               | 10             | 14%      |
+| José Correa       | 5               | 10             | 14%      |
+| Kevin Morales     | 8               | 10             | 14%      |
+| Jhoana Pech       | 8               | 10             | 14%      |
+| Bianca Ramos      | 5               | 10             | 14%      |
+| **TOTAL**         | **43**          | **70**         | **100%** |
+
