@@ -50,7 +50,7 @@ Desarrollar una plataforma web que permita:
 
 | Rama | Descripción | 
 |------|-------------|
-| **[TERCERA-ENTREGA-V2](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/TERCERA-ENTREGA-V2)** | Versión final del proyecto | 
+| **[Tercera-Entrega](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/TERCERA-ENTREGA-V2)** | Versión final del proyecto | 
 | **[Segunda-Entrega](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Segunda-Entrega)** | Desarrollo y implementación | 
 | **[Primera-Entrega](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega)** | Análisis y planificación | 
 
@@ -97,5 +97,6 @@ Agradecemos al **Prof. Edgar Cambranes** por la guía y enseñanzas durante el d
 </div>
 
 -----
+
 
 
