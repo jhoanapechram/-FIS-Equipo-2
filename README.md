@@ -36,16 +36,19 @@ Aquí se documentan los entregables, avances, evidencias y artefactos producidos
 
 ## 📁 Estructura del Repositorio
 
-> *Aquí podrás añadir tus carpetas y su contenido.*
+A continuación se presenta un resumen de cada carpeta y los documentos incluidos.
 
-* 📦 **3ra Entrega**
-    * 📄 Documento general
-    * 📂 `imágenes`
-    * 📂 `diagramas`
-    * 📂 `prototipos`
-    * 📂 `requerimientos`
-    * 📂 `pruebas`
-    * ... *(agrega lo que necesites)*
+| Carpeta | Descripción |
+|---------|-------------|
+| [**Competencias**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Competencias) | Documenta las competencias genéricas y específicas desarrolladas, así como retroalimentación interna del equipo. |
+| [**Diseño**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Dise%C3%B1o) | Contiene los cambios del prototipo, la correspondencia entre requerimientos y pantallas, y la guía de diseño del sistema. |
+| [**Presentación del avance**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Presentaci%C3%B3n%20del%20avance) | Carpeta destinada a almacenar los recursos utilizados para la presentación correspondiente a esta tercera entrega. |
+| [**Proceso**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Proceso) | Reúne la documentación del proceso de trabajo, así como todas las bitácoras de sprints e individuales. 
+| [**Producto**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Producto) | Contiene la documentación del producto, su evolución, aspectos de innovación y perfiles de usuarios. |
+| [**Pruebas**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Pruebas  ) | Incluye los resultados y conclusiones derivados de pruebas formales, informales y con la herramienta Useberry. |
+| [**Requisitos**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Requisitos) | Documentación relacionada con casos de uso, historias de usuario, priorización y lista final de requerimientos. |
+
+---
 
 ---
 

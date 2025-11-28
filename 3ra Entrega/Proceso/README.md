@@ -1,25 +1,25 @@
-# Proceso
-
-Esta carpeta documenta el proceso seguido para el desarrollo de la tercera entrega del proyecto **SmartPrice**, utilizando la metodología **Scrum**. Aquí se incluyen los registros del trabajo iterativo, roles, actividades por sprint y evidencias del seguimiento del proyecto.
-
-## Contenido
-
-### 1. [Descripción del Proceso](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/TERCERA-ENTREGA-V2/3ra%20Entrega/Proceso/Descripci%C3%B3n_Proceso.md)
-Archivo: `Descripción_Proceso.md`  
-Incluye:
-- Información general del proyecto y su planeación.
-- Configuración de los 4 sprints y metodología utilizada.
-- Roles del equipo y responsabilidades.
-- Actividades realizadas y herramientas empleadas (Monday.com, GitHub, bitácoras y reuniones).
-- Organización de entregables y evidencias del proceso.
-
-### 2. [Bitácoras por Sprint](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/TERCERA-ENTREGA-V2/3ra%20Entrega/Proceso/Gesti%C3%B3n_del_Proceso)
-Carpeta: `Gestión_del_Proceso`  
-Incluye:
-- Bitácoras completas de los sprints 1, 2 y 3.
-- Actividades realizadas, acuerdos, pendientes y responsables.
-- Seguimiento del avance semanal y retrospectivas.
+# Proceso – Proyecto SmartPrice
 
 ---
 
-Este apartado permite rastrear de forma clara la evolución del proyecto, la organización del equipo y el cumplimiento del marco de trabajo Scrum.
+## Descripción general
+
+La carpeta **Proceso** reúne la documentación relacionada con la organización, gestión y seguimiento del trabajo realizado durante el desarrollo del proyecto SmartPrice.
+
+---
+
+## Contenido de la carpeta
+
+| Archivo / Carpeta | Descripción breve |
+|-------------------|-------------------|
+| [**Gestión_del_Proceso**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Proceso/Gesti%C3%B3n_del_Proceso) | Carpeta que contiene todas las bitácoras del proyecto, incluyendo bitácoras por sprint y bitácoras individuales de cada integrante. |
+| [**Descripción_Proceso.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Proceso/Descripci%C3%B3n_Proceso.md) | Explica cómo se llevó a cabo el proceso del proyecto: metodología, etapas, actividades y flujo de trabajo. |
+
+
+---
+
+## Objetivo de la carpeta
+
+Documentar el proceso seguido por el equipo, mostrando cómo se organizaron las tareas, cómo avanzó el proyecto y qué decisiones se tomaron a lo largo del desarrollo.
+
+---

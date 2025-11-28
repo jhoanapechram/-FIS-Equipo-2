@@ -1,13 +1,25 @@
-# Competencias
+# Competencias – Proyecto SmartPrice
 
-### En esta carpeta se encuentra un documento que reúne las competencias desarrolladas en el proyecto y una justificación breve de cada una.
-#### El archivo incluye:
+---
 
-  -Administración de Software: descripción de cómo se gestionó el proyecto y se aplicó Scrum.
-  
-  -Desarrollo de Software: mejoras realizadas al prototipo, documentación y manejo de requisitos.
-  
-  -Innovación de Software: propuestas y ajustes enfocados en mejorar la usabilidad y experiencia del usuario.
-  
+## Descripción general
 
-Este documento resume de forma clara cómo se trabajó cada competencia a lo largo del proyecto.
+La carpeta **Competencias** reúne la documentación relacionada con las competencias genéricas y específicas desarrolladas durante el proyecto, así como la retroalimentación del desempeño del equipo.
+
+---
+
+## Contenido de la carpeta
+
+| Archivo | Descripción breve |
+|---------|-------------------|
+| [**Competencias_Especificas.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Competencias/Competencias_Especificas.md) | Describe cómo se desarrollaron las competencias específicas a través de actividades del proyecto. |
+| [**Competencias_Genéricas.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Competencias/Competencias_Gen%C3%A9ricas.md) | Explica la manera en que el proyecto promovió competencias genéricas mediante tareas y entregas. |
+| [**Crítica_Constructiva.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Competencias/Cr%C3%ADtica_Constructiva.md) | Documento con retroalimentación interna para mejorar el desempeño y la colaboración del equipo. |
+
+---
+
+## Objetivo de la carpeta
+
+Evidenciar el desarrollo de competencias clave y registrar aprendizajes y áreas de mejora dentro del equipo.
+
+---
