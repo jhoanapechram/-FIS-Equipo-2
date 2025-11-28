@@ -1,18 +1,14 @@
-# Información de las carpetas:
+## 📁 Estructura de la Carpeta
 
-## - [Competencias](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Competencias)
-- [Competencias genéricas y específicas_1](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Competencias/Competencias%20genericas%20y%20especificas_1.pdf)
 
-## - [Proceso](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Proceso)
-- [Sprints](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Proceso/Sprints)
-    - [Resultados Reunión Sprint #1](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Sprints/Resultados_Reuni%C3%B3n_Sprint%20%231.docx)
-    - [Resultados Reunión Sprint #2](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Sprints/Resultados%20Reuni%C3%B3n%20Sprint%20%232.docx)
-  - [Bitácora_de_Actividades](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Proceso/Bit%C3%A1cora_de_actividades.pdf)
-## - [Producto](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Producto)
-  - [Fis producto](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/FIS%20producto.pdf)
-  - [Video_presentación](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Producto/Video_Presentaci%C3%B3n.md)
-## - [Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/main/1era%20Entrega/Requisitos)
-  - [Fis_Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf)
-  - [Historias-de-usuario](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/Historias_de_usuario.pdf)
-  - [Requisitos Priorización](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/main/1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACI%C3%93N.pdf)
-     
+📦 **[1era Entrega](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega)**  
+Esta carpeta contiene el desarrollo del proyecto **SmartPrice**, realizado por el **Equipo 2** como parte de la asignatura *Fundamentos de Ingeniería de Software*.  
+Aquí se documentan los entregables, avances, evidencias y artefactos producidos durante el proceso para la [Primera entrega](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega).
+Incluye lo siguiente:
+| Carpeta | Descripción | Documentos incluidos |
+|---------|-------------|----------------------|
+| **[Competencias](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega/Competencias)** | El propósito de esta carpeta es documentar las competencias desarrolladas durante el desarrollo del producto. | • [Competencias genericas y especificas_1.pdf](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Competencias/Competencias%20genericas%20y%20especificas_1.pdf)<br>• [Competencias.md](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Competencias/Competencias.md) |
+| **[Presentación del avance](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega/Presentaci%C3%B3n%20del%20avance)** | Contiene los recursos correspondientes a la presentación final del avance del proyecto SmartPrice. | • [Primera_Entrega.md](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Presentación%20del%20avance/Primera_Entrega.md) |
+| **[Proceso](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega/Proceso)** | Su propósito es establecer la estructura de trabajo y la manera en que se desarrolló la entrega. | • [Sprints](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega/Proceso/Sprints)<br>• [Bitácora_de_actividades.pdf](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Proceso/Bitácora_de_actividades.pdf)<br>• [Metodología.md](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Proceso/Metodología.md) |
+| **[Producto](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega/Producto)** | Documenta los cambios del producto SmartPrice de forma estructurada y verificable. | • [FIS producto.pdf](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Producto/FIS%20producto.pdf)<br>• [Producto.md](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Producto/Producto.md) |
+| **[Requisitos](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/Primera-Entrega/1era%20Entrega/Requisitos)** | Documentación relacionada al análisis, definición y priorización de requisitos. | • [Caso de Uso con Criterios de Aceptación.pdf](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Requisitos/Caso%20de%20Uso%20con%20Criterios%20de%20Aceptación.pdf)<br>• [FIS_REQUISITOS.pdf](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Requisitos/FIS_REQUISITOS.pdf)<br>• [REQUISITOS PRIORIZACIÓN.pdf](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Requisitos/REQUISITOS%20PRIORIZACIÓN.pdf)<br>• [Requisitos.md](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Requisitos/Requisitos.md) |
