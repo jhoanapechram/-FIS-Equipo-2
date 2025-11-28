@@ -12,7 +12,7 @@ La carpeta **Competencias** reúne la documentación relacionada con las compete
 
 | Archivo | Descripción breve |
 |---------|-------------------|
-| [**Competencias_Especificas.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/tree/capiiim-patch-2/3ra%20Entrega/Competencias) | Describe cómo se desarrollaron las competencias específicas a través de actividades del proyecto. |
+| [**Competencias_Especificas.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Competencias/Competencias_Especificas.md) | Describe cómo se desarrollaron las competencias específicas a través de actividades del proyecto. |
 | [**Competencias_Genéricas.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Competencias/Competencias_Gen%C3%A9ricas.md) | Explica la manera en que el proyecto promovió competencias genéricas mediante tareas y entregas. |
 | [**Crítica_Constructiva.md**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/capiiim-patch-2/3ra%20Entrega/Competencias/Cr%C3%ADtica_Constructiva.md) | Documento con retroalimentación interna para mejorar el desempeño y la colaboración del equipo. |
 
