@@ -4,4 +4,4 @@ Este directorio contiene el documento fundamental que establece la **definición
 
 | Documento | Descripción |
 | :---------- | :------------- |
-| [**FIS producto.pdf**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Producto/FIS%20producto.pdf) | Documento único que detalla la descripción del producto, el problema a resolver, la propuesta de valor y la identificación de los usuarios (público objetivo) de la aplicación. |
+| [**FIS producto.pdf**](https://github.com/jhoanapechram/-FIS-Equipo-2/blob/Primera-Entrega/1era%20Entrega/Producto/FIS%20producto.pdf) | Este documento presenta la descripción del producto, una aplicación orientada a comparar precios de supermercados en México de forma dinámica y personalizada. Se detalla el público objetivo, principalmente adultos jóvenes interesados en optimizar su tiempo y dinero al momento de comprar. También se expone la propuesta de valor, que diferencia la solución de alternativas como SoySuper y la lista de Profeco al incluir factores como distancia, accesibilidad y ofertas actualizadas. El contenido permite comprender el alcance inicial del proyecto y su impacto en los usuarios. |
