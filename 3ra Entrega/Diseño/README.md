@@ -6,6 +6,8 @@
 
 La carpeta **Diseño** contiene la documentación relacionada con la creación, estructura, lineamientos y evolución del diseño del sistema SmartPrice.
 
+[Link del prototipo SmartPrice](https://eacvellano.github.io/Mockup-SmartPrice/)
+
 ---
 
 ## Contenido de la carpeta
